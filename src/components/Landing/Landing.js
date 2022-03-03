@@ -374,7 +374,55 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-red pt-100 pb-70">
+            <div className="about-section about-section-bg bg-red pt-100 pb-70">
+                <div className="container">
+                    <div className="row">
+                        <h1 className="c-red font-weight-bolder">Why Evaluationz</h1>
+                    </div>
+
+                    <div className="row statistic-block">
+                        <div className="grid d-flex">
+                            <div className="col-md-4">
+                                <div className="circle">
+                                    <div className="circle__inner">
+                                        <h1 className="c-red">2,222</h1>
+                                        <p className="c-blue">COMPANIES</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="circle">
+                                    <div className="circle__inner">
+                                        <h1 className="c-red">31M</h1>
+                                        <p className="c-blue">VERIFICATIONS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="circle">
+                                    <div className="circle__inner">
+                                        <h1 className="c-red">22,898</h1>
+                                        <p className="c-blue">RED FLAGS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <p className="text-white">
+                            Building on sound expertise gathered since our inception in <b>2006</b>, Evaluationz India has evolved to become the leader
+                            in digital verification. Our services span a breadth of industries and a depth of verification categories.
+                        </p>
+
+                        <div className="col-12">
+                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-section bg-red pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">

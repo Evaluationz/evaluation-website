@@ -6281,3 +6281,43 @@ select.form-control {
 .red-image-right{
   border-right: 1rem solid #ff1717;
 }
+
+
+.about-section-bg{
+  background: url('../images/landing/Image-8.jpg') no-repeat center center;
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-section-bg .statistic-block .col-md-4{
+  padding: 3rem;
+}
+.about-section-bg .statistic-block .circle{
+  background-color: #ffffff;
+  border: 3px solid #ff1717;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+}
+
+.about-section-bg .statistic-block .circle .circle__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.about-section-bg .statistic-block .circle .circle__inner h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.about-section-bg .statistic-block .circle .circle__inner p{
+  font-size: 1.5rem;
+  font-weight: 500;
+}

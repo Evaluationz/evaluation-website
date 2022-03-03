@@ -1304,14 +1304,14 @@ select.form-control {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.main-nav nav .navbar-nav .nav-item:last-child a {
+.main-nav nav .navbar-nav .nav-item.nav-btn a {
   background: #ff1717;
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 5px;
 }
-.main-nav nav .navbar-nav .nav-item:last-child a:hover {
+.main-nav nav .navbar-nav .nav-item.nav-btn a:hover {
   color: #ffffff !important;
 }
 

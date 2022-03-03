@@ -30,15 +30,15 @@ const navbar = () => {
                                     <li className="nav-item">
                                         <a className="nav-link dropdown-toggle">SERVICES</a>
                                         <ul className="dropdown-menu">
-                                            <li className="nav-item  nav-item-1">
+                                            <li className="nav-item nav-item-1">
                                                 <a href="https://templates.envytheme.com/erudex/default/index.html"
                                                    className="nav-link active">Home Demo 1</a>
                                             </li>
-                                            <li className="nav-item  nav-item-2">
+                                            <li className="nav-item nav-item-2">
                                                 <a href="https://templates.envytheme.com/erudex/default/index-2.html"
                                                    className="nav-link">Home Demo 2</a>
                                             </li>
-                                            <li className="nav-item  nav-item-3">
+                                            <li className="nav-item nav-item-3">
                                                 <a href="https://templates.envytheme.com/erudex/default/index-3.html"
                                                    className="nav-link">Home Demo 3</a>
                                             </li>
@@ -67,7 +67,7 @@ const navbar = () => {
                                         <Link to="/contact"
                                            className="nav-link">CONTACT</Link>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="nav-item nav-btn">
                                         <Link to="/get-in-touch"
                                            className="nav-link">GET IN TOUCH</Link>
                                     </li>

@@ -1,0 +1,23 @@
+.App {
+	text-align: center;
+}
+.txtali-l {
+  text-align: left;
+}
+.title {
+	color: #6c757d !important;
+	margin-bottom: 0.5rem !important;
+}
+.text {
+	font-size: 12px;
+	color: #6c757d !important;
+	margin-bottom: 0.5rem !important;
+}
+.customBtn {
+	background-color: #e2d4a8 !important;
+	border-color: #e2d4a8 !important;
+}
+.customBtn:hover,
+.customBtn:active {
+	background-color: #b3a884 !important;
+}

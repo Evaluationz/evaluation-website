@@ -3290,6 +3290,14 @@ select.form-control {
   padding-top: 30px;
 }
 
+.banner-carousel h2{
+  font-size: 3rem;
+}
+.banner-carousel p{
+  font-size: 2rem;
+  font-weight: 100;
+}
+
 .testimonial-card-body {
   padding: 30px;
   border-radius: 10px;
@@ -6244,11 +6252,32 @@ select.form-control {
 }
 /*Brand Background Color*/
 .bg-blue{
-  color: #3e72fe;
+  background: #3e72fe;
 }
 .bg-red{
-  color: #ff1717;
+  background: #ff1717;
 }
 
-/*Button*/
+/*Button UI*/
+.btn-red{
+  background-color: #ff1717 !important;
+  border-color: #ff1717 !important;
+}
+.btn-blue{
+  background-color: #3e72fe !important;
+  border-color: #3e72fe !important;
+}
 
+/*Image UI*/
+.blue-image-left{
+  border-left: 1rem solid #3e72fe;
+}
+.red-image-left{
+  border-left: 1rem solid #ff1717;
+}
+.blue-image-right{
+  border-right: 1rem solid #3e72fe;
+}
+.red-image-right{
+  border-right: 1rem solid #ff1717;
+}

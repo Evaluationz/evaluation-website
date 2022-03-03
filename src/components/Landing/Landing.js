@@ -40,7 +40,7 @@ const Landing = () => {
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
-                                                    <div className="about-section-item about-item-image text-center">
+                                                    <div className="about-section-item about-item-image text-center blue-image-left">
                                                         <img src="images/landing/carousel/Banner-Image-1.jpg" alt="shape"/>
                                                     </div>
                                                 </div>
@@ -50,7 +50,7 @@ const Landing = () => {
                                                             <h2 className="c-red">Leaders in digital verification</h2>
                                                         </div>
                                                         <div className="about-content">
-                                                            <p>Bespoke solutions powered by AI and integration</p>
+                                                            <p className="text-white">Bespoke solutions powered by AI and integration</p>
                                                             <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
@@ -59,29 +59,24 @@ const Landing = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/*<div className="owl-item">
+
+                                <div className="owl-item">
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
-                                                    <div className="about-section-item about-item-image text-center">
-                                                        <img src="images/index/feature-shape-1.png" alt="shape"/>
+                                                    <div className="about-section-item about-item-image text-center red-image-left">
+                                                        <img src="images/landing/carousel/Banner-Image-2.jpg" alt="shape"/>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-details">
                                                         <div className="section-title section-title-left text-start">
-                                                            <small>About Us</small>
-                                                            <h2>Smarttrak is a AI Technology Solutions company focused on </h2>
+                                                            <h2 className="c-red">The next evolution in verification.</h2>
                                                         </div>
                                                         <div className="about-content">
-                                                            <ul>
-                                                                <li>Revolutionizing your business with our Advanced AI</li>
-                                                                <li>Intelligent and Predictive Assets Monitoring</li>
-                                                            </ul>
-                                                            <p>We help businesses to lead the charge to digital innovation and tap into the power of the AI,
-                                                                by transforming  and creating a competitive advantage that will scale.</p>
-                                                            <Link to="/aboutus" className="btn main-btn">About Us</Link>
+                                                            <p className="text-white">Digital. Instant. And universal.</p>
+                                                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -89,36 +84,311 @@ const Landing = () => {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="owl-item">
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
-                                                    <div className="about-section-item about-item-image text-center">
-                                                        <img src="images/index/feature-shape-1.png" alt="shape"/>
+                                                    <div className="about-section-item about-item-image text-center blue-image-left">
+                                                        <img src="images/landing/carousel/Banner-Image-3.jpg" alt="shape"/>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-details">
                                                         <div className="section-title section-title-left text-start">
-                                                            <small>About Us</small>
-                                                            <h2>Smarttrak is a AI Technology Solutions company focused on </h2>
+                                                            <h2 className="c-red">Verification made digital. And simple.</h2>
                                                         </div>
                                                         <div className="about-content">
-                                                            <ul>
-                                                                <li>Revolutionizing your business with our Advanced AI</li>
-                                                                <li>Intelligent and Predictive Assets Monitoring</li>
-                                                            </ul>
-                                                            <p>We help businesses to lead the charge to digital innovation and tap into the power of the AI,
-                                                                by transforming  and creating a competitive advantage that will scale.</p>
-                                                            <Link to="/aboutus" className="btn main-btn">About Us</Link>
+                                                            <p className="text-white">Verification made digital. And simple.</p>
+                                                            <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>*/}
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+                                                <div className="col-lg-6 pb-30">
+                                                    <div className="about-section-item about-item-image text-center red-image-left">
+                                                        <img src="images/landing/carousel/Banner-Image-4.jpg" alt="shape"/>
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-6 pb-30">
+                                                    <div className="about-section-item about-item-details">
+                                                        <div className="section-title section-title-left text-start">
+                                                            <h2 className="c-red">Our Verification, your system.</h2>
+                                                        </div>
+                                                        <div className="about-content">
+                                                            <p className="text-white">Seamless Integration with powerful API</p>
+                                                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+                                                <div className="col-lg-6 pb-30">
+                                                    <div className="about-section-item about-item-image text-center blue-image-left">
+                                                        <img src="images/landing/carousel/Banner-Image-5.jpg" alt="shape"/>
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-6 pb-30">
+                                                    <div className="about-section-item about-item-details">
+                                                        <div className="section-title section-title-left text-start">
+                                                            <h2 className="c-red">Extending verification from B2B to B2B2C</h2>
+                                                        </div>
+                                                        <div className="about-content">
+                                                            <p className="text-white">Read our latest blog</p>
+                                                            <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-section bg-blue pt-100 pb-70">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-details">
+                                <div className="section-title section-title-left text-start">
+                                    <h2 className="text-white">Verified is vital</h2>
+                                </div>
+                                <div className="about-content">
+                                    <p className="text-white">Trust, but verify is an old proverb that has taken new
+                                        meaning in this digital age.</p>
+
+                                    <p className="text-white">
+                                        The importance of verification cannot be overemphasised.
+                                        The need for verification has expanded from employee
+                                        background verification to almost any aspect of current
+                                        living. And Evaluationz is one of the few companies that
+                                        have been able to keep pace with the ever-expanding
+                                        needs. And what’s more. We have been able to harness the
+                                        power of AI to create the proprietary Blue G tech platform
+                                        that makes real-time digital verification a possibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center red-image-right">
+                                <img src="images/landing/image-3.jpg" alt="shape"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-section bg-red pt-100 pb-70">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center blue-image-left">
+                                <img src="images/landing/image-4.jpg" alt="shape"/>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-details">
+                                <div className="section-title section-title-left text-start">
+                                    <h2 className="text-white">Who do we verify for?</h2>
+                                </div>
+                                <div className="about-content">
+                                    <p className="text-white">Trust, but verify is an old proverb that has taken new
+                                        meaning in this digital age.</p>
+
+                                    <p className="text-white">
+                                        Evaluationz offers digital verification services for use
+                                        cases that include corporates, BFSI, fintech, e-commerce,
+                                        HR and staffing, IT and SaaS, healthcare and individual
+                                        users or customers. Evaluation offers instant or
+                                        near-instant verification solutions based on the
+                                        proprietary BlueG platform.
+                                    </p>
+                                    <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-section bg-white pt-100 pb-70">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-details">
+                                <div className="section-title section-title-left text-start">
+                                    <h2 className="c-red">What do we verify?</h2>
+                                </div>
+                                <div className="about-content">
+                                    <p className="text-black">
+                                        Evaluationz uses artificial intelligence to automate the
+                                        verification process while staying compliant to statutory
+                                        norms of data privacy that govern the verification
+                                        process. Importantly, we have the capability to solution
+                                        our current identity verification product with liveness
+                                        detection and OCR capabilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center red-image-right">
+                                <img src="images/landing/image-5.jpg" alt="shape"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row align-items-center mt-4">
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-1.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Digital Identity Verification
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-2.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Education Verification
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-3.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Employment Verification
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-4.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Digital Address Verification
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-5.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Criminal Record Check
+                                </span>
+                        </div>
+                    </div>
+
+                    <div className="row align-items-center my-4">
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-6.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Social Media Check
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-7.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Reference Check
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-8.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Drug Test
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-9.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Digital Passport Verification
+                                </span>
+                        </div>
+
+                        <div className="col d-flex align-items-center justify-content-center">
+                            <img src="images/landing/icons/Icon-10.png" alt="shape" width="80"/>
+                            <span className="font-weight-bold ml-2">
+                                    Credit Check
+                                </span>
+                        </div>
+                    </div>
+
+                    <div className="row align-items-center my-4">
+                        <div className="col-12">
+                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-section bg-blue pt-100 pb-70">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center red-image-left">
+                                <img src="images/landing/image-6.jpg" alt="shape"/>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-details">
+                                <div className="section-title section-title-left text-start">
+                                    <h2 className="text-white">How do we verify?</h2>
+                                </div>
+                                <div className="about-content">
+                                    <p className="text-white font-weight-normal">Evaluationz’ proprietary <b>BlueG platform</b>, developed
+                                        completely in-house. leverages the power of AI,
+                                        components of government identity documents and
+                                        databases, and the ease of intuitive, user-friendly
+                                        interfaces to offer accurate and comprehensive results
+                                        in real-time.</p>
+
+                                    <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-section bg-red pt-100 pb-70">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-details">
+                                <div className="section-title section-title-left text-start">
+                                    <h2 className="text-white">Start verifying now.</h2>
+                                </div>
+                                <Link to="/explore" className="btn btn-primary btn-blue">Get in touch</Link>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center blue-image-right">
+                                <img src="images/landing/image-7.jpg" alt="shape"/>
                             </div>
                         </div>
                     </div>

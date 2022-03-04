@@ -62,7 +62,7 @@ jQuery(function ($) {
     //Testimonials carousel
     $(".testimonials-carousel").owlCarousel({
         loop: true,
-        items: 1,
+        items: 3,
         autoplay: true,
         smartSpeed: 1500,
         margin: 30,
@@ -74,10 +74,10 @@ jQuery(function ($) {
                 items: 1
             },
             768: {
-                items: 1
+                items: 2
             },
             992: {
-                items: 1
+                items: 3
             }
         }
     });

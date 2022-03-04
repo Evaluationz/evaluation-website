@@ -423,7 +423,7 @@ const Landing = () => {
             </div>
 
             <div className="testimonial-section pt-5 position-relative">
-                <div className="container-fluid bg-white">
+                <div className="col-12 px-md-5 bg-white">
                     <div className="row">
                         <h1 className="c-red font-weight-bolder pl-80">Testimonials</h1>
                     </div>
@@ -433,107 +433,58 @@ const Landing = () => {
                                 <div className="owl-item">
                                     <div className="item">
                                         <div className="container">
-                                            <div className="row align-items-center">
-                                                <div className="col-md-4">
-                                                    <div className="testimonial bg-red">
-                                                        <div className="pic shadow-lg">
-                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                        </div>
-                                                        <p className="description text-white">
-                                                            is simply dummy text of the printing
-                                                            and typesetting industry. Lorem
-                                                            Ipsum has been the industry's
-                                                            standard dummy text ever since the
-                                                            1500s, when an unknown printer took
-                                                            a galley of type and scrambled it to
-                                                        </p>
-                                                    </div>
+                                            <div className="testimonial bg-red">
+                                                <div className="pic shadow-lg">
+                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
                                                 </div>
-
-                                                <div className="col-md-4">
-                                                    <div className="testimonial bg-blue">
-                                                        <div className="pic">
-                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                        </div>
-                                                        <p className="description text-white">
-                                                            is simply dummy text of the printing
-                                                            and typesetting industry. Lorem
-                                                            Ipsum has been the industry's
-                                                            standard dummy text ever since the
-                                                            1500s, when an unknown printer took
-                                                            a galley of type and scrambled it to
-                                                        </p>
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-4">
-                                                    <div className="testimonial bg-red">
-                                                        <div className="pic">
-                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                        </div>
-                                                        <p className="description text-white">
-                                                            is simply dummy text of the printing
-                                                            and typesetting industry. Lorem
-                                                            Ipsum has been the industry's
-                                                            standard dummy text ever since the
-                                                            1500s, when an unknown printer took
-                                                            a galley of type and scrambled it to
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="owl-item">
                                     <div className="item">
                                         <div className="container">
-                                            <div className="row align-items-center">
-                                                <div className="col-md-4 pb-30">
-                                                    <div className="testimonial bg-red">
-                                                        <div className="pic shadow-lg">
-                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                        </div>
-                                                        <p className="description text-white">
-                                                            is simply dummy text of the printing
-                                                            and typesetting industry. Lorem
-                                                            Ipsum has been the industry's
-                                                            standard dummy text ever since the
-                                                            1500s, when an unknown printer took
-                                                            a galley of type and scrambled it to
-                                                        </p>
-                                                    </div>
+                                            <div className="testimonial bg-red">
+                                                <div className="pic shadow-lg">
+                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
                                                 </div>
-                                                <div className="col-md-4 pb-30">
-                                                    <div className="testimonial bg-blue">
-                                                        <div className="pic">
-                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                        </div>
-                                                        <p className="description text-white">
-                                                            is simply dummy text of the printing
-                                                            and typesetting industry. Lorem
-                                                            Ipsum has been the industry's
-                                                            standard dummy text ever since the
-                                                            1500s, when an unknown printer took
-                                                            a galley of type and scrambled it to
-                                                        </p>
-                                                    </div>
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="testimonial bg-red">
+                                                <div className="pic shadow-lg">
+                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
                                                 </div>
-                                                <div className="col-md-4 pb-30">
-                                                    <div className="testimonial bg-red">
-                                                        <div className="pic">
-                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                        </div>
-                                                        <p className="description text-white">
-                                                            is simply dummy text of the printing
-                                                            and typesetting industry. Lorem
-                                                            Ipsum has been the industry's
-                                                            standard dummy text ever since the
-                                                            1500s, when an unknown printer took
-                                                            a galley of type and scrambled it to
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
                                             </div>
                                         </div>
                                     </div>

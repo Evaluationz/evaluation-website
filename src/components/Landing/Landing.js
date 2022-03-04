@@ -374,12 +374,14 @@ const Landing = () => {
                 </div>
             </div>
             <div className="testimonial-section p-b-100 position-relative">
-                <h2 className="c-red">Testimonials</h2>
+
                 <div className="container-fluid pt-100 pb-30 bg-white">
+                    <div className="row">
+                        <h1 className="c-red font-weight-bolder">Testimonials</h1>
+                    </div>
                     <div className="testimonials-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
-
 
                                 <div className="owl-item">
                                     <div className="item">
@@ -439,7 +441,6 @@ const Landing = () => {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="owl-item">
                                     <div className="item">
                                         <div className="container">
@@ -506,7 +507,6 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            //testimonial end
             <div className="testimonial-section p-b-100 position-relative">
                 <h2 className="c-red">Blog</h2>
                 <div className="container-fluid pt-100 pb-30 bg-blue">
@@ -521,7 +521,7 @@ const Landing = () => {
                                         <div className="owl-item">
                                             <div className="item">
                                                 <div className="container">
-                                                    <div className="card" >
+                                                    <div className="blog-card" >
                                                         <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">John Doe</h4>

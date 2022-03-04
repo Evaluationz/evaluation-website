@@ -504,33 +504,154 @@ const Landing = () => {
             </div>
             <div className="testimonial-section p-b-100 position-relative">
                 <div className="container-fluid pt-100 pb-30 bg-blue">
-                    <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
-                        <div className="owl-stage-outer pt-0">
-                            <div className="owl-stage">
-                                <div className="row align-items-center">
-                                    <div className="col-md-4 pb-30">
-                                        <p>Hii</p>
+                    <div className="row">
+                        <h1 className="text-white font-weight-bolder pl-80">Success  Stories</h1>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                      
+                                        <p class="card-text"> is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown
+                                        printer took a galley of type and scrambled it to make a
+                                        type specimen book. It has survived not only five
+                                        centuries, but also the leap into electronic typesetting,
+                                        remaining essentially unchanged. It was popularised in
+                                        the 1960s with the release of Letraset sheets containing
+                                        Lorem Ipsum passages, and more recently with desktop
+                                        publishing software like Aldus PageMaker including
+                                        versions of Lorem Ipsum.</p>
+                                        <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+
+
+                                        
                                     </div>
-                                    <div className="col-md-4 pb-30">
-                                        <div className="owl-item">
-                                            <div className="item">
-                                                <div className="container">
-                                                    <div className="blog-card" >
-                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
-                                                        <div className="card-body">
-                                                            <h4 className="card-title">John Doe</h4>
-                                                            <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                                            <a href="#" class="btn btn-primary">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-8 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4 pb-30">
-                                        <p>Hii</p>
+                                    <div class="col-4 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-8 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="testimonial-section p-b-100 position-relative">
+                <div className="container-fluid pt-100 pb-30 bg-white">
+                    <div className="row">
+                        <h1 className="c-red font-weight-bolder pl-80">Blog</h1>
+                    </div>
+                    <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                        <div className="owl-stage-outer pt-0">
+                            <div className="owl-stage">
+
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+
+                                                <div className="blog bg-red">
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+
+                                                <div className="blog bg-blue">
+                                                    <div className="card" >
+                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <div className="card-body">
+                                                            <h4 className="card-title">BLOG</h4>
+                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+
+                                                <div className="blog bg-red">
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+
+                                                <div className="blog bg-red">
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

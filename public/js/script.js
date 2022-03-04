@@ -68,7 +68,7 @@ jQuery(function ($) {
         margin: 30,
         dots: false,
         nav: true,
-        navText: ["<i class='mdi mdi-chevron-left c-blue mt-1'></i>","<i class='mdi mdi-chevron-right c-blue mt-1'></i>"],
+        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
         responsive:{
             0: {
                 items: 1
@@ -86,24 +86,29 @@ jQuery(function ($) {
     //Blogs carousel
     $(".blog-carousel").owlCarousel({
         loop: true,
-        items: 1,
-        autoplay: true,
+        items: 3,
+        autoplay: false,
         smartSpeed: 1500,
         margin: 30,
         dots: false,
         nav: true,
-        navText: ['<','>'],
+        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+        pagination:false,
+        // onInitialized : function(el){
+        //     el.find(".owl-item").eq(0).addClass("synced");
+        // },
         responsive:{
             0: {
-                items: 1
+                items: 3
             },
             768: {
-                items: 1
+                items: 3
             },
             992: {
-                items: 1
+                items: 3
             }
         }
     });
+    
 
 });

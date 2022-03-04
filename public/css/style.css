@@ -6420,3 +6420,10 @@ select.form-control {
     margin-bottom: 1rem;
   }
 }
+
+/*carousel ui*/
+.owl-theme .owl-nav [class*=owl-]{
+  color: #000;
+  background: transparent;
+  font-size: 3rem;
+}

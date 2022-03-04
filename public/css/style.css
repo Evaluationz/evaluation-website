@@ -3413,13 +3413,16 @@ select.form-control {
   font-size: 18px;
   width: 50px;
   height: 50px;
-  border: 1px solid #e1e1e1;
+  border: transparent;
   color: #7684ea;
   border-radius: 50%;
   margin: 0;
   margin-right: 15px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .default-carousel.owl-theme .owl-nav button:hover, .default-carousel.owl-theme .owl-nav button:focus, .default-carousel.owl-theme .owl-nav button:active {
@@ -6302,13 +6305,6 @@ select.form-control {
   width: 100%;
   height: auto;
 }
-.testimonial .description{
-  font-size: 10px;
-  line-height: 15px;
-  margin-bottom: 2px;
-  position: relative;
-}
-
 
 .testimonial .title{
   display: inline-block;
@@ -6327,6 +6323,12 @@ select.form-control {
 .pl-80 {
   padding-left: 80px;
 }
+
+.testimonials-carousel .testimonial .description {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
 .testimonials-carousel .nav-button {
   height: 50px;
   width: 25px;
@@ -6340,10 +6342,38 @@ select.form-control {
   opacity: 0;
 }
 .testimonials-carousel .owl-prev {
-  left: 0px;
+  left: 0;
 }
 .testimonials-carousel .owl-next {
-  right: 0px;
+  right: 0;
+}
+.testimonials-carousel.default-carousel.owl-theme .owl-nav {
+  margin-top: 0;
+}
+.testimonials-carousel.default-carousel.owl-theme .owl-nav button {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border: transparent;
+  color: #3e72fe;
+  border-radius: 50%;
+  margin: 0;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-carousel.default-carousel.owl-theme .owl-nav button:hover,
+.testimonials-carousel.default-carousel.owl-theme .owl-nav button:focus,
+.testimonials-carousel.default-carousel.owl-theme .owl-nav button:active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #000;
+}
+.testimonials-carousel button i {
+  font-size: 3rem;
 }
 
 /*Blogs*/
@@ -6421,9 +6451,21 @@ select.form-control {
   }
 }
 
-/*carousel ui*/
-.owl-theme .owl-nav [class*=owl-]{
-  color: #000;
-  background: transparent;
-  font-size: 3rem;
+/*Carousel UI*/
+/*.owl-next{
+  display: none !important;
+}
+.owl-next .mdi{
+  display: block;
+}*/
+
+.owl-prev{
+  position: absolute;
+  left: 0;
+  top: 33%;
+}
+.owl-next{
+  position: absolute;
+  right: 0;
+  top: 33%;
 }

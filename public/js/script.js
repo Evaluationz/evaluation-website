@@ -68,7 +68,7 @@ jQuery(function ($) {
         margin: 30,
         dots: false,
         nav: true,
-        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+        navText: ["<i class='mdi mdi-chevron-left c-blue'></i>", "<i class='mdi mdi-chevron-right c-blue'></i>"],
         responsive:{
             0: {
                 items: 1

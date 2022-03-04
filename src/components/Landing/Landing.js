@@ -117,7 +117,7 @@ const Landing = () => {
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center red-image-left">
                                                         <img src="images/landing/carousel/Banner-Image-4.jpg" alt="shape"/>
-                                                    </div>
+                                                    </div>  
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-details">
@@ -421,7 +421,14 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-
+            <div className="blog-section bg-white pt-100 pb-70">
+                <div className="container">
+                    <div className="row">
+                        <h1 className="c-red font-weight-bolder">Blog</h1>
+                    </div>
+                   
+                </div>
+            </div>
             <div className="about-section bg-red pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">

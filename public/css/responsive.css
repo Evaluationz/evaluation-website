@@ -192,11 +192,6 @@
   .newsletter-form {
     max-width: 100%;
   }
-  .footer-shape:nth-child(1) {
-    top: 50px;
-    -webkit-transform: none;
-            transform: none;
-  }
   .pricing-card {
     padding: 50px;
   }

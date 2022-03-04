@@ -1,0 +1,103 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
+const Footer = () => {
+    return (
+        <footer className="bg-black footer">
+            <div className="footer-upper pt-4 pb-2 position-relative">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-6 col-lg-4 white-border-right">
+                            <div className="footer-content-item">
+                                <div className="footer-logo">
+                                    <Link to="/" onClick={() => {window.location.href="/"}}>
+                                        <div className="d-flex align-items-center justify-content-start">
+                                            <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50}/>
+                                            <img src="images/logo.png" alt="logo" className="logo logo-image"/>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="footer-details">
+                                    <p className="text-white">
+                                        FOLLOW US ON
+                                    </p>
+                                    <ul className="social-list social-list-btn">
+                                        <li>
+                                            <Link to={{pathname: "https://www.twitter.com/"}} target="_blank" name="facebook"><i className="mdi mdi-twitter"></i></Link>
+                                        </li>
+                                        <li>
+                                            <Link to={{pathname: "https://www.facebook.com/"}} target="_blank" name="youtube"><i className="mdi mdi-facebook"></i></Link>
+                                        </li>
+                                        <li>
+                                            <Link to={{pathname: "https://in.linkedin.com/"}} target="_blank" name="linkedin"><i className="mdi mdi-linkedin"></i></Link>
+                                        </li>
+                                    </ul>
+
+                                    <div className="footer-copyright-text pt-3 footer-copyright-text-white">
+                                        <p><Link to="/tnc">Terms of Use</Link> | <Link to="/privacy">Privacy Policy</Link> | <Link to="/cookie">Cookie Policy</Link></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-md-6 col-lg-4 white-border-right">
+                            <div className="footer-content-list footer-content-item desk-pad-left-70">
+                                <div className="footer-content-title">
+                                    <h3>QUICK LINKS</h3>
+                                </div>
+                                <ul className="footer-details footer-list">
+                                    <li>
+                                        <Link to="/services">SERVICES</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/use-cases">USE CASES</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/technology">TECHNOLOGY</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/about">ABOUT</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/insights">INSIGHTS</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/careers">CAREERS</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/contact">CONTACT</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-md-6 col-lg-4">
+                            <div className="footer-content-list footer-content-item desk-pad-left-70">
+                                <div className="footer-content-title">
+                                    <h3>ADDRESS</h3>
+                                </div>
+                                <div className="footer-details footer-address">
+                                    <div className="footer-address-item">
+                                        <div className="footer-address-text">
+                                            <p>Evaluationz India Private Limited
+                                                BHIVE Workspace, 29 MG Road,
+                                                7th Floor-Mahalaxmi Chambers,
+                                                Next to Trinity Metro Station,
+                                                Bangalore —560001</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="scroll-top scrolltopactive" id="scrolltop">
+                <div className="scroll-top-inner">
+                    <i className="mdi mdi-arrow-up"></i>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

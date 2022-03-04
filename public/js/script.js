@@ -68,7 +68,7 @@ jQuery(function ($) {
         margin: 30,
         dots: false,
         nav: true,
-        navText: ['<','>'],
+        navText: ["<i class='mdi mdi-chevron-left c-blue mt-1'></i>","<i class='mdi mdi-chevron-right c-blue mt-1'></i>"],
         responsive:{
             0: {
                 items: 1

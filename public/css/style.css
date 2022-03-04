@@ -926,28 +926,17 @@ select.form-control {
 }
 
 .social-list.social-list-btn li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  color: #585858;
-  border-radius: 3px;
+  color: #ffffff;
+}
+.social-list.social-list-btn li a i{
+  font-size: 30px;
 }
 
 .social-list.social-list-btn li a:hover {
-  color: #7684ea;
-}
-
-.social-list.social-list-sm li {
-  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.6;
 }
 
 .page-bg {
@@ -3711,31 +3700,6 @@ select.form-control {
   }
 }
 
-.footer-shape {
-  position: absolute;
-}
-
-.footer-shape:nth-child(1) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 5%;
-}
-
-.footer-shape:nth-child(2) {
-  bottom: 65px;
-  right: 5%;
-}
-
-.footer-round-shape {
-  opacity: .12;
-}
-
-.footer-round-shape img {
-  -webkit-animation: horizontalRide 10s alternate infinite linear;
-  animation: horizontalRide 10s alternate infinite linear;
-}
-
 .footer-content-item {
   margin-bottom: 20px;
 }
@@ -3754,8 +3718,10 @@ select.form-control {
 }
 
 .footer-content-title h3 {
-  font-size: 22px;
+  font-size: 19px;
+  color: #ffffff;
   margin-bottom: 0;
+  font-weight: 200;
 }
 
 .footer-list {
@@ -3765,9 +3731,8 @@ select.form-control {
 }
 
 .footer-list li {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 8px;
-  padding-left: 20px;
   position: relative;
   list-style: none;
 }
@@ -3786,18 +3751,13 @@ select.form-control {
   margin-top: 3px;
 }
 
-.footer-list li:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 5px;
-  height: 5px;
-  background: #7684ea;
+.footer-list li a {
+  color: #ffffff;
 }
-
 .footer-list li:hover a {
-  color: #7684ea;
+  color: #ffffff;
+  opacity: .6;
+  text-decoration: none;
 }
 
 .footer-address-item {
@@ -3819,7 +3779,7 @@ select.form-control {
 .footer-address-text p {
   font-size: 16px;
   margin-bottom: 0;
-  color: #000;
+  color: #ffffff;
 }
 
 .footer-address-text p a {
@@ -3829,31 +3789,24 @@ select.form-control {
 .footer-address-text p a:hover {
   color: #7684ea;
 }
-
-.footer-lower {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #ebebeb;
-}
-
 .footer-copyright-text {
-  text-align: center;
+  text-align: left;
 }
 
 .footer-copyright-text p {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 200;
   margin-bottom: 0;
-  color: #000;
+  color: #fff;
 }
 
 .footer-copyright-text p a {
-  color: #7684ea;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 200;
 }
 
 .footer-copyright-text p a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .pricing-card {
@@ -4949,7 +4902,7 @@ select.form-control {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: #fff;
-  background: #7684ea;
+  background: #3e72fe;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -6281,6 +6234,48 @@ select.form-control {
 .red-image-right{
   border-right: 1rem solid #ff1717;
 }
+.white-border-right{
+  border-right: 2px solid #ffffff;
+}
+
+.about-section-bg{
+  background: url('../images/landing/Image-8.jpg') no-repeat center center;
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-section-bg .statistic-block .col-md-4{
+  padding: 3rem;
+}
+.about-section-bg .statistic-block .circle{
+  background-color: #ffffff;
+  border: 3px solid #ff1717;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+}
+
+.about-section-bg .statistic-block .circle .circle__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.about-section-bg .statistic-block .circle .circle__inner h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.about-section-bg .statistic-block .circle .circle__inner p{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 /*Testimonilas*/
 .testimonial{
@@ -6313,6 +6308,7 @@ select.form-control {
 .testimonial .title{
   display: inline-block;
   font-size: 18px;
+  color: #4a5184;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
@@ -6323,5 +6319,3 @@ select.form-control {
   color: #757575;
   text-transform: capitalize;
 }
-
- 

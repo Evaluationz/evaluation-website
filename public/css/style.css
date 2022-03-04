@@ -6281,3 +6281,48 @@ select.form-control {
 .red-image-right{
   border-right: 1rem solid #ff1717;
 }
+
+/*Testimonilas*/
+.testimonial{
+  text-align: center;
+  padding: 85px 10px 45px 10px;
+  margin: 70px 15px 35px;
+  position: relative;
+}
+.testimonial .pic{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+}
+.testimonial .pic img{
+  width: 100%;
+  height: auto;
+}
+.testimonial .description{
+  font-size: 10px;
+  line-height: 15px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+
+.testimonial .title{
+  display: inline-block;
+  font-size: 18px;
+  color: #4a5184;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.testimonial .post{
+  display: inline-block;
+  font-size: 15px;
+  color: #757575;
+  text-transform: capitalize;
+}
+
+ 

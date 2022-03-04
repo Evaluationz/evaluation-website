@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
     return (
@@ -13,7 +13,7 @@ const Landing = () => {
                         <div className="col-md-6 col-lg-5">
                             <div className="user-card">
                                 <div className="user-card-body">
-                                    <img src="images/landing/image-1.jpg" className="img-fluid"/>
+                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
                                     <Link to="/employees" className="redirect-link">Employees<i className="mdi mdi-chevron-right c-blue mt-1"></i></Link>
                                 </div>
                             </div>
@@ -21,7 +21,7 @@ const Landing = () => {
                         <div className="col-md-6 col-lg-5 float-md-right">
                             <div className="user-card">
                                 <div className="user-card-body">
-                                    <img src="images/landing/image-2.jpg" className="img-fluid"/>
+                                    <img src="images/landing/image-2.jpg" className="img-fluid" />
                                     <Link to="/user" className="redirect-link">User<i className="mdi mdi-chevron-right c-red mt-1"></i></Link>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center blue-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-1.jpg" alt="shape"/>
+                                                        <img src="images/landing/carousel/Banner-Image-1.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -66,7 +66,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center red-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-2.jpg" alt="shape"/>
+                                                        <img src="images/landing/carousel/Banner-Image-2.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -91,7 +91,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center blue-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-3.jpg" alt="shape"/>
+                                                        <img src="images/landing/carousel/Banner-Image-3.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -116,7 +116,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center red-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-4.jpg" alt="shape"/>
+                                                        <img src="images/landing/carousel/Banner-Image-4.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -141,7 +141,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center blue-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-5.jpg" alt="shape"/>
+                                                        <img src="images/landing/carousel/Banner-Image-5.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -193,7 +193,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/landing/image-3.jpg" alt="shape"/>
+                                <img src="images/landing/image-3.jpg" alt="shape" />
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center blue-image-left">
-                                <img src="images/landing/image-4.jpg" alt="shape"/>
+                                <img src="images/landing/image-4.jpg" alt="shape" />
                             </div>
                         </div>
 
@@ -257,82 +257,82 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/landing/image-5.jpg" alt="shape"/>
+                                <img src="images/landing/image-5.jpg" alt="shape" />
                             </div>
                         </div>
                     </div>
 
                     <div className="row align-items-center mt-4">
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-1.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-1.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Digital Identity Verification
-                                </span>
+                                Digital Identity Verification
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-2.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-2.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Education Verification
-                                </span>
+                                Education Verification
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-3.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-3.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Employment Verification
-                                </span>
+                                Employment Verification
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-4.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-4.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Digital Address Verification
-                                </span>
+                                Digital Address Verification
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-5.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-5.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Criminal Record Check
-                                </span>
+                                Criminal Record Check
+                            </span>
                         </div>
                     </div>
 
                     <div className="row align-items-center my-4">
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-6.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-6.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Social Media Check
-                                </span>
+                                Social Media Check
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-7.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-7.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Reference Check
-                                </span>
+                                Reference Check
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-8.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-8.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Drug Test
-                                </span>
+                                Drug Test
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-9.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-9.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Digital Passport Verification
-                                </span>
+                                Digital Passport Verification
+                            </span>
                         </div>
 
                         <div className="col d-flex align-items-center justify-content-center">
-                            <img src="images/landing/icons/Icon-10.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-10.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
-                                    Credit Check
-                                </span>
+                                Credit Check
+                            </span>
                         </div>
                     </div>
 
@@ -349,7 +349,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-left">
-                                <img src="images/landing/image-6.jpg" alt="shape"/>
+                                <img src="images/landing/image-6.jpg" alt="shape" />
                             </div>
                         </div>
 
@@ -373,6 +373,171 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            //Arun start
+
+            <div className="testimonial-section p-b-100 position-relative">
+                <h2 className="c-red">Testimonials</h2>
+                <div className="container-fluid pt-100 pb-30 bg-white">
+                    <div className="testimonials-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                        <div className="owl-stage-outer pt-0">
+                            <div className="owl-stage">
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+                                                <div className="col-md-4 pb-30">
+                                                    <div className="testimonial bg-red">
+                                                        <div className="pic shadow-lg">
+                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                                        </div>
+                                                        <p className="description text-white">
+                                                            is simply dummy text of the printing
+                                                            and typesetting industry. Lorem
+                                                            Ipsum has been the industry's
+                                                            standard dummy text ever since the
+                                                            1500s, when an unknown printer took
+                                                            a galley of type and scrambled it to
+
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-4 pb-30">
+                                                    <div className="testimonial bg-blue">
+                                                        <div className="pic">
+                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                                        </div>
+                                                        <p className="description text-white">
+                                                            is simply dummy text of the printing
+                                                            and typesetting industry. Lorem
+                                                            Ipsum has been the industry's
+                                                            standard dummy text ever since the
+                                                            1500s, when an unknown printer took
+                                                            a galley of type and scrambled it to
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-4 pb-30">
+                                                    <div className="testimonial bg-red">
+                                                        <div className="pic">
+                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                                        </div>
+                                                        <p className="description text-white">
+                                                            is simply dummy text of the printing
+                                                            and typesetting industry. Lorem
+                                                            Ipsum has been the industry's
+                                                            standard dummy text ever since the
+                                                            1500s, when an unknown printer took
+                                                            a galley of type and scrambled it to
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+                                                <div className="col-md-4 pb-30">
+                                                    <div className="testimonial bg-red">
+                                                        <div className="pic shadow-lg">
+                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                                        </div>
+                                                        <p className="description text-white">
+                                                            is simply dummy text of the printing
+                                                            and typesetting industry. Lorem
+                                                            Ipsum has been the industry's
+                                                            standard dummy text ever since the
+                                                            1500s, when an unknown printer took
+                                                            a galley of type and scrambled it to
+
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-4 pb-30">
+                                                    <div className="testimonial bg-blue">
+                                                        <div className="pic">
+                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                                        </div>
+                                                        <p className="description text-white">
+                                                            is simply dummy text of the printing
+                                                            and typesetting industry. Lorem
+                                                            Ipsum has been the industry's
+                                                            standard dummy text ever since the
+                                                            1500s, when an unknown printer took
+                                                            a galley of type and scrambled it to
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-4 pb-30">
+                                                    <div className="testimonial bg-red">
+                                                        <div className="pic">
+                                                            <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                                        </div>
+                                                        <p className="description text-white">
+                                                            is simply dummy text of the printing
+                                                            and typesetting industry. Lorem
+                                                            Ipsum has been the industry's
+                                                            standard dummy text ever since the
+                                                            1500s, when an unknown printer took
+                                                            a galley of type and scrambled it to
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="testimonial-section p-b-100 position-relative">
+                <h2 className="c-red">Blog</h2>
+                <div className="container-fluid pt-100 pb-30 bg-blue">
+                    <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                        <div className="owl-stage-outer pt-0">
+                            <div className="owl-stage">
+                                <div className="row align-items-center">
+                                    <div className="col-md-4 pb-30">
+                                        <p>Hii</p>
+                                    </div>
+                                    <div className="col-md-4 pb-30">
+                                        <div className="owl-item">
+                                            <div className="item">
+                                                <div className="container">
+                                                    <div className="card" >
+                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <div className="card-body">
+                                                            <h4 className="card-title">John Doe</h4>
+                                                            <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                                            <a href="#" class="btn btn-primary">See Profile</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 pb-30">
+                                        <p>Hii</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            //Arun End
 
             <div className="about-section bg-red pt-100 pb-70">
                 <div className="container">
@@ -388,7 +553,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center blue-image-right">
-                                <img src="images/landing/image-7.jpg" alt="shape"/>
+                                <img src="images/landing/image-7.jpg" alt="shape" />
                             </div>
                         </div>
                     </div>

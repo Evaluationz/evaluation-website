@@ -35,6 +35,7 @@ jQuery(function ($) {
     });
 
     // Banner-carousel
+    
     $(".banner-carousel").owlCarousel({
         loop: true,
         items: 1,
@@ -56,4 +57,53 @@ jQuery(function ($) {
             }
         }
     });
+
+
+    //Testimonials carousel
+    $(".testimonials-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        smartSpeed: 1500,
+        margin: 30,
+        dots: false,
+        nav: true,
+        navText: ['<','>'],
+        responsive:{
+            0: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
+    
+    //Blogs carousel
+    $(".blog-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        smartSpeed: 1500,
+        margin: 30,
+        dots: false,
+        nav: true,
+        navText: ['<','>'],
+        responsive:{
+            0: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
 });

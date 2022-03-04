@@ -46,25 +46,30 @@ const Footer = () => {
                                 </div>
                                 <ul className="footer-details footer-list">
                                     <li>
-                                        <Link to="/services">SERVICES</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/use-cases">USE CASES</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/technology">TECHNOLOGY</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/about">ABOUT</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/insights">INSIGHTS</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/careers">CAREERS</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/contact">CONTACT</Link>
+                                        <div className="row">
+                                            <div className="col">
+                                                <Link to="/services">SERVICES</Link>
+                                            </div>
+                                            <div className="col">
+                                                <Link to="/use-cases" className="no-wrap">USE CASES</Link>
+                                            </div>
+                                            <div className="col">
+                                                <Link to="/technology">TECHNOLOGY</Link>
+                                            </div>
+                                            <div className="col">
+                                                <Link to="/about">ABOUT</Link>
+                                            </div>
+                                            <div className="col">
+                                                <Link to="/insights">INSIGHTS</Link>
+                                            </div>
+                                            <div className="col">
+                                                <Link to="/careers">CAREERS</Link>
+                                            </div>
+                                            <div className="col">
+                                                <Link to="/contact">CONTACT</Link>
+                                            </div>
+                                        </div>
+
                                     </li>
                                 </ul>
                             </div>

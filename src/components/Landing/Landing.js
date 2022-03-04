@@ -263,35 +263,35 @@ const Landing = () => {
                     </div>
 
                     <div className="row align-items-center mt-4">
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-1.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Digital Identity Verification
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-2.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Education Verification
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-3.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Employment Verification
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-4.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Digital Address Verification
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-5.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Criminal Record Check
@@ -299,36 +299,36 @@ const Landing = () => {
                         </div>
                     </div>
 
-                    <div className="row align-items-center my-4">
-                        <div className="col d-flex align-items-center justify-content-center">
+                    <div className="row align-items-center my-md-4">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-6.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Social Media Check
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-7.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Reference Check
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-8.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Drug Test
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-9.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Digital Passport Verification
                                 </span>
                         </div>
 
-                        <div className="col d-flex align-items-center justify-content-center">
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/landing/icons/Icon-10.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                     Credit Check
@@ -336,7 +336,7 @@ const Landing = () => {
                         </div>
                     </div>
 
-                    <div className="row align-items-center my-4">
+                    <div className="row align-items-center my-md-4">
                         <div className="col-12">
                             <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
                         </div>
@@ -422,6 +422,87 @@ const Landing = () => {
                 </div>
             </div>
 
+            <div className="about-section bg-blue pt-5 pb-30">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <h2 className="text-white">Success Stories</h2>
+                    </div>
+                    <div className="row align-items-center">
+                        <div className="col mb-4">
+                            <div className="col-lg-12 py-3 shadow bg-white">
+                                <p className="text-black">
+                                    is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a
+                                    type specimen book. It has survived not only five
+                                    centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in
+                                    the 1960s with the release of Letraset sheets containing
+                                    Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including
+                                    versions of Lorem Ipsum.
+                                </p>
+                                <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                            </div>
+                        </div>
+
+                        <div className="col">
+                            <div className="row">
+                                <div className="col-lg-6 mb-4">
+                                    <div className="col-lg-12 py-3 shadow bg-white">
+                                        <p className="text-black mb-0">
+                                            is simply dummy text
+                                            of the printing and
+                                            typesetting industry.
+                                            Lorem Ipsum has been
+                                            the industry's standard
+                                            dummy text ever since
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 mb-4">
+                                    <div className="col-lg-12 py-3 shadow bg-white">
+                                        <p className="text-black mb-0">
+                                            is simply dummy text
+                                            of the printing and
+                                            typesetting industry.
+                                            Lorem Ipsum has been
+                                            the industry's standard
+                                            dummy text ever since
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 mb-4">
+                                    <div className="col-lg-12 py-3 shadow bg-white">
+                                        <p className="text-black mb-0">
+                                            is simply dummy text
+                                            of the printing and
+                                            typesetting industry.
+                                            Lorem Ipsum has been
+                                            the industry's standard
+                                            dummy text ever since
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="col-lg-12 py-3 shadow bg-white">
+                                        <p className="text-black mb-0">
+                                            is simply dummy text
+                                            of the printing and
+                                            typesetting industry.
+                                            Lorem Ipsum has been
+                                            the industry's standard
+                                            dummy text ever since
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="about-section bg-red pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
@@ -430,7 +511,7 @@ const Landing = () => {
                                 <div className="section-title section-title-left text-start">
                                     <h2 className="text-white">Start verifying now.</h2>
                                 </div>
-                                <Link to="/explore" className="btn btn-primary btn-blue">Get in touch</Link>
+                                <Link to="/get-in-touch" className="btn btn-primary btn-blue">Get in touch</Link>
                             </div>
                         </div>
 

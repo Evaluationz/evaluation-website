@@ -1899,15 +1899,15 @@ select.form-control {
   transform: translateY(-50%);
   height: auto;
   padding-right: 0;
-  color: #7684ea;
+  color: #ffffff;
 }
 
 .mean-container a.meanmenu-reveal span {
-  background-color: #7684ea;
+  background-color: #ffffff;
 }
 
 .mean-container .mean-nav {
-  margin-top: 53px;
+  margin-top: 70px;
 }
 
 .mean-container .mean-nav .navbar-nav {
@@ -3736,6 +3736,10 @@ select.form-control {
   position: relative;
   list-style: none;
 }
+.footer-list li .col{
+  max-width: fit-content;
+  margin-bottom: 0.5rem;
+}
 
 .footer-list li:last-child {
   margin-bottom: 0;
@@ -3753,8 +3757,9 @@ select.form-control {
 
 .footer-list li a {
   color: #ffffff;
+  margin-bottom: .5rem;
 }
-.footer-list li:hover a {
+.footer-list li a:hover {
   color: #ffffff;
   opacity: .6;
   text-decoration: none;
@@ -6275,4 +6280,48 @@ select.form-control {
 .about-section-bg .statistic-block .circle .circle__inner p{
   font-size: 1.5rem;
   font-weight: 500;
+}
+.no-wrap{
+  white-space: nowrap;
+}
+
+.about-section .col-md-2{
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+@media screen and (max-width: 499px){
+  .about-section .col-md-2{
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px){
+  .about-section .col-md-2{
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .hero-block{
+    margin-top: 2rem;
+  }
+  .hero-block h1{
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .hero-block{
+    margin-top: 2rem;
+  }
+  .hero-block h1{
+    font-size: 2.5rem;
+  }
+  .about-section .col-md-2{
+    max-width: 33.3%;
+    flex: 0 0 33.3%;
+    margin-bottom: 1rem;
+  }
 }

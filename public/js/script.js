@@ -62,53 +62,49 @@ jQuery(function ($) {
     //Testimonials carousel
     $(".testimonials-carousel").owlCarousel({
         loop: true,
-        items: 1,
+        items: 3,
         autoplay: true,
         smartSpeed: 1500,
         margin: 30,
         dots: false,
         nav: true,
-        navText: ["<i className='nav-button owl-prev mdi mdi-chevron-right c-blue mt-1'></i>", "<i className='mdi mdi-chevron-right c-blue mt-1'></i>"],
+        navText: ["<i class='mdi mdi-chevron-left c-blue'></i>", "<i class='mdi mdi-chevron-right c-blue'></i>"],
         responsive:{
             0: {
                 items: 1
             },
             768: {
-                items: 1
+                items: 2
             },
             992: {
-                items: 1
+                items: 3
             }
         }
     });
 
     
     //Blogs carousel
+   
     $(".blog-carousel").owlCarousel({
         loop: true,
         items: 3,
-        autoplay: false,
+        center:true,
+        autoplay: true,
         smartSpeed: 1500,
         margin: 30,
         dots: false,
         nav: true,
-        navText: ["<div class='nav-button owl-prev'><</div>", "<div class='nav-button owl-next'>></div>"],
-        pagination:false,
-        // onInitialized : function(el){
-        //     el.find(".owl-item").eq(0).addClass("synced");
-        // },
+        navText: ["<i class='mdi mdi-chevron-left c-blue'></i>", "<i class='mdi mdi-chevron-right c-blue'></i>"],
         responsive:{
             0: {
-                items: 3
+                items: 1
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
                 items: 3
             }
         }
     });
-    
-
 });

@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const Landing = () => {
     return (
         <section>
+            <Helmet>
+             <title>Modified Title</title>
+            </Helmet>
             <div className="hero-block p-tb-100">
                 <div className="container">
                     <div className="col-12 px-0 pb-md-5">

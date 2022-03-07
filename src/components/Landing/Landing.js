@@ -638,84 +638,26 @@ const Landing = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+
+                                                <div className="blog bg-red">
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-         {/* <div className="blog-section pt-5 position-relative">
-                <div className="col-12 px-md-5 bg-white">
-                    <div className="row">
-                        <h1 className="c-red font-weight-bolder pl-80">Blog</h1>
-                    </div>
-                    <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
-                        <div className="owl-stage-outer pt-0">
-                            <div className="owl-stage">
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className="about-section bg-red pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">

@@ -82,29 +82,4 @@ jQuery(function ($) {
         }
     });
 
-    
-    //Blogs carousel
-   
-    $(".blog-carousel").owlCarousel({
-        loop: true,
-        items: 3,
-        center:true,
-        autoplay: true,
-        smartSpeed: 1500,
-        margin: 30,
-        dots: false,
-        nav: true,
-        navText: ["<i class='mdi mdi-chevron-left c-blue'></i>", "<i class='mdi mdi-chevron-right c-blue'></i>"],
-        responsive:{
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            }
-        }
-    });
 });

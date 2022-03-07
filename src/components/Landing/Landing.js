@@ -580,79 +580,47 @@ const Landing = () => {
                 </div>
             </div>
          {/* blog */}
-         <div className="testimonial-section p-b-100 position-relative">
-                <div className="container-fluid pt-100 pb-30 bg-white">
-                    <div className="row">
-                        <h1 className="c-red font-weight-bolder pl-80">Blog</h1>
+         <div className="about-section bg-red pt-5 pb-30">
+                <div className="container">
+                <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                        <div className="about-section-item about-item-image text-center blue-image-left">
+                                <div class="card">
+                                    <div class="card-body">
+                                        This is some text within a card body.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center blue-image-right">
+                            <div class="card">
+                                    <div class="card-body">
+                                        This is some text within a card body.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
-                        <div className="owl-stage-outer pt-0">
-                            <div className="owl-stage">
-
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 pb-30">
+                        <div className="about-section-item about-item-image text-center blue-image-left">
+                        <div class="card">
+                                    <div class="card-body">
+                                        This is some text within a card body.
                                     </div>
                                 </div>
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
+                                </div>
+                        </div>
 
-                                                <div className="blog bg-blue">
-                                                    <div className="card" >
-                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
-                                                        <div className="card-body">
-                                                            <h4 className="card-title">BLOG</h4>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
+                        <div className="col-lg-6 pb-30">
+                            <div className="about-section-item about-item-image text-center blue-image-right">
+                            <div class="card">
+                                    <div class="card-body">
+                                        This is some text within a card body.
                                     </div>
                                 </div>
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>

@@ -6382,36 +6382,6 @@ select.form-control {
   font-size: 3rem;
 }
 
-/*Blogs*/
-.blog{
-  text-align: center;
-  padding: 85px 10px 45px 10px;
-  margin: 70px 10px 35px;
-  position: relative;
-}
-
-.blog-carousel .synced .item{
-  background: #0c83e7;
-}
-.blog-carousel .nav-button {
-  height: 50px;
-  width: 25px;
-  cursor: pointer;
-  position: absolute;
-  top: 110px !important;
-}
-.blog-carousel .owl-prev.disabled,
-.blog-carousel .owl-next.disabled {
-  pointer-events: none;
-  opacity: 0;
-}
-.blog-carousel .owl-prev {
-  left: 400px;
-}
-.blog-carousel .owl-next {
-  right: 400px;
-}
-
 .no-wrap{
   white-space: nowrap;
 }

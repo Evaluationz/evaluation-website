@@ -6486,17 +6486,7 @@ select.form-control {
   cursor: auto;
   margin: 0;
 }
-.owl-item:not(.center) > div:hover {
-  opacity: .75;
-}
 
-.blog-carousel .nav-button {
-  height: 50px;
-  width: 25px;
-  cursor: pointer;
-  position: absolute;
-  top: 110px !important;
-}
 .blog-carousel .owl-nav.disabled{
   display: block;
 }

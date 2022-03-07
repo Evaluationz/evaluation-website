@@ -166,8 +166,15 @@ const Landing = () => {
                     <div className="row">
                         <div className="col-md-6 py-2">
                             <div className="card h-100 text-white">
-                                <img className="card-img-top img-fluid" src="images/about-us/Nobby.jpg" alt="Nobby"/>
-
+                                <ul className="media__container pl-0">
+                                    <li className="media">
+                                        <div>
+                                            <div className="media__item">
+                                                <img className="card-img-top img-fluid" src="images/about-us/Nobby.jpg" alt="Nobby"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <div className="card-body">
                                     <h5 className="card-title">Nobby Nazareth</h5>
                                     <h5 className="card-title">Founder & CEO</h5>
@@ -197,7 +204,15 @@ const Landing = () => {
 
                         <div className="col-md-6 py-2">
                             <div className="card h-100 text-white">
-                                <img className="card-img-top img-fluid" src="images/about-us/Manikandan.jpg" alt="Manikandan"/>
+                                <ul className="media__container pl-0">
+                                    <li className="media">
+                                        <div>
+                                            <div className="media__item">
+                                                <img className="card-img-top img-fluid" src="images/about-us/Manikandan.jpg" alt="Manikandan"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
 
                                 <div className="card-body">
                                     <h5 className="card-title">Manikandan Ramasamy</h5>
@@ -226,8 +241,15 @@ const Landing = () => {
 
                         <div className="col-md-6 py-2">
                             <div className="card h-100 text-white">
-                                <img className="card-img-top img-fluid" src="images/about-us/Piyush.jpg" alt="Piyush"/>
-
+                                <ul className="media__container pl-0">
+                                    <li className="media">
+                                        <div>
+                                            <div className="media__item">
+                                                <img className="card-img-top img-fluid" src="images/about-us/Piyush.jpg" alt="Piyush"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <div className="card-body">
                                     <h5 className="card-title">Piyush N Jha</h5>
                                     <h5 className="card-title">Vice President</h5>
@@ -258,8 +280,15 @@ const Landing = () => {
 
                         <div className="col-md-6 py-2">
                             <div className="card h-100 text-white">
-                                <img className="card-img-top img-fluid" src="images/about-us/Parvathi.jpg" alt="Parvathi"/>
-
+                                <ul className="media__container pl-0">
+                                    <li className="media">
+                                        <div>
+                                            <div className="media__item">
+                                                <img className="card-img-top img-fluid" src="images/about-us/Parvathi.jpg" alt="Parvathi"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <div className="card-body">
                                     <h5 className="card-title">Parvathi Shankar</h5>
                                     <h5 className="card-title">HR Manager</h5>
@@ -327,7 +356,15 @@ const Landing = () => {
                     <div className="row">
                         <div className="col-md-6 py-2">
                             <div className="card h-100 text-white">
-                                <img className="card-img-top img-fluid" src="images/about-us/Nobby.jpg" alt="Nobby"/>
+                                <ul className="media__container pl-0">
+                                    <li className="media">
+                                        <div>
+                                            <div className="media__item">
+                                                <img className="card-img-top img-fluid" src="images/about-us/Nobby.jpg" alt="Nobby"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
 
                                 <div className="card-body">
                                     <h5 className="card-title">Nobby Nazareth</h5>
@@ -358,7 +395,15 @@ const Landing = () => {
 
                         <div className="col-md-6 py-2">
                             <div className="card h-100 text-white">
-                                <img className="card-img-top img-fluid" src="images/about-us/KK-Mathew.jpg" alt="KK-Mathew"/>
+                                <ul className="media__container pl-0">
+                                    <li className="media">
+                                        <div>
+                                            <div className="media__item">
+                                                <img className="mr-3" src="images/about-us/KK-Mathew.jpg" alt="KK-Mathew"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
 
                                 <div className="card-body">
                                     <h5 className="card-title">KK Mathew</h5>

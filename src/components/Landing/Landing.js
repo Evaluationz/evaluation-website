@@ -580,7 +580,7 @@ const Landing = () => {
                 </div>
             </div>
          {/* blog */}
-         <div className="about-section bg-red pt-5 pb-30">
+         <div className="about-section bg-blue pt-5 pb-30">
                 <div className="container">
                 <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">

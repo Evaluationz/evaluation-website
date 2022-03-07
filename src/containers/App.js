@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Landing from "../components/Landing/Landing";
 import AboutUs from "../components/AboutUs/AboutUs";
 import ContactUs from "../components/ContactUs/ContactUs";
+import Technology from "../components/Technology/Technology";
 import Footer from "../components/Footer/Footer";
 
 import "./App.css";
@@ -21,6 +22,7 @@ const App = () => {
                         <Route path='/' exact component={Landing} />
                         <Route path='/about-us' component={AboutUs} />
                         <Route path='/contact' component={ContactUs} />
+                        <Route path='/technology' component={Technology} />
                         <Footer/>
                     </Switch>
                 </ScrollIntoView>

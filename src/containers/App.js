@@ -5,6 +5,7 @@ import Landing from "../components/Landing/Landing";
 import AboutUs from "../components/AboutUs/AboutUs";
 import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
+import ContactUs from "../components/ContactUs/ContactUs";
 import Footer from "../components/Footer/Footer";
 
 import "./App.css";
@@ -23,6 +24,7 @@ const App = () => {
                         <Route path='/about-us' component={AboutUs} />
                         <Route path='/services' component={Services} />
                         <Route path='/blog' component={Blog} />
+                        <Route path='/contact' component={ContactUs} />
                         <Footer/>
                     </Switch>
                 </ScrollIntoView>

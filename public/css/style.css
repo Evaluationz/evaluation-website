@@ -239,6 +239,10 @@ img {
   border-radius: 3px;
 }
 
+.border-radius-5 {
+  border-radius: 5px;
+}
+
 .border-top {
   border-top: 1px solid #f4f8ff !important;
 }
@@ -6211,13 +6215,18 @@ select.form-control {
 .c-red{
   color: #ff1717;
 }
-
+.c-light-gray{
+  color: #cfd2d3;
+}
 /*Brand Background Color*/
 .bg-blue{
   background: #3e72fe;
 }
 .bg-red{
   background: #ff1717;
+}
+.bg-light-gray{
+  background: #cfd2d3;
 }
 
 /*Button UI*/
@@ -6228,6 +6237,10 @@ select.form-control {
 .btn-blue{
   background-color: #3e72fe !important;
   border-color: #3e72fe !important;
+}
+.btn-light-gray{
+  background-color: #cfd2d3 !important;
+  border-color: #cfd2d3 !important;
 }
 
 /*Image UI*/
@@ -6278,31 +6291,12 @@ select.form-control {
   width: 100%;
 }
 .about-section-bg .statistic-block .circle .circle__inner h1{
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 .about-section-bg .statistic-block .circle .circle__inner p{
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-@media screen and (max-width: 767px) {
-  .about-section-bg .statistic-block .col-md-4{
-    padding: 1rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .about-section-bg .statistic-block .col-md-4{
-    padding: 1rem;
-  }
-  .about-section-bg .statistic-block .circle .circle__inner h1{
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .about-section-bg .statistic-block .circle .circle__inner p{
-    font-size: 1rem;
-    font-weight: 500;
-  }
 }
 
 /*Testimonilas*/
@@ -6456,6 +6450,11 @@ select.form-control {
   max-width: 20%;
   flex: 0 0 20%;
 }
+.about-section.contact-us-section .form-control{
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 10px;
+  height: calc(1.5em + 0.75rem + 15px);
+}
 
 /*Responsive Media Queries*/
 @media screen and (max-width: 499px){
@@ -6573,6 +6572,13 @@ select.form-control {
   font-size: 3rem;
 }
 
+/*Contact us map*/
+.map
+{
+  width:100%;
+  height:450px;
+  border:0px;
+}
 
 /*About Us Media Container*/
 .media {

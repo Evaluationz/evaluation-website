@@ -638,20 +638,7 @@ const Landing = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

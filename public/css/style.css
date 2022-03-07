@@ -6540,3 +6540,53 @@ select.form-control {
 .blog-carousel button i {
   font-size: 3rem;
 }
+
+
+/*About Us Media Container*/
+.media {
+  width: 100%;
+  list-style: none;
+}
+
+.media__item,
+.media__body {
+  display: block;
+  text-align: center;
+}
+.media--top .media__item, .media--top.media__body {
+  vertical-align: top;
+}
+.media--bottom .media__item, .media--bottom.media__body {
+  vertical-align: bottom;
+}
+
+.media__item > img {
+  display: block;
+  max-width: none;
+  margin: 0 auto;
+}
+.media--rev .media__item {
+  padding: 0 0 0 1em;
+}
+
+.media__body {
+  width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 30em) {
+  .media {
+    display: table;
+  }
+
+  .media__item,
+  .media__body {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: left;
+  }
+
+  .media__item {
+    padding: 0 1em 0 0;
+  }
+}

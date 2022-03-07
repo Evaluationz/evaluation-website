@@ -6220,10 +6220,13 @@ select.form-control {
 }
 /*Brand Background Color*/
 .bg-blue{
-  background: #3e72fe;
+  background-color: #3e72fe !important;
 }
 .bg-red{
-  background: #ff1717;
+  background-color: #ff1717 !important;
+}
+.bg-light-gray{
+  background-color: #cfd2d3 !important;
 }
 .bg-light-gray{
   background: #cfd2d3;

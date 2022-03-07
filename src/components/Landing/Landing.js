@@ -6,7 +6,7 @@ const Landing = () => {
     return (
         <section>
             <Helmet>
-                <title>Modified Title</title>
+                <title>Evaluationz: Employee, Vendor and User Verification</title>
             </Helmet>
             <div className="hero-block p-tb-100">
                 <div className="container">

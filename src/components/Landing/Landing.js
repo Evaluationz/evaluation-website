@@ -6,7 +6,7 @@ const Landing = () => {
     return (
         <section>
             <Helmet>
-             <title>Modified Title</title>
+                <title>Modified Title</title>
             </Helmet>
             <div className="hero-block p-tb-100">
                 <div className="container">
@@ -499,79 +499,153 @@ const Landing = () => {
                 </div>
             </div>
 
+            <div className="testimonial-section position-relative">
+                <div className="container-fluid py-5 bg-red">
+                    <div className="row">
+                        <h1 className="text-white font-weight-bolder pl-80">Client list</h1>
+                    </div>
+                    <div className="client-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                        <div className="owl-stage-outer pt-0">
+                            <div className="owl-stage">
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="testimonial bg-white">
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="testimonial bg-white">
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="testimonial bg-white">
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="about-section bg-blue pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
                         <h2 className="text-white">Success Stories</h2>
                     </div>
                     <div className="row align-items-center">
-                        <div className="col mb-4">
-                            <div className="col-lg-12 py-3 shadow bg-white">
-                                <p className="text-black">
-                                    is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard
-                                    dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a
-                                    type specimen book. It has survived not only five
-                                    centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. It was popularised in
-                                    the 1960s with the release of Letraset sheets containing
-                                    Lorem Ipsum passages, and more recently with desktop
-                                    publishing software like Aldus PageMaker including
-                                    versions of Lorem Ipsum.
-                                </p>
-                                <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                        <div className="card-group">
+                            <div className="card border-0 bg-transparent">
+                                <div className="card-body m-2 rounded bg-white shadow-sm">
+                                    <div className="col-12">
+                                        <p className="text-black">
+                                            is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard
+                                            dummy text ever since the 1500s, when an unknown
+                                            printer took a galley of type and scrambled it to make a
+                                            type specimen book. It has survived not only five
+                                            centuries, but also the leap into electronic typesetting,
+                                            remaining essentially unchanged. It was popularised in
+                                            the 1960s with the release of Letraset sheets containing
+                                            Lorem Ipsum passages, and more recently with desktop
+                                            publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                        <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div className="card border-0 bg-transparent ml-md-3">
+                                <div className="row">
+                                    <div className="col-sm-6 py-2">
+                                        <div className="card card-body h-100 bg-white shadow-sm">
+                                            <p className="text-black mb-0">
+                                                is simply dummy text
+                                                of the printing and
+                                                typesetting industry.
+                                                Lorem Ipsum has been
+                                                the industry's standard
+                                                dummy text ever since
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="col-sm-6 py-2">
+                                        <div className="card h-100 bg-white shadow-sm">
+                                            <div className="card-body">
+                                                <p className="text-black mb-0">
+                                                    is simply dummy text
+                                                    of the printing and
+                                                    typesetting industry.
+                                                    Lorem Ipsum has been
+                                                    the industry's standard
+                                                    dummy text ever since
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div className="col">
-                            <div className="row">
-                                <div className="col-lg-6 mb-4 float-left">
-                                    <div className="col-lg-12 py-3 shadow bg-white">
-                                        <p className="text-black mb-0">
-                                            is simply dummy text
-                                            of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been
-                                            the industry's standard
-                                            dummy text ever since
-                                        </p>
+                                <div className="row">
+                                    <div className="col-sm-6 py-2">
+                                        <div className="card card-body h-100 bg-white shadow-sm">
+                                            <p className="text-black mb-0">
+                                                is simply dummy text
+                                                of the printing and
+                                                typesetting industry.
+                                                Lorem Ipsum has been
+                                                the industry's standard
+                                                dummy text ever since
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-6 mb-4 float-left">
-                                    <div className="col-lg-12 py-3 shadow bg-white">
-                                        <p className="text-black mb-0">
-                                            is simply dummy text
-                                            of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been
-                                            the industry's standard
-                                            dummy text ever since
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 mb-4 float-left">
-                                    <div className="col-lg-12 py-3 shadow bg-white">
-                                        <p className="text-black mb-0">
-                                            is simply dummy text
-                                            of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been
-                                            the industry's standard
-                                            dummy text ever since
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 float-left">
-                                    <div className="col-lg-12 py-3 shadow bg-white">
-                                        <p className="text-black mb-0">
-                                            is simply dummy text
-                                            of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been
-                                            the industry's standard
-                                            dummy text ever since
-                                        </p>
+                                    <div className="col-sm-6 py-2">
+                                        <div className="card h-100 bg-white shadow-sm">
+                                            <div className="card-body">
+                                                <p className="text-black mb-0">
+                                                    is simply dummy text
+                                                    of the printing and
+                                                    typesetting industry.
+                                                    Lorem Ipsum has been
+                                                    the industry's standard
+                                                    dummy text ever since
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -579,47 +653,28 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-         {/* blog */}
-         <div className="testimonial-section p-b-100 position-relative">
-                <div className="container-fluid pt-100 pb-30 bg-white">
+
+            <div className="testimonial-section position-relative">
+                <div className="container-fluid py-5 bg-white">
                     <div className="row">
                         <h1 className="c-red font-weight-bolder pl-80">Blog</h1>
                     </div>
                     <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
-
                                 <div className="owl-item">
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
-
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
                                                         <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">BLOG</h4>
                                                             <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
-
-
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -628,12 +683,15 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
+                                                <div className="blog bg-blue">
+                                                    <div className="card" >
+                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <div className="card-body">
+                                                            <h4 className="card-title">BLOG</h4>
+                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -642,12 +700,32 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-
-                                                <div className="blog bg-red">
-
+                                                <div className="blog bg-blue">
+                                                    <div className="card" >
+                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <div className="card-body">
+                                                            <h4 className="card-title">BLOG</h4>
+                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+                                                <div className="blog bg-blue">
+                                                    <div className="card" >
+                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <div className="card-body">
+                                                            <h4 className="card-title">BLOG</h4>
+                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -657,78 +735,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-         {/* <div className="blog-section pt-5 position-relative">
-                <div className="col-12 px-md-5 bg-white">
-                    <div className="row">
-                        <h1 className="c-red font-weight-bolder pl-80">Blog</h1>
-                    </div>
-                    <div className="blog-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
-                        <div className="owl-stage-outer pt-0">
-                            <div className="owl-stage">
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className="about-section bg-red pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">

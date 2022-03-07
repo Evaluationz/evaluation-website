@@ -28,36 +28,37 @@ const navbar = () => {
                             <div className="collapse navbar-collapse mean-menu d-block" id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
-                                        <a className="nav-link dropdown-toggle">SERVICES</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item nav-item-1">
-                                                <a href="https://templates.envytheme.com/erudex/default/index.html"
-                                                   className="nav-link active">Home Demo 1</a>
-                                            </li>
-                                            <li className="nav-item nav-item-2">
-                                                <a href="https://templates.envytheme.com/erudex/default/index-2.html"
-                                                   className="nav-link">Home Demo 2</a>
-                                            </li>
-                                            <li className="nav-item nav-item-3">
-                                                <a href="https://templates.envytheme.com/erudex/default/index-3.html"
-                                                   className="nav-link">Home Demo 3</a>
-                                            </li>
-                                        </ul>
+                                        <Link to="/services" className="nav-link">SERVICES</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/use-cases" className="nav-link">USE CASES</Link>
+                                        <Link to="/industries" className="nav-link dropdown-toggle">INDUSTRIES</Link>
+                                        <ul className="dropdown-menu">
+                                            <li className="nav-item nav-item-1">
+                                                <Link to="/industries" className="nav-link">INDUSTRIES1</Link>
+                                            </li>
+                                            <li className="nav-item nav-item-2">
+                                                <Link to="/industries" className="nav-link">INDUSTRIES2</Link>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/technology"
                                               className="nav-link">TECHNOLOGY</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/about"
+                                        <Link to="/about-us"
                                               className="nav-link">ABOUT</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/insights"
-                                           className="nav-link">INSIGHTS</Link>
+                                        <a className="nav-link dropdown-toggle">INSIGHTS</a>
+                                        <ul className="dropdown-menu">
+                                            <li className="nav-item nav-item-1">
+                                                <Link to="/blog" className="nav-link">BLOG</Link>
+                                            </li>
+                                            <li className="nav-item nav-item-2">
+                                                <Link to="/industries" className="nav-link">SUCCESS STORIES</Link>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/careers"

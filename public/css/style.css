@@ -6277,12 +6277,31 @@ select.form-control {
   width: 100%;
 }
 .about-section-bg .statistic-block .circle .circle__inner h1{
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 .about-section-bg .statistic-block .circle .circle__inner p{
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .about-section-bg .statistic-block .col-md-4{
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about-section-bg .statistic-block .col-md-4{
+    padding: 1rem;
+  }
+  .about-section-bg .statistic-block .circle .circle__inner h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .about-section-bg .statistic-block .circle .circle__inner p{
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 /*Testimonilas*/
@@ -6324,39 +6343,46 @@ select.form-control {
   padding-left: 80px;
 }
 
-.testimonials-carousel .testimonial .description {
+.testimonials-carousel .testimonial .description ,
+.client-carousel .testimonial .description {
   font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 0;
 }
-.testimonials-carousel .owl-stage-outer {
-  /*padding: 0 3rem;*/
-}
-.testimonials-carousel .nav-button {
+
+.testimonials-carousel .nav-button ,
+.client-carousel .nav-button {
   height: 50px;
   width: 25px;
   cursor: pointer;
   position: absolute;
   top: 110px !important;
 }
-.testimonials-carousel .owl-nav.disabled{
+.testimonials-carousel .owl-nav.disabled,
+.client-carousel .owl-nav.disabled{
   display: block;
 }
 .testimonials-carousel .owl-prev.disabled,
-.testimonials-carousel .owl-next.disabled {
+.testimonials-carousel .owl-next.disabled ,
+.client-carousel .owl-next.disabled ,
+.client-carousel .owl-next.disabled {
   pointer-events: none;
   opacity: 0;
 }
-.testimonials-carousel .owl-prev {
-  left: -3rem;
+.testimonials-carousel .owl-prev ,
+.client-carousel .owl-prev {
+  left: -1rem;
 }
-.testimonials-carousel .owl-next {
-  right: -3rem;
+.testimonials-carousel .owl-next ,
+.client-carousel .owl-next {
+  right: -1rem;
 }
-.testimonials-carousel.default-carousel.owl-theme .owl-nav {
+.testimonials-carousel.default-carousel.owl-theme .owl-nav ,
+.client-carousel.default-carousel.owl-theme .owl-nav {
   margin-top: 0;
 }
-.testimonials-carousel.default-carousel.owl-theme .owl-nav button {
+.testimonials-carousel.default-carousel.owl-theme .owl-nav button ,
+.client-carousel.default-carousel.owl-theme .owl-nav button {
   font-size: 18px;
   width: 50px;
   height: 50px;
@@ -6373,12 +6399,16 @@ select.form-control {
 }
 .testimonials-carousel.default-carousel.owl-theme .owl-nav button:hover,
 .testimonials-carousel.default-carousel.owl-theme .owl-nav button:focus,
-.testimonials-carousel.default-carousel.owl-theme .owl-nav button:active {
+.testimonials-carousel.default-carousel.owl-theme .owl-nav button:active,
+.client-carousel.default-carousel.owl-theme .owl-nav button:hover,
+.client-carousel.default-carousel.owl-theme .owl-nav button:focus,
+.client-carousel.default-carousel.owl-theme .owl-nav button:active {
   background-color: transparent;
   border-color: transparent;
   color: #000;
 }
-.testimonials-carousel button i {
+.testimonials-carousel button i ,
+.client-carousel button i {
   font-size: 3rem;
 }
 
@@ -6420,6 +6450,8 @@ select.form-control {
   max-width: 20%;
   flex: 0 0 20%;
 }
+
+/*Responsive Media Queries*/
 @media screen and (max-width: 499px){
   .about-section .col-md-2{
     max-width: 100%;
@@ -6458,13 +6490,6 @@ select.form-control {
 }
 
 /*Carousel UI*/
-/*.owl-next{
-  display: none !important;
-}
-.owl-next .mdi{
-  display: block;
-}*/
-
 .owl-prev{
   position: absolute;
   left: 0;
@@ -6523,4 +6548,54 @@ select.form-control {
 }
 .blog-carousel button i {
   font-size: 3rem;
+}
+
+
+/*About Us Media Container*/
+.media {
+  width: 100%;
+  list-style: none;
+}
+
+.media__item,
+.media__body {
+  display: block;
+  text-align: center;
+}
+.media--top .media__item, .media--top.media__body {
+  vertical-align: top;
+}
+.media--bottom .media__item, .media--bottom.media__body {
+  vertical-align: bottom;
+}
+
+.media__item > img {
+  display: block;
+  max-width: none;
+  margin: 0 auto;
+}
+.media--rev .media__item {
+  padding: 0 0 0 1em;
+}
+
+.media__body {
+  width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 30em) {
+  .media {
+    display: table;
+  }
+
+  .media__item,
+  .media__body {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: left;
+  }
+
+  .media__item {
+    padding: 0 1em 0 0;
+  }
 }

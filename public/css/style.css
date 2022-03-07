@@ -6277,12 +6277,31 @@ select.form-control {
   width: 100%;
 }
 .about-section-bg .statistic-block .circle .circle__inner h1{
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 .about-section-bg .statistic-block .circle .circle__inner p{
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .about-section-bg .statistic-block .col-md-4{
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about-section-bg .statistic-block .col-md-4{
+    padding: 1rem;
+  }
+  .about-section-bg .statistic-block .circle .circle__inner h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .about-section-bg .statistic-block .circle .circle__inner p{
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 /*Testimonilas*/

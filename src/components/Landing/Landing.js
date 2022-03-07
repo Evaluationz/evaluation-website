@@ -385,7 +385,7 @@ const Landing = () => {
                     </div>
 
                     <div className="row statistic-block">
-                        <div className="grid d-flex">
+                        <div className="grid d-md-flex">
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
@@ -566,7 +566,7 @@ const Landing = () => {
             <div className="about-section bg-blue pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
-                        <h2 className="text-white">Success Stories</h2>
+                        <h1 className="text-white font-weight-bolder">Success Stories</h1>
                     </div>
                     <div className="row align-items-center">
                         <div className="card-group">

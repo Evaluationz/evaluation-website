@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Landing from "../components/Landing/Landing";
+import AboutUs from "../components/AboutUs/AboutUs";
 import Footer from "../components/Footer/Footer";
 
 import "./App.css";
@@ -17,6 +18,7 @@ const App = () => {
                     <Switch className="pl-0">
                         <Navbar/>
                         <Route path='/' exact component={Landing} />
+                        <Route path='/about-us' component={AboutUs} />
                         <Footer/>
                     </Switch>
                 </ScrollIntoView>

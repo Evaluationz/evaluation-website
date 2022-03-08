@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{Component}from "react";
 import { Helmet } from 'react-helmet';
 import { Button, Alert, Form, Row, Col } from 'react-bootstrap';
 
-const Landing = () => {
+
+const ContactUs = () => {
     return (
         <section>
             <Helmet>
@@ -41,7 +41,7 @@ const Landing = () => {
 
             <div className="about-section bg-white pt-100 pb-5">
                 <div className="container">
-                    <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.974009881821!2d77.6142341140435!3d12.973514118348346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17daed2415b9%3A0x12dd81e0b4f492f2!2sBHIVE%20Workspace%20MG%20Road!5e0!3m2!1sen!2sin!4v1646640348585!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                   <iframe className="map"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left text-start">
                         <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 71017600</h5>
                         <h5 className="text-black font-weight-bolder">Mail us at : sales@evaluationz.com</h5>
@@ -106,4 +106,4 @@ const Landing = () => {
     );
 };
 
-export default Landing;
+export default ContactUs;

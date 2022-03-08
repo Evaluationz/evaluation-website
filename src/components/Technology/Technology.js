@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
-const Landing = () => {
+const Technology = () => {
     return (
         <section>
             <Helmet>
@@ -135,4 +135,4 @@ const Landing = () => {
     );
 };
 
-export default Landing;
+export default Technology;

@@ -8,6 +8,7 @@ import SuccessStories from "../components/SuccessStories/SuccessStories";
 import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
 import ContactUs from "../components/ContactUs/ContactUs";
+import Industries from "../components/Industries/Industries";
 import Footer from "../components/Footer/Footer";
 
 import "./App.css";
@@ -28,6 +29,7 @@ const App = () => {
                         <Route path='/success-stories' component={SuccessStories} />
                         <Route path='/services' component={Services} />
                         <Route path='/blog' component={Blog} />
+                        <Route path='/industries' component={Industries} />
                         <Route path='/contact' component={ContactUs} />
                         <Footer/>
                     </Switch>

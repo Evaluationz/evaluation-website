@@ -9,6 +9,10 @@ import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Footer from "../components/Footer/Footer";
+import FAQ from "../components/FAQ's/FAQ";
+import BlogDetails1 from "../components/Blog/BlogDetails1";
+import BlogDetails2 from "../components/Blog/BlogDetails2";
+import BlogDetails3 from "../components/Blog/BlogDetails3";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,6 +33,10 @@ const App = () => {
                         <Route path='/services' component={Services} />
                         <Route path='/blog' component={Blog} />
                         <Route path='/contact' component={ContactUs} />
+                        <Route path='/faq' component={FAQ} />
+                        <Route path='/blog1' component={BlogDetails1} />
+                        <Route path='/blog2' component={BlogDetails2} />
+                        <Route path='/blog3' component={BlogDetails3} />
                         <Footer/>
                     </Switch>
                 </ScrollIntoView>

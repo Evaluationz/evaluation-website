@@ -6245,6 +6245,11 @@ select.form-control {
   background-color: #cfd2d3 !important;
   border-color: #cfd2d3 !important;
 }
+.btn-white{
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+}
 
 /*Image UI*/
 .blue-image-left{

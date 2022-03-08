@@ -10,7 +10,7 @@ const Landing = () => {
                 <title>Evaluationz: Contact us</title>
             </Helmet>
 
-            <div className="about-section bg-red pt-100 pb-70">
+            <div className="about-section bg-red pt-100 pb-4">
                 <div className="container pt-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
@@ -39,7 +39,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white pt-100 pb-5">
                 <div className="container">
                     <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.974009881821!2d77.6142341140435!3d12.973514118348346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17daed2415b9%3A0x12dd81e0b4f492f2!2sBHIVE%20Workspace%20MG%20Road!5e0!3m2!1sen!2sin!4v1646640348585!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                     <div className="section-title section-title-left text-start">
@@ -50,7 +50,7 @@ const Landing = () => {
 
             </div>
 
-            <div className="about-section contact-us-section bg-light-gray pt-100 pb-70">
+            <div className="about-section contact-us-section bg-light-gray pt-100 pb-5">
 
                 <div className="container">
                     <div className="section-title section-title-left text-start">

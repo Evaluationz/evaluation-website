@@ -9,7 +9,7 @@ const Landing = () => {
                 <title>Evaluationz: Technology</title>
             </Helmet>
 
-            <div className="about-section bg-blue pt-100 pb-70">
+            <div className="about-section bg-blue pt-5 mt-5 pb-5">
                 <div className="container pt-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
@@ -32,7 +32,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white pt-5 pb-5">
                 <div className="container pt-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
@@ -76,8 +76,8 @@ const Landing = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
-                            <div className="about-section-item about-item-image text-center blue-image-left">
-                                <img src="images/technology/Image-2.jpg" alt="shape" />
+                            <div className="about-section-item about-item-image text-center">
+                                <img src="images/technology/Image-2.jpg" alt="shape" className="blue-image-left"/>
                             </div>
                         </div>
 
@@ -99,7 +99,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className="about-section bg-blue pt-5 pb-30">
+            <div className="about-section bg-blue pt-100 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
@@ -124,8 +124,8 @@ const Landing = () => {
                         </div>
 
                         <div className="col-lg-6 pb-30">
-                            <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/technology/image-3.jpg" alt="shape" />
+                            <div className="about-section-item about-item-image text-center">
+                                <img src="images/technology/image-3.jpg" alt="shape"  className="red-image-right"/>
                             </div>
                         </div>
                     </div>

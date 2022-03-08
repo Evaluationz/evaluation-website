@@ -8,6 +8,7 @@ import SuccessStories from "../components/SuccessStories/SuccessStories";
 import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
 import ContactUs from "../components/ContactUs/ContactUs";
+import Technology from "../components/Technology/Technology";
 import Footer from "../components/Footer/Footer";
 import FAQ from "../components/FAQ's/FAQ";
 import BlogDetails1 from "../components/Blog/BlogDetails1";
@@ -37,6 +38,7 @@ const App = () => {
                         <Route path='/blog1' component={BlogDetails1} />
                         <Route path='/blog2' component={BlogDetails2} />
                         <Route path='/blog3' component={BlogDetails3} />
+                        <Route path='/technology' component={Technology} />
                         <Footer/>
                     </Switch>
                 </ScrollIntoView>

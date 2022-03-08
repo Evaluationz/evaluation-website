@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 const Blog = () => {
+    const history = useHistory();
     return (
         <section>
             <Helmet>
@@ -14,10 +15,10 @@ const Blog = () => {
                         <h1>Blogs</h1>
                     </div>
                     <div className="row d-flex justify-content-between">
-                        <div className="col-md-4 py-2">
+                        <div className="col-md-4 py-2" onClick={ () => history.push(`/blog1`)}>
                             <div className="user-card h-100 bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-1/image-1.png" alt="blog" />
+                                    <img src="images/blogs/blog-1/image-1.png" alt="blog"/>
                                 </div>
                                 <div className="card-body">
 
@@ -29,8 +30,8 @@ const Blog = () => {
                                         asset under contract is of tremendous value. With the</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4 py-2">
+                         </div>
+                        <div className="col-md-4 py-2" onClick={ () => history.push(`/blog2`)}>
                             <div className="user-card h-100 bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-2/image-1.jpg" alt="blog" />
@@ -42,7 +43,7 @@ const Blog = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 py-2">
+                        <div className="col-md-4 py-2" onClick={ () => history.push(`/blog3`)}>
                             <div className="user-card h-100 bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-3/image-1.jpg" alt="blog" />

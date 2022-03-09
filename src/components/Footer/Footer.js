@@ -34,7 +34,7 @@ const Footer = () => {
                                     </ul>
 
                                     <div className="footer-copyright-text pt-3 footer-copyright-text-white">
-                                        <p><Link to="/tnc">Terms of Use</Link> | <Link to="/privacy">Privacy Policy</Link> | <Link to="/cookie">Cookie Policy</Link></p>
+                                        <p><Link to="/tnc">Terms of Use</Link> | <Link to="/privacy">Privacy Policy</Link> | <Link to="/cookie">Cookie Policy</Link> | <Link to="/faq">FAQ's</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
                                                 BHIVE Workspace, 29 MG Road,
                                                 7th Floor-Mahalaxmi Chambers,
                                                 Next to Trinity Metro Station,
-                                                Bangalore —560001</p>
+                                                Bangalore — 560001</p>
                                         </div>
                                     </div>
                                 </div>

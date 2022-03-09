@@ -3,28 +3,28 @@ import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 import axios from "axios";
 
-const statistics = { ClientCount:'',TotalCase:'',RedCase:''}
+const statistics = { ClientCount: '', TotalCase: '', RedCase: '' }
 const Landing = () => {
-    const [ statisticState, updateStatisticState ] = useState(statistics);
-    
-  useEffect(() => {
-    checkStatistics()
-  },[])
+    const [statisticState, updateStatisticState] = useState(statistics);
 
-  async function  checkStatistics(){
-    let clientDetails = await axios.get("https://verify.evaluationz.com:304/api/KompassWebsiteData");
-    let res = clientDetails.data
-    updateStatisticState(() => ({...statisticState,ClientCount:res.data.ClientCount,TotalCase:res.data.TotalCase,RedCase:res.data.RedCase}))
-  }
+    useEffect(() => {
+        checkStatistics()
+    }, [])
 
-  const { ClientCount,TotalCase,RedCase } = statisticState
+    async function checkStatistics() {
+        let clientDetails = await axios.get("https://verify.evaluationz.com:304/api/KompassWebsiteData");
+        let res = clientDetails.data
+        updateStatisticState(() => ({ ...statisticState, ClientCount: res.data.ClientCount, TotalCase: res.data.TotalCase, RedCase: res.data.RedCase }))
+    }
+
+    const { ClientCount, TotalCase, RedCase } = statisticState
 
     return (
         <section>
             <Helmet>
                 <title>Evaluationz: Employee, Vendor and User Verification</title>
                 <meta name="description" content="Evaluationz is a Nascom empanalled gold partner in the space of employee, vendor and user verification which is digitized and real time" />
-                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
+                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
             <div className="hero-block p-tb-100">
                 <div className="container">
@@ -286,35 +286,35 @@ const Landing = () => {
 
                     <div className="row align-items-center mt-4">
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/icon-1.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/icon-1.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Digital Identity Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-2.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-2.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Education Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-3.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-3.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Employment Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-4.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-4.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Digital Address Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-5.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-5.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Criminal Record Check
                             </span>
@@ -323,35 +323,35 @@ const Landing = () => {
 
                     <div className="row align-items-center my-md-4">
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-6.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-6.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Social Media Check
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-7.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-7.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Reference Check
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-8.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-8.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Drug Test
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-9.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-9.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Digital Passport Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-10.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/Icon-10.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Credit Check
                             </span>
@@ -407,7 +407,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">{ ClientCount }</h1>
+                                        <h1 className="c-red">{ClientCount}</h1>
                                         <p className="c-blue">COMPANIES</p>
                                     </div>
                                 </div>
@@ -415,7 +415,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">{ TotalCase }</h1>
+                                        <h1 className="c-red">{TotalCase}</h1>
                                         <p className="c-blue">VERIFICATIONS</p>
                                     </div>
                                 </div>
@@ -423,7 +423,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">{ RedCase }</h1>
+                                        <h1 className="c-red">{RedCase}</h1>
                                         <p className="c-blue">RED FLAGS</p>
                                     </div>
                                 </div>
@@ -444,7 +444,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="testimonial-section pt-5 position-relative">
+           {/* <div className="testimonial-section pt-5 position-relative">
                 <div className="col-12 px-md-5 bg-white">
                     <div className="row">
                         <h1 className="c-red font-weight-bolder pl-80">Testimonials</h1>
@@ -515,7 +515,7 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="testimonial-section position-relative">
                 <div className="container-fluid py-5 bg-red">
@@ -529,14 +529,7 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="testimonial bg-white">
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
+                                                <img src="images/client/amazon.png"  />
                                             </div>
                                         </div>
                                     </div>

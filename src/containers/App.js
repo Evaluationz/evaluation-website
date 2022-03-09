@@ -21,6 +21,7 @@ import FAQ from "../components/FAQ's/FAQ";
 import BlogDetails1 from "../components/Blog/BlogDetails1";
 import BlogDetails2 from "../components/Blog/BlogDetails2";
 import BlogDetails3 from "../components/Blog/BlogDetails3";
+import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -53,6 +54,7 @@ const App = () => {
                         <Route path='/blog2' component={BlogDetails2} />
                         <Route path='/blog3' component={BlogDetails3} />
                         <Route path='/technology' component={Technology} />
+                        <Route path='/privacy' component={PrivacyPolicy} />
                         <Footer/>
                     </Switch>
                 </ScrollIntoView>

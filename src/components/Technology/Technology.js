@@ -125,7 +125,7 @@ const Technology = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/technology/image-3.jpg" alt="shape"  className="red-image-right"/>
+                                <img src="images/technology/Image-3.jpg" alt="shape"  className="red-image-right"/>
                             </div>
                         </div>
                     </div>

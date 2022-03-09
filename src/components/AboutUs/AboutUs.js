@@ -173,7 +173,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="card-img-top img-fluid" src="images/about-us/Nobby.jpg" alt="Nobby"/>
+                                                <img className="card-img-top img-fluid" src="images/about-us/nobby.jpg" alt="Nobby"/>
                                             </div>
                                         </div>
                                     </li>
@@ -211,7 +211,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="card-img-top img-fluid" src="images/about-us/Manikandan.jpg" alt="Manikandan"/>
+                                                <img className="card-img-top img-fluid" src="images/about-us/manikandan.jpg" alt="Manikandan"/>
                                             </div>
                                         </div>
                                     </li>
@@ -248,7 +248,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="card-img-top img-fluid" src="images/about-us/Piyush.jpg" alt="Piyush"/>
+                                                <img className="card-img-top img-fluid" src="images/about-us/piyush.jpg" alt="Piyush"/>
                                             </div>
                                         </div>
                                     </li>
@@ -287,7 +287,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="card-img-top img-fluid" src="images/about-us/Parvathi.jpg" alt="Parvathi"/>
+                                                <img className="card-img-top img-fluid" src="images/about-us/parvathi.jpg" alt="Parvathi"/>
                                             </div>
                                         </div>
                                     </li>
@@ -319,7 +319,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="mr-3" src="images/about-us/Ganesh.jpg" alt="Ganesh N C"/>
+                                                <img className="mr-3" src="images/about-us/ganesh.jpg" alt="Ganesh N C"/>
                                             </div>
                                             <div className="media__body">
                                                 <h5 className="mt-0">Ganesh N C</h5>
@@ -363,7 +363,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="card-img-top img-fluid" src="images/about-us/Nobby.jpg" alt="Nobby"/>
+                                                <img className="card-img-top img-fluid" src="images/about-us/nobby.jpg" alt="Nobby"/>
                                             </div>
                                         </div>
                                     </li>
@@ -402,7 +402,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="mr-3" src="images/about-us/KK-Mathew.jpg" alt="KK-Mathew"/>
+                                                <img className="mr-3" src="images/about-us/kk-mathew.jpg" alt="KK-Mathew"/>
                                             </div>
                                         </div>
                                     </li>
@@ -436,7 +436,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="mr-3" src="images/about-us/Maheshwar.jpg" alt="Maheshwar"/>
+                                                <img className="mr-3" src="images/about-us/maheshwar.jpg" alt="Maheshwar"/>
                                             </div>
                                             <div className="media__body">
                                                 <h5 className="mt-0">Maheshwar Tiruchinapalli</h5>

@@ -17,7 +17,7 @@ const ContactUs = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/contact-us/Image-1.png" alt="shape" className="blue-image-left" />
+                                <img src="images/contact-us/image-1.png" alt="shape" className="blue-image-left" />
                             </div>
                         </div>
 

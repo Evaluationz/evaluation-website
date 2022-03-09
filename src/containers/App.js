@@ -8,6 +8,13 @@ import SuccessStories from "../components/SuccessStories/SuccessStories";
 import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
 import ContactUs from "../components/ContactUs/ContactUs";
+import Industries from "../components/Industries/Industries";
+import Ecommerce from "../components/Industries/SubPages/Ecommerce";
+import Banking from "../components/Industries/SubPages/Banking";
+import Corporate from "../components/Industries/SubPages/Corporate";
+import Matrimonial from "../components/Industries/SubPages/Matrimonial";
+import Dating from "../components/Industries/SubPages/Dating";
+import Rental from "../components/Industries/SubPages/Rental";
 import Technology from "../components/Technology/Technology";
 import Footer from "../components/Footer/Footer";
 import FAQ from "../components/FAQ's/FAQ";
@@ -33,6 +40,13 @@ const App = () => {
                         <Route path='/success-stories' component={SuccessStories} />
                         <Route path='/services' component={Services} />
                         <Route path='/blog' component={Blog} />
+                        <Route path='/industries' component={Industries} />
+                        <Route path='/ecommerce' component={Ecommerce} />
+                        <Route path='/banking-fintech' component={Banking} />
+                        <Route path='/corporate' component={Corporate} />
+                        <Route path='/matrimonial' component={Matrimonial} />
+                        <Route path='/online-dating' component={Dating} />
+                        <Route path='/rental' component={Rental} />
                         <Route path='/contact' component={ContactUs} />
                         <Route path='/faq' component={FAQ} />
                         <Route path='/blog1' component={BlogDetails1} />

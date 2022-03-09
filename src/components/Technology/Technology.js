@@ -16,7 +16,7 @@ const Technology = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/technology/Image-1.jpg" alt="shape" className="red-image-left"/>
+                                <img src="images/technology/image-1.jpg" alt="shape" className="red-image-left"/>
                             </div>
                         </div>
                         <div className="col-lg-6 pb-30">
@@ -39,7 +39,7 @@ const Technology = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/landing/Image-6.jpg" alt="shape"/>
+                                <img src="images/landing/image-6.jpg" alt="shape"/>
                             </div>
                         </div>
                         <div className="col-lg-6 pb-30">
@@ -79,7 +79,7 @@ const Technology = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/technology/Image-2.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/technology/image-2.jpg" alt="shape" className="blue-image-left"/>
                             </div>
                         </div>
 

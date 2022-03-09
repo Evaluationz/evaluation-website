@@ -1312,8 +1312,8 @@ select.form-control {
   color: #fff;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 16px;
   text-transform: none;
   font-weight: normal;
@@ -6245,6 +6245,11 @@ select.form-control {
   background-color: #cfd2d3 !important;
   border-color: #cfd2d3 !important;
 }
+.btn-white{
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+}
 
 /*Image UI*/
 .blue-image-left{
@@ -6270,7 +6275,7 @@ select.form-control {
 }
 
 .about-section-bg{
-  background: url('../images/landing/Image-8.jpg') no-repeat center center;
+  background: url('../images/landing/image-8.jpg') no-repeat center center;
   min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;

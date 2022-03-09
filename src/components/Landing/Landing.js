@@ -45,7 +45,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center blue-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-1.jpg" alt="shape" />
+                                                        <img src="images/landing/carousel/banner-image-1.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -70,7 +70,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center red-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-2.jpg" alt="shape" />
+                                                        <img src="images/landing/carousel/banner-image-2.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -95,7 +95,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center blue-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-3.jpg" alt="shape" />
+                                                        <img src="images/landing/carousel/banner-image-3.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -120,7 +120,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center red-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-4.jpg" alt="shape" />
+                                                        <img src="images/landing/carousel/banner-image-4.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -145,7 +145,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
                                                     <div className="about-section-item about-item-image text-center blue-image-left">
-                                                        <img src="images/landing/carousel/Banner-Image-5.jpg" alt="shape" />
+                                                        <img src="images/landing/carousel/banner-image-5.jpg" alt="shape" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 pb-30">
@@ -268,7 +268,7 @@ const Landing = () => {
 
                     <div className="row align-items-center mt-4">
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-1.png" alt="shape" width="80"/>
+                            <img src="images/landing/icons/icon-1.png" alt="shape" width="80"/>
                             <span className="font-weight-bold ml-2">
                                 Digital Identity Verification
                             </span>

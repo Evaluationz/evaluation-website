@@ -14,7 +14,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/industries/matrimonial/Image-1.jpg" alt="shape" className="red-image-left"/>
+                                <img src="images/industries/matrimonial/image-1.jpg" alt="shape" className="red-image-left"/>
                             </div>
                         </div>
 
@@ -50,35 +50,35 @@ const Landing = () => {
                     </h3>
                     <div className="row align-items-center mt-4">
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-1.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-1.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Digital Identity Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-2.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-2.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Digital Address Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-3.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-3.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Education Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-4.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-4.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                Legal Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-5.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-5.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                Financial Track Record Verification
                             </span>
@@ -111,28 +111,28 @@ const Landing = () => {
 
                     <div className="row align-items-center mt-4">
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-6.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-6.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Seamless API Integration
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-7.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-7.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                Intuitive And Hassle-free Process
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-8.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-8.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Multiple Payment Options
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/matrimonial/Icon-9.png" alt="shape" width="80"/>
+                            <img src="images/industries/matrimonial/icon-9.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Automatically Trigger Initial And Repeat Verifications
                             </span>

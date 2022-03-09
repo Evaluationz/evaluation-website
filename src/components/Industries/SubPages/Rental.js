@@ -14,7 +14,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/industries/rental/Image-1.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/rental/image-1.jpg" alt="shape" className="blue-image-left"/>
                             </div>
                         </div>
 
@@ -50,28 +50,28 @@ const Landing = () => {
                     </h3>
                     <div className="row align-items-center mt-4">
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-1.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-1.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Digital Identity Verification
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-2.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-2.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Digital Address Verification
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-3.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-3.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                Legal Verification
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-4.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-4.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Credit Verification
                             </span>
@@ -104,28 +104,28 @@ const Landing = () => {
 
                     <div className="row align-items-center mt-4">
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-5.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-5.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Seamless API Integration
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-6.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-6.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                Intuitive And Hassle-free Process
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-7.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-7.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Multiple Payment Options
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/rental/Icon-8.png" alt="shape" width="80"/>
+                            <img src="images/industries/rental/icon-8.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Automatically Trigger Initial And Repeat Verifications
                             </span>

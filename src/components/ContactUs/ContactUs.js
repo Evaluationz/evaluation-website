@@ -89,7 +89,7 @@ const ContactUs = () => {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <textarea className="form-control shadow-lg" placeholder="Message/Query" />
+                                    <textarea className="form-control shadow-lg"  placeholder="Message/Query" />
                                 </div>
                             </div>
                             <div className="row align-items-center">

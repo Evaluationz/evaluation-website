@@ -6460,6 +6460,10 @@ select.form-control {
   border-radius: 10px;
   height: calc(1.5em + 0.75rem + 15px);
 }
+.about-section.contact-us-section .form-control textarea{
+  
+  height: calc(1.5em + 0.75rem + 30px);
+}
 
 /*Responsive Media Queries*/
 @media screen and (max-width: 499px){

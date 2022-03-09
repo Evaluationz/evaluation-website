@@ -8,6 +8,8 @@ const ContactUs = () => {
         <section>
             <Helmet>
                 <title>Evaluationz: Contact us</title>
+                <meta name="description" content="Have someone from Evaluationz reach out to you with out various digital and realtime offerings" />
+                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
 
             <div className="about-section bg-red pt-100 pb-4">

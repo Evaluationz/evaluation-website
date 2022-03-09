@@ -7,6 +7,9 @@ const Landing = () => {
         <section>
             <Helmet>
                 <title>Evaluationz: About us</title>
+                <meta name="description" content="Learn about values, mission and leadership team and the Board of Directors leading Evaluationz" />
+                <meta name="keywords" content="Nobby Nazareth, Piyush Jha, Manikandan Ramasamy, Ganesh N C, Parvathi Shankar, KK Mathew, Maheshwar Tiruchinapalli" />
+
             </Helmet>
 
             <div className="about-section bg-red pt-100 pb-70">

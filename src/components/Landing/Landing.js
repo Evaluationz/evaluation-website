@@ -19,6 +19,8 @@ const Landing = () => {
 
     const { ClientCount, TotalCase, RedCase } = statisticState
 
+    
+
     return (
         <section>
             <Helmet>
@@ -529,7 +531,14 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="testimonial bg-white">
-                                                <img src="images/client/amazon.png"  />
+                                            <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p> 
                                             </div>
                                         </div>
                                     </div>
@@ -679,10 +688,12 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <img className="card-img-top" src="images/blogs/blog-1/image-1.png" alt="Blog" />
                                                         <div className="card-body">
-                                                            <h4 className="card-title">BLOG</h4>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+                                                            <h4 className="card-title">Why background verification
+                                                                services are crucial before and
+                                                                after listing properties</h4>
+                                                            <Link to="/blog1" className="btn btn-primary btn-red">Read More</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -696,10 +707,10 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <img className="card-img-top" src="images/blogs/blog-2/image-1.jpg" alt="Blog" />
                                                         <div className="card-body">
-                                                            <h4 className="card-title">BLOG</h4>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+                                                            <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
+                                                            <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -713,27 +724,10 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
+                                                        <img className="card-img-top" src="images/blogs/blog-3/image-1.jpg" alt="Blog" />
                                                         <div className="card-body">
-                                                            <h4 className="card-title">BLOG</h4>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="row align-items-center">
-                                                <div className="blog bg-blue">
-                                                    <div className="card" >
-                                                        <img className="card-img-top" src="img_avatar1.png" alt="Card image" />
-                                                        <div className="card-body">
-                                                            <h4 className="card-title">BLOG</h4>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Read More</Link>
+                                                            <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
+                                                            <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>
                                                         </div>
                                                     </div>
                                                 </div>

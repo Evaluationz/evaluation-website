@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 const BlogDetails = () => {
@@ -10,14 +9,13 @@ const BlogDetails = () => {
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
             </Helmet>
-            
 
-            <div className="about-section bg-white pt-100 mt-5 pb-4">
-                <div className="container">
+            <div className="about-section bg-white py-4 mt-5">
+                <div className="container pt-5">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
-                                <div className="section-title section-title-left text-start">
+                                <div className="section-title section-title-left mb-0 text-start">
                                     <h1 className="text-black font-weight-bolder">Ensuring a safer drive for ride-hailing customers</h1>
                                 </div>
                             </div>
@@ -25,16 +23,16 @@ const BlogDetails = () => {
                     </div>
                 </div>
             </div>
+
             <div className="about-section col-md-10 p-0 m-0 red-image-right red-image-bottom">
                 <img src="images/blogs/blog-3/image-1.jpg" alt="shape" className="blog-details-image" />
             </div>
 
-            <div className="about-section bg-white pt-100 pb-4 blue-image-bottom">
+            <div className="about-section bg-white pt-5 blue-image-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 pb-30">
                             <div className="about-section-item about-item-details">
-
                                 <div className="about-content">
                                     <p className="text-black font-weight-normal">It is a situation that any cab aggregator or ride-hailing company fears. Blaring headlines about driver misbehaviour or criminality.  Unfortunately, they are more common than anybody would imagine. </p>
                                     <p className="text-black font-weight-normal">Sample these headlines.</p>
@@ -50,16 +48,15 @@ const BlogDetails = () => {
                                 <p className="text-black font-weight-bold mb-0">Digital Identity Verification</p>
                                 <p className="text-black font-weight-normal">The most basic verification that needs to be carried out is Identity Verification. Most drivers submit hard copies of government identity documents as their ID proof. Advanced verification service companies offer the option of API integration with the ride-hailing company’s HR or partner management platform to ensure that these documents can be authenticated in real time, digitally. </p>
                                 <div className="container">
-                                        <div className="row align-items-center">
-                                            <div className="col-lg-12 pt-5 pb-30">
-                                                <div className="text-center">
-                                                    <img src="images/blogs/blog-3/image-2.jpg" alt="shape" className="blog-details-image" />
-                                                </div>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-12 px-0 py-3">
+                                            <div className="text-center">
+                                                <img src="images/blogs/blog-3/image-2.jpg" alt="shape" className="blog-details-image" />
                                             </div>
                                         </div>
                                     </div>
-                                   
-                                
+                                </div>
+
                                 <p className="text-black font-weight-bold mb-0">Digital Address Verification</p>
                                 <p className="text-black font-weight-normal">The authentication of addresses can be carried out by the verification platform as well. With many people moving from states and regions all over the country for employment, permanent address verification becomes important for traceability. The right verification solution can utilise government documents for verification of permanent address and use GPS-enabled verification for the local address. </p>
 
@@ -81,11 +78,6 @@ const BlogDetails = () => {
                                 <p className="text-black font-weight-normal">Look for a verification solution that can keep pace with the needs of the fast-changing industry. The ability to componentize government identity databases and utilize AI to return results in real-time can make your verification process quicker and more accurate. </p>
                                 <p className="text-black font-weight-normal">Ensure that it has API integration to reduce time and effort. An integrated solution can trigger automatic verification requests on receipt of an application and make the driver onboarding process more efficient and robust. API integration can also trigger repeat verifications at regular intervals for continuous verification to make cross-check that the driver is still in the green zone. </p>
                                 <p className="text-black font-weight-normal">Do your research and choose a comprehensive verification solution for a relaxing ride; the comfort that comes when the driver can be trusted.</p>
-
-
-
-
-
                             </div>
                         </div>
                     </div>

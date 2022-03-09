@@ -9,14 +9,13 @@ const Landing = () => {
                 <title>Evaluationz: Careers</title>
                 <meta name="description" content="See what open jobs in Evaluationz are best suited to you" />
                 <meta name="keywords" content="Careers, hiring, job position, application" />
-
             </Helmet>
 
-            <div className="about-section bg-blue pt-100 pb-70">
-                <div className="container">
+            <div className="about-section bg-blue py-4 mt-5">
+                <div className="container pt-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
-                            <div className="about-section-item about-item-image text-center">
+                            <div className="about-section-item about-item-image text-md-left text-center">
                                 <img src="images/careers/image-1.png" alt="shape" className="red-image-left"/>
                             </div>
                         </div>
@@ -32,17 +31,17 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="about-content">
                                     <p className="text-black font-weight-normal">Since our inception in 2006, Evaluationz has been a benchmark for a great workplace. Employees have become evangelists as
                                         they see their career trajectory rise. And it’s no wonder. We follow the follow the principles of R.I.S.E – Regular Immediate
                                         Specific Encouraging – as an integral part of the company culture.</p>
                                 </div>
-                                <div className="section-title section-title-left text-start">
+                                <div className="section-title section-title-left mt-3 mb-0 text-start">
                                     <p className="text-black font-weight-bold">The company has been built on four pillars:</p>
                                 </div>
                             </div>
@@ -119,7 +118,7 @@ const Landing = () => {
 
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="about-content">
                                     <p className="text-black font-weight-normal">If you would like to join us on our path of growth and discovery, here are some opportunities that are available right now. If you
@@ -135,10 +134,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-light-gray pt-100 pb-70">
+            <div className="about-section bg-light-gray py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h3 className="text-black">Current open positions:</h3>
@@ -166,7 +165,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to="/" className="btn btn-primary btn-red">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-red">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +186,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to="/" className="btn btn-primary btn-blue">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-blue">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +207,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to="/" className="btn btn-primary btn-blue">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-blue">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -228,14 +227,13 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to="/" className="btn btn-primary btn-red">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-red">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

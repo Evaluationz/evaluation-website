@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
+import axios from "axios";
 
+const statistics = { ClientCount:'',TotalCase:'',RedCase:''}
 const Landing = () => {
+    const [ statisticState, updateStatisticState ] = useState(statistics);
+    
+  useEffect(() => {
+    checkStatistics()
+  },[])
+
+  async function  checkStatistics(){
+    let clientDetails = await axios.get("https://verify.evaluationz.com:304/api/KompassWebsiteData");
+    let res = clientDetails.data
+    updateStatisticState(() => ({...statisticState,ClientCount:res.data.ClientCount,TotalCase:res.data.TotalCase,RedCase:res.data.RedCase}))
+  }
+
+  const { ClientCount,TotalCase,RedCase } = statisticState
+
     return (
         <section>
             <Helmet>
                 <title>Evaluationz: Employee, Vendor and User Verification</title>
+                <meta name="description" content="Evaluationz is a Nascom empanalled gold partner in the space of employee, vendor and user verification which is digitized and real time" />
+                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
             </Helmet>
             <div className="hero-block p-tb-100">
                 <div className="container">
@@ -389,7 +407,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">2,222</h1>
+                                        <h1 className="c-red">{ ClientCount }</h1>
                                         <p className="c-blue">COMPANIES</p>
                                     </div>
                                 </div>
@@ -397,7 +415,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">31M</h1>
+                                        <h1 className="c-red">{ TotalCase }</h1>
                                         <p className="c-blue">VERIFICATIONS</p>
                                     </div>
                                 </div>
@@ -405,7 +423,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">22,898</h1>
+                                        <h1 className="c-red">{ RedCase }</h1>
                                         <p className="c-blue">RED FLAGS</p>
                                     </div>
                                 </div>

@@ -7,6 +7,9 @@ const Landing = () => {
         <section>
             <Helmet>
                 <title>Evaluationz: Careers</title>
+                <meta name="description" content="See what open jobs in Evaluationz are best suited to you" />
+                <meta name="keywords" content="Careers, hiring, job position, application" />
+
             </Helmet>
 
             <div className="about-section bg-blue pt-100 pb-70">

@@ -14,7 +14,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center">
-                                <img src="images/industries/ecommerce/Image-1.png" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/ecommerce/image-1.png" alt="shape" className="blue-image-left"/>
                             </div>
                         </div>
 
@@ -49,21 +49,21 @@ const Landing = () => {
                     </h3>
                     <div className="row align-items-center mt-4">
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-1.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-1.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Digital Identity Verification
                             </span>
                         </div>
 
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-2.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-2.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Digital Address Verification
                             </span>
                         </div>
 
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-3.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-3.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Education Verification
                             </span>
@@ -72,19 +72,19 @@ const Landing = () => {
 
                     <div className="row align-items-center mt-4">
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-4.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-4.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                Driving Licence Verification
                             </span>
                         </div>
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-5.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-5.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Legal Verification
                             </span>
                         </div>
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-6.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-6.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Drug Tests
                             </span>
@@ -117,28 +117,28 @@ const Landing = () => {
 
                     <div className="row align-items-center mt-4">
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-7.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-7.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Seamless API Integration
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-8.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-8.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                Intuitive And Hassle-free Process
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-9.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-9.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Multiple Payment Options
                             </span>
                         </div>
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/Icon-10.png" alt="shape" width="80"/>
+                            <img src="images/industries/ecommerce/icon-10.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Automatically Trigger Initial And Repeat Verifications
                             </span>

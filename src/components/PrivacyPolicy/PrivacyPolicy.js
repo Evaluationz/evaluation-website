@@ -8,15 +8,13 @@ const PrivacyPolicy = () => {
             <Helmet>
                 <title>Evaluationz: PrivacyPolicy</title>
             </Helmet>
-            
-
             <div className="service-section bg-white pt-130 pb-70" >
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12">
                             <div className="service-section-item service-item-details">
                                 <div className="section-title section-title-left text-start">
-                                <p className="font-weight-bolder ft-20">Privacy Policy</p>
+                                <p className="font-weight-bolder ft-40">Privacy Policy</p>
                                     <p className="font-weight-normal pt-20">
                                     This privacy policy (“Privacy Policy”) has been drafted and published in accordance with the Information Technology Act, 2000, the Information Technology (Amendment)
                                     Act, 2008, and the Information Technology (Reasonable security practices and procedures and sensitive personal data or information) Rules, 2011, of the Republic of India.
@@ -247,7 +245,81 @@ const PrivacyPolicy = () => {
                                     </li>
                                     </li>
                                     </ol>
-                                    LINKS TO THE THIRD PARTY SITES
+                                    
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    LINKS TO THE THIRD PARTY SITES<br/>
+                                    Our Platform may, from time to time, contain links to and from the websites of Our partner networks, affiliates and other third parties, whose privacy policy may differ from
+                                    that of Ours. The inclusion of a link does not imply any endorsement by Us of the third party website, the website's provider, or the information on the third party website. If
+                                    You follow a link to any of these websites, please note that these websites may be governed by their own privacy policies and We disclaim all responsibility or liability with
+                                    respect to these policies or the websites. Please check these policies and the terms of the websites before You submit any information to these websites.
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    CHANGE IN PRIVACY POLICY<br/>
+                                    Company may update this Privacy Policy at any time, with or without advance notice. In the event there are significant changes in the way the Company treats Your Personal
+                                    Information, Company will display a notice on the Platform or send You an email, as provided for above. Unless stated otherwise, this Privacy Policy applies to all
+                                    information that Company has about You and Your account. Notwithstanding the above, Company shall not be required to notify You of any changes made to the Privacy 
+                                    Policy. If You use the Platform after notice of changes have been sent to You or published on the Platform, Your continued use of the Platform shall mean Your deemed
+                                    consent to the changed practices.
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    CHOICE/OPT-OUT/DELETION/CORRECTION
+                                    <ol>
+                                        <li>
+                                        Company provides all its users with the opportunity to opt-out of receiving non-essential communications from us or on behalf of our partners after setting up an
+                                        Account.
+                                        </li>
+                                        <li>
+                                        If You want to remove Your contact information from all Our lists and newsletters, please write to us at sales@evaluationz.com with “unsubscribe” as the subject or any 
+                                        button provided on the Platform, as the case may be.
+                                        </li>
+                                        <li>
+                                        If You wish to have the information or data that you have provided to the Company deleted, You can always do so by sending a request to us on the e-mail id. You may 
+                                        note that correction or deletion of certain information or data may lead to cancellation of your registration with the Platform or your access to certain features of the Platform.
+                                        You also agree and acknowledge that certain data or information cannot be corrected or deleted or prohibited to be deleted as required under any applicable law, law
+                                        enforcement requests or under any judicial proceedings. Any information that is sought to be deleted, whether upon deactivation of Your account on the Platform or
+                                        otherwise, shall be deleted from the user interface of the Platform but may be retained on the servers of the Company for such period as may be required under applicable
+                                        laws, Terms of Use or as per the policy of the Company or any third-party vendor engaged by the Company. You acknowledge and agree that the Company and/or any thirdparty vendor engaged and authorised by the Company shall be entitled to retain such information to the extent required under this clause and the Company disclaims any 
+                                        liability or obligation not specifically agreed hereunder with respect to such information. You also agree that any aggregated information or data based on the analysis or
+                                        benchmarking activity undertaken by the Company, either manually or through related algorithms, shall be the sole property of the Company and the Company shall neither
+                                        have the obligation to delete it or provide such aggregated information or data to You.
+
+                                        </li>
+                                    </ol>
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    EXCLUSION<br/>
+                                    This Privacy Policy does not apply to any information other than such information collected by the Company through the Platform. This Privacy Policy shall not apply to any 
+                                    unsolicited information You provide Us through this Platform or through any other means. This includes, but is not limited to, information posted to any public areas of the
+                                    Platform. All such unsolicited information shall be deemed to be non-confidential and the Company shall be free to use, process or disclose such unsolicited information
+                                    without any limitations. We make no representation that the content contained on the Platform is appropriate or to be used or accessed outside of the Republic of India. The
+                                    Company’s responsibility with respect to such information shall be as per the laws of Republic of India. If You use or access the Platform from outside the Republic of India,
+                                    You do so at Your own risk and are responsible for compliance with the laws of such jurisdiction.
+
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    SEVERABILITY<br/>
+                                    We have taken every effort to ensure that this Privacy Policy adheres with the applicable laws. The invalidity or unenforceability of any part of this Policy shall not prejudice or
+                                    affect the validity or enforceability of the remainder of this Privacy Policy. This Privacy Policy does not apply to any information other than the information collected by the
+                                    Company through the Platform. This Privacy Policy shall be inapplicable to any unsolicited information You provide us through this Platform or through any other means.
+                                    This includes, but is not limited to, information posted in any public areas of the Platform. All unsolicited information shall be deemed to be non-confidential and the
+                                    Company shall be free to use and/ or disclose such unsolicited information without any limitations.
+
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    WAIVER<br/>
+                                    Any rights or remedies under this Privacy Policies may be waived only in writing. Delay in exercising or non-exercise of any such right or remedy does not constitute a waiver
+                                    of that right or remedy, or any other right or remedy.
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    GOVERNING LAW AND JURISDICTION<br/>
+                                    This Privacy Policy are governed by and construed in accordance with the laws of India. Any dispute arising out of or in connection with the use of the Platform or this 
+                                    Privacy Policy shall be subject to the exclusive jurisdiction of the courts in Bangalore, India.
+                                    </p>
+                                    <p className="font-weight-normal pt-20">
+                                    QUESTIONS AND GRIEVANCES<br/>
+                                    Your grievances, questions or feedback regarding this Privacy Policy should be directed to Our grievance officer mentioned below:
+                                    <br/>Email Id: sales@evaluationz.com
                                     </p>
                                 </div>
                             </div>

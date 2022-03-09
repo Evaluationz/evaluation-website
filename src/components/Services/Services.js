@@ -62,7 +62,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-1.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-1.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Digital Identity Verification</h3>
                                     </div>
                                     <p className="text-white">
@@ -84,7 +84,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-2.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-2.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Digital Address Verification</h3>
                                     </div>
                                     <p className="text-white">
@@ -109,7 +109,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-3.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-3.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Credit Score Check</h3>
                                     </div>
                                     <p className="text-white">
@@ -128,7 +128,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-4.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-4.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Digital Passport Verification</h3>
                                     </div>
                                     <p className="text-white">
@@ -143,7 +143,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-5.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-5.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Education Verification</h3>
                                     </div>
                                     <p className="text-white">
@@ -162,7 +162,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-6.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-6.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Employment Verification</h3>
                                     </div>
                                     <p className="text-white">
@@ -183,7 +183,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-7.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-7.png" alt="shape" width="100" />
                                         <div>
                                         <h3 className="text-white pl-3">Criminal Record Check</h3>
                                         <p className="text-white pl-3">(Data base checks)</p>
@@ -206,7 +206,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-8.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-8.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Social Media Check</h3>
                                     </div>
                                     <p className="text-white">
@@ -228,7 +228,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-9.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-9.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Reference Check</h3>
                                     </div>
                                     <p className="text-white">
@@ -249,7 +249,7 @@ const Services = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
                                     <div className="col-md-12 d-flex align-items-center justify-content-start">
-                                        <img src="images/services/icons/Icon-10.png" alt="shape" width="100" />
+                                        <img src="images/services/icons/icon-10.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Drug Test</h3>
                                     </div>
                                     <p className="text-white">

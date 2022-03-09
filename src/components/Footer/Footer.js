@@ -51,16 +51,13 @@ const Footer = () => {
                                                 <Link to="/services">SERVICES</Link>
                                             </div>
                                             <div className="col">
-                                                <Link to="/use-cases" className="no-wrap">USE CASES</Link>
+                                                <Link to="/success-stories" className="no-wrap text-uppercase">Success Stories</Link>
                                             </div>
                                             <div className="col">
                                                 <Link to="/technology">TECHNOLOGY</Link>
                                             </div>
                                             <div className="col">
-                                                <Link to="/about">ABOUT</Link>
-                                            </div>
-                                            <div className="col">
-                                                <Link to="/insights">INSIGHTS</Link>
+                                                <Link to="/about-us">ABOUT</Link>
                                             </div>
                                             <div className="col">
                                                 <Link to="/careers">CAREERS</Link>
@@ -69,7 +66,6 @@ const Footer = () => {
                                                 <Link to="/contact">CONTACT</Link>
                                             </div>
                                         </div>
-
                                     </li>
                                 </ul>
                             </div>

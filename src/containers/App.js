@@ -8,8 +8,19 @@ import SuccessStories from "../components/SuccessStories/SuccessStories";
 import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
 import ContactUs from "../components/ContactUs/ContactUs";
+import Industries from "../components/Industries/Industries";
+import Ecommerce from "../components/Industries/SubPages/Ecommerce";
+import Banking from "../components/Industries/SubPages/Banking";
+import Corporate from "../components/Industries/SubPages/Corporate";
+import Matrimonial from "../components/Industries/SubPages/Matrimonial";
+import Dating from "../components/Industries/SubPages/Dating";
+import Rental from "../components/Industries/SubPages/Rental";
 import Technology from "../components/Technology/Technology";
 import Footer from "../components/Footer/Footer";
+import FAQ from "../components/FAQ's/FAQ";
+import BlogDetails1 from "../components/Blog/BlogDetails1";
+import BlogDetails2 from "../components/Blog/BlogDetails2";
+import BlogDetails3 from "../components/Blog/BlogDetails3";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,7 +40,18 @@ const App = () => {
                         <Route path='/success-stories' component={SuccessStories} />
                         <Route path='/services' component={Services} />
                         <Route path='/blog' component={Blog} />
+                        <Route path='/industries' component={Industries} />
+                        <Route path='/ecommerce' component={Ecommerce} />
+                        <Route path='/banking-fintech' component={Banking} />
+                        <Route path='/corporate' component={Corporate} />
+                        <Route path='/matrimonial' component={Matrimonial} />
+                        <Route path='/online-dating' component={Dating} />
+                        <Route path='/rental' component={Rental} />
                         <Route path='/contact' component={ContactUs} />
+                        <Route path='/faq' component={FAQ} />
+                        <Route path='/blog1' component={BlogDetails1} />
+                        <Route path='/blog2' component={BlogDetails2} />
+                        <Route path='/blog3' component={BlogDetails3} />
                         <Route path='/technology' component={Technology} />
                         <Footer/>
                     </Switch>

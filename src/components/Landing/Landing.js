@@ -19,7 +19,7 @@ const Landing = () => {
 
     const { ClientCount, TotalCase, RedCase } = statisticState
 
-
+    
 
     return (
         <section>
@@ -528,89 +528,52 @@ const Landing = () => {
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
                                 <div className="owl-item">
-                                    <div className="item bg-white p-2">
+                                    <div className="item">
                                         <div className="container">
-                                            <img src="images/landing/clients/amazon.png" className="img-fluid" />
+                                            <div className="testimonial bg-white">
+                                            <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p> 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item bg-white p-2">
+                                    <div className="item">
                                         <div className="container">
-                                            <img src="images/landing/clients/conduent.png" className="img-fluid" />
+                                            <div className="testimonial bg-white">
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item bg-white p-2">
+                                    <div className="item">
                                         <div className="container">
-                                            <img src="images/landing/clients/icici.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/hdfclife.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/infosys.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/logo-without_punch_line.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/outsource.jpg" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/quess.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/sbilife.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/tatamotors.png" className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item bg-white p-2">
-                                        <div className="container">
-                                            <img src="images/landing/clients/xoriant.png" className="img-fluid" />
+                                            <div className="testimonial bg-white">
+                                                <p className="description text-white">
+                                                    is simply dummy text of the printing
+                                                    and typesetting industry. Lorem
+                                                    Ipsum has been the industry's
+                                                    standard dummy text ever since the
+                                                    1500s, when an unknown printer took
+                                                    a galley of type and scrambled it to
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

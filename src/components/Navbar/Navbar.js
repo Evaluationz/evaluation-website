@@ -13,13 +13,23 @@ const Navbar = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [formState, updateFormState] = useState(formData);
+    const [validated, setValidated] = useState(false);
 
-    async function Contactus(){
+    async function Contactus(event){
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        else{
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
         let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
         handleClose()
+        }
+        setValidated(true);
     }
+
 
     function onChange(e){
         e.persist();
@@ -123,11 +133,11 @@ const Navbar = () => {
                 <Modal.Body>
                     <div className="about-section contact-us-section bg-white">
                         <div className="container">
-                            <Form method="POST">
+                            <Form noValidate validated={validated} onSubmit={Contactus}>
                                 <Form.Group className="mb-0" controlId="formPlaintextEmail">
                                     <div className="row align-items-center ">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
+                                            <Form.Control type="text" required className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
@@ -142,12 +152,12 @@ const Navbar = () => {
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
+                                            <Form.Control type="email" required name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
+                                            <Form.Control type="number" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
                                         </div>
                                         <div className="col-lg-6 pb-3">
                                             <Form.Control type="text" name="city" className="shadow-sm" onChange={onChange} placeholder="City" />
@@ -164,7 +174,7 @@ const Navbar = () => {
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={Contactus}>
+                    <Button variant="primary" type='submit'>
                         Submit
                     </Button>
                 </Modal.Footer>

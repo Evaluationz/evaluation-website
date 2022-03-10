@@ -19,7 +19,7 @@ const Landing = () => {
 
     const { ClientCount, TotalCase, RedCase } = statisticState
 
-    
+
 
     return (
         <section>
@@ -528,52 +528,89 @@ const Landing = () => {
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item bg-white p-2">
                                         <div className="container">
-                                            <div className="testimonial bg-white">
-                                            <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p> 
-                                            </div>
+                                            <img src="images/landing/clients/amazon.png" className="img-fluid" />
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item bg-white p-2">
                                         <div className="container">
-                                            <div className="testimonial bg-white">
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
+                                            <img src="images/landing/clients/conduent.png" className="img-fluid" />
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item bg-white p-2">
                                         <div className="container">
-                                            <div className="testimonial bg-white">
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
+                                            <img src="images/landing/clients/icici.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/hdfclife.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/infosys.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/logo-without_punch_line.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/outsource.jpg" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/quess.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/sbilife.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/tatamotors.png" className="img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="owl-item">
+                                    <div className="item bg-white p-2">
+                                        <div className="container">
+                                            <img src="images/landing/clients/xoriant.png" className="img-fluid" />
                                         </div>
                                     </div>
                                 </div>
@@ -688,7 +725,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-1/Image-1.png" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-1/image-1.png" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and
@@ -707,7 +744,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-2/Image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-2/image-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
                                                             <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
@@ -724,7 +761,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-3/Image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-3/image-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
                                                             <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>

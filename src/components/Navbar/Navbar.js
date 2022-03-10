@@ -2,23 +2,49 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import Alert from 'react-bootstrap/Alert';
 import {Form, Row} from "react-bootstrap";
 import axios from "axios";
 
 
 const formData = { name:'',company:'',title:'',email:'',phone:'',city:'',message:''}
+const alertSettings = {
+    variant:'' , msg:'' , alertStatus: false
+  }
+
 const Navbar = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [formState, updateFormState] = useState(formData);
+    const [validateform, setValidatedForm] = useState(false);
+    const [ alertState, updateAlertState ] = useState(alertSettings);
+    const { alertStatus,variant,msg } = alertState
+
 
     async function Contactus(){
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
+        if(name!="" && email!="")
+       {
         let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
         handleClose()
+       }
+       else
+       {
+        setValidatedForm(false);
+        var msg = 'Please Enter Your Name and Email Address ';
+        updateAlertState(() => ({...alertState,alertStatus:true,variant:'danger' , msg:msg}))
+        setTimeout(() => {
+            updateAlertState(() => ({ ...alertState, alertStatus: false, variant: '', msg: '' }))
+  
+          }, 3000);
+          //handleClose()
+      
+       }
+     
+       
     }
 
     function onChange(e){
@@ -117,17 +143,19 @@ const Navbar = () => {
             </div>
 
             <Modal show={show} onHide={handleClose}>
+            <Alert show={alertStatus} variant={variant}>{msg}</Alert>
                 <Modal.Header closeButton>
+                
                     <Modal.Title>Get in Touch</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div className="about-section contact-us-section bg-white">
                         <div className="container">
-                            <Form method="POST">
+                            <Form noValidate validated={validateform} method="POST">
                                 <Form.Group className="mb-0" controlId="formPlaintextEmail">
                                     <div className="row align-items-center ">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
+                                            <Form.Control type="text" required className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
@@ -142,12 +170,12 @@ const Navbar = () => {
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
+                                            <Form.Control type="email" required name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
+                                            <Form.Control type="number" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
                                         </div>
                                         <div className="col-lg-6 pb-3">
                                             <Form.Control type="text" name="city" className="shadow-sm" onChange={onChange} placeholder="City" />

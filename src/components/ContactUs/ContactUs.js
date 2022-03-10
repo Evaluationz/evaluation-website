@@ -7,11 +7,20 @@ const formData = { name:'',company:'',title:'',email:'',phone:'',city:'',message
 
 const ContactUs = () => {
     const [formState, updateFormState] = useState(formData);
+    const [validated, setValidated] = useState(false);
 
-    async function Contactus(){
+    async function Contactus(event){
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        else{
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
         let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
+        }
+        setValidated(true);
     }
 
     function onChange(e){
@@ -77,11 +86,11 @@ const ContactUs = () => {
                         <p className="text-black mb-0">If you have a specific query, please fill this form and we will get back to you soon.</p>
                     </div>
 
-                    <Form>
+                    <Form noValidate validated={validated} onSubmit={Contactus}>
                         <Form.Group as={Row} className="mb-12" controlId="formPlaintextEmail">
                             <div className="row align-items-center ">
                                 <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" className="shadow-lg" name="name" onChange={onChange} placeholder="Name" />
+                                    <Form.Control type="text" required className="shadow-lg" name="name" onChange={onChange} placeholder="Name" />
                                 </div>
                             </div>
                             <div className="row align-items-center">
@@ -96,12 +105,12 @@ const ContactUs = () => {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" name="email" className="shadow-lg" onChange={onChange} placeholder="Email" />
+                                    <Form.Control type="email" required name="email" className="shadow-lg" onChange={onChange} placeholder="Email" />
                                 </div>
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-6 pb-30">
-                                    <Form.Control type="text" name="phone" className="shadow-lg" onChange={onChange} placeholder="Phone" />
+                                    <Form.Control type="number" name="phone" className="shadow-lg" onChange={onChange} placeholder="Phone" />
                                 </div>
                                 <div className="col-lg-6 pb-30">
                                     <Form.Control type="text" name="city" className="shadow-lg" onChange={onChange} placeholder="City" />
@@ -114,7 +123,7 @@ const ContactUs = () => {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <Button onClick={Contactus} className="btn btn-primary btn-red shadow-lg font-weight-bolder" >Submit</Button>
+                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" >Submit</Button>
                                 </div>
                             </div>
                         </Form.Group>

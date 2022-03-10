@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Landing from "../components/Landing/Landing";
 import AboutUs from "../components/AboutUs/AboutUs";
 import Careers from "../components/Careers/Careers";
-import SuccessStories from "../components/SuccessStories/SuccessStories";
+import CaseStudies from "../components/CaseStudies/CaseStudies";
 import Services from "../components/Services/Services";
 import Blog from "../components/Blog/BlogLanding";
 import ContactUs from "../components/ContactUs/ContactUs";
@@ -38,7 +38,7 @@ const App = () => {
                         <Route path='/' exact component={Landing} />
                         <Route path='/about-us' component={AboutUs} />
                         <Route path='/careers' component={Careers} />
-                        <Route path='/success-stories' component={SuccessStories} />
+                        <Route path='/case-studies' component={CaseStudies} />
                         <Route path='/services' component={Services} />
                         <Route path='/blog' component={Blog} />
                         <Route path='/industries' component={Industries} />

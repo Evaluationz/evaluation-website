@@ -16,12 +16,12 @@ const ContactUs = () => {
                 <div className="container pt-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
-                            <div className="about-section-item about-item-image text-center">
+                            <div className="about-section-item about-item-image text-md-left text-center">
                                 <img src="images/contact-us/image-1.png" alt="shape" className="blue-image-left" />
                             </div>
                         </div>
 
-                        <div className="col-lg-4 pb-30">
+                        <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h1 className="text-white font-weight-bolder">We’d love to hear from you.</h1>
@@ -57,10 +57,11 @@ const ContactUs = () => {
 
             <div className="about-section contact-us-section bg-light-gray pt-5 pb-1">
                 <div className="container">
-                    <div className="section-title section-title-left text-start">
+                    <div className="section-title section-title-left mb-3 text-start">
                         <h3 className="text-black font-weight-bolder">Get in Touch</h3>
-                        <p className="text-black">If you have a specific query, please fill this form and we will get back to you soon.</p>
+                        <p className="text-black mb-0">If you have a specific query, please fill this form and we will get back to you soon.</p>
                     </div>
+
                     <Form method="POST">
                         <Form.Group as={Row} className="mb-12" controlId="formPlaintextEmail">
                             <div className="row align-items-center ">
@@ -93,7 +94,7 @@ const ContactUs = () => {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <textarea className="form-control shadow-lg"  placeholder="Message/Query" />
+                                    <textarea className="form-control shadow-lg" style={{maxHeight: '150px', height: '150px'}} placeholder="Message/Query" />
                                 </div>
                             </div>
                             <div className="row align-items-center">

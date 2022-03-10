@@ -129,7 +129,29 @@ const Technology = () => {
                         </div>
                     </div>
                 </div>
-            </div>           
+            </div>
+
+            <div className="about-section bg-white pt-4 pb-2">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-md-3 mb-3">
+                            <img src="images/technology/bx-block.png" alt="shape" className=""/>
+                        </div>
+
+                        <div className="col-md-3 mb-3">
+                            <img src="images/technology/ex-block.png" alt="shape" className=""/>
+                        </div>
+
+                        <div className="col-md-3 mb-3">
+                            <img src="images/technology/dx-block.png" alt="shape" className=""/>
+                        </div>
+
+                        <div className="col-md-3 mb-3">
+                            <img src="images/technology/cx-block.png" alt="shape" className=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };

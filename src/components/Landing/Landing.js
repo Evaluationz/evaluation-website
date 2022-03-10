@@ -295,28 +295,28 @@ const Landing = () => {
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-2.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-2.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Education Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-3.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-3.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Employment Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-4.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-4.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Digital Address Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-5.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-5.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Criminal Record Check
                             </span>
@@ -325,35 +325,35 @@ const Landing = () => {
 
                     <div className="row align-items-center my-md-4">
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-6.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-6.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Social Media Check
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-7.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-7.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Reference Check
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-8.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-8.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Drug Test
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-9.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-9.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Digital Passport Verification
                             </span>
                         </div>
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/landing/icons/Icon-10.png" alt="shape" width="80" />
+                            <img src="images/landing/icons/icon-10.png" alt="shape" width="80" />
                             <span className="font-weight-bold ml-2">
                                 Credit Check
                             </span>

@@ -2,7 +2,6 @@ import React,{Component}from "react";
 import { Helmet } from 'react-helmet';
 import { Button, Alert, Form, Row, Col } from 'react-bootstrap';
 
-
 const ContactUs = () => {
     return (
         <section>
@@ -32,7 +31,7 @@ const ContactUs = () => {
                                         BHIVE Workspace, 29 MG Road
                                         7TH Floor, Mahalakshmi Chambers
                                         Next to Trinity Metro Station,
-                                        Bangalore – 560001</p>
+                                        Bangalore - 560001</p>
                                 </div>
                             </div>
                         </div>

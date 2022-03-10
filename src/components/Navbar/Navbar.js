@@ -109,35 +109,35 @@ const Navbar = () => {
                             <Form method="POST">
                                 <Form.Group className="mb-0" controlId="formPlaintextEmail">
                                     <div className="row align-items-center ">
-                                        <div className="col-lg-12 pb-3">
+                                        <div className="col-lg-12 px-0 pb-3">
                                             <Form.Control type="text" className="shadow-sm" name="" placeholder="Name" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
+                                        <div className="col-lg-12 px-0 pb-3">
                                             <Form.Control type="text" name="" className="shadow-sm" placeholder="Company" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
+                                        <div className="col-lg-12 px-0 pb-3">
                                             <Form.Control type="text" name="" className="shadow-sm" placeholder="Title" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
+                                        <div className="col-lg-12 px-0 pb-3">
                                             <Form.Control type="text" name="" className="shadow-sm" placeholder="Email" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
-                                        <div className="col-lg-6 pb-3">
+                                        <div className="col-lg-6 pl-0 pb-3">
                                             <Form.Control type="text" name="" className="shadow-sm" placeholder="Phone" />
                                         </div>
-                                        <div className="col-lg-6 pb-3">
+                                        <div className="col-lg-6 pr-0 pb-3">
                                             <Form.Control type="text" name="" className="shadow-sm" placeholder="City" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
+                                        <div className="col-lg-12 px-0 pb-3">
                                             <textarea className="form-control shadow-sm" style={{maxHeight: '100px', height: '100px'}} placeholder="Message/Query" />
                                         </div>
                                     </div>

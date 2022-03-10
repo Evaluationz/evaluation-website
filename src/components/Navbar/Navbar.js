@@ -3,12 +3,29 @@ import {Link} from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import {Form, Row} from "react-bootstrap";
+import axios from "axios";
 
+
+const formData = { name:'',company:'',title:'',email:'',phone:'',city:'',message:''}
 const Navbar = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [formState, updateFormState] = useState(formData);
+
+    async function Contactus(){
+        const { name,company,title,email,phone,city,message } = formState;
+        const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
+        let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
+        handleClose()
+    }
+
+    function onChange(e){
+        e.persist();
+        updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
+    }    
+
 
     return (
         <div className="fixed-top non-fixed">
@@ -110,35 +127,35 @@ const Navbar = () => {
                                 <Form.Group className="mb-0" controlId="formPlaintextEmail">
                                     <div className="row align-items-center ">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" className="shadow-sm" name="" placeholder="Name" />
+                                            <Form.Control type="text" className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Company" />
+                                            <Form.Control type="text" name="company" className="shadow-sm" onChange={onChange} placeholder="Company" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Title" />
+                                            <Form.Control type="text" name="title" className="shadow-sm" onChange={onChange} placeholder="Title" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Email" />
+                                            <Form.Control type="text" name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Phone" />
+                                            <Form.Control type="text" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
                                         </div>
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="City" />
+                                            <Form.Control type="text" name="city" className="shadow-sm" onChange={onChange} placeholder="City" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <textarea className="form-control shadow-sm" style={{maxHeight: '100px', height: '100px'}} placeholder="Message/Query" />
+                                            <textarea className="form-control shadow-sm" name="message" onChange={onChange} style={{maxHeight: '100px', height: '100px'}} placeholder="Message/Query" />
                                         </div>
                                     </div>
                                 </Form.Group>
@@ -147,7 +164,7 @@ const Navbar = () => {
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button variant="primary" onClick={Contactus}>
                         Submit
                     </Button>
                 </Modal.Footer>

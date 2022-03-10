@@ -82,7 +82,7 @@ const Footer = () => {
                                                 BHIVE Workspace, 29 MG Road,
                                                 7th Floor-Mahalaxmi Chambers,
                                                 Next to Trinity Metro Station,
-                                                Bangalore — 560001</p>
+                                                Bangalore - 560001</p>
                                         </div>
                                     </div>
                                 </div>

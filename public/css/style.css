@@ -6436,7 +6436,21 @@ select.form-control {
 .client-carousel button i {
   font-size: 3rem;
 }
-
+.client-carousel .owl-stage .owl-item .item{
+  border-radius: 5rem;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-carousel .owl-stage .owl-item .item .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-carousel .owl-stage .owl-item .item img{
+  max-width: 150px;
+}
 
 /*Blogs*/
 .blog{

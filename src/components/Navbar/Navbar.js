@@ -50,7 +50,7 @@ const Navbar = () => {
     function onChange(e){
         e.persist();
         updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
-    }    
+    }
 
 
     return (

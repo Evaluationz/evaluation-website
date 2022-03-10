@@ -4,6 +4,19 @@ import { Button, Alert, Form, Row, Col } from 'react-bootstrap';
 
 
 const ContactUs = () => {
+    const [formState, updateFormState] = useState(formData);
+
+    async function Contactus(){
+        const { name,company,title,email,phone,city,message } = formState;
+        const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
+        let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
+    }
+
+    function onChange(e){
+        e.persist();
+        updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
+    }
+
     return (
         <section>
             <Helmet>
@@ -32,7 +45,7 @@ const ContactUs = () => {
                                         BHIVE Workspace, 29 MG Road
                                         7TH Floor, Mahalakshmi Chambers
                                         Next to Trinity Metro Station,
-                                        Bangalore – 560001</p>
+                                        Bangalore - 560001</p>
                                 </div>
                             </div>
                         </div>

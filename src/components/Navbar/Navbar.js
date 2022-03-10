@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import {Form, Row} from "react-bootstrap";
 
-const navbar = () => {
+const Navbar = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <div className="fixed-top non-fixed">
             <div className="navbar-area sticky-black bg-black is-sticky">
@@ -81,8 +89,8 @@ const navbar = () => {
                                            className="nav-link">CONTACT</Link>
                                     </li>
                                     <li className="nav-item nav-btn">
-                                        <Link to="/get-in-touch"
-                                           className="nav-link">GET IN TOUCH</Link>
+                                        <a  onClick={handleShow}
+                                           className="nav-link cursor-pointer">GET IN TOUCH</a>
                                     </li>
                                 </ul>
                             </div>
@@ -90,8 +98,62 @@ const navbar = () => {
                     </div>
                 </div>
             </div>
+
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Get in Touch</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="about-section contact-us-section bg-white">
+                        <div className="container">
+                            <Form method="POST">
+                                <Form.Group className="mb-0" controlId="formPlaintextEmail">
+                                    <div className="row align-items-center ">
+                                        <div className="col-lg-12 pb-3">
+                                            <Form.Control type="text" className="shadow-sm" name="" placeholder="Name" />
+                                        </div>
+                                    </div>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-12 pb-3">
+                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Company" />
+                                        </div>
+                                    </div>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-12 pb-3">
+                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Title" />
+                                        </div>
+                                    </div>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-12 pb-3">
+                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-6 pb-3">
+                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="Phone" />
+                                        </div>
+                                        <div className="col-lg-6 pb-3">
+                                            <Form.Control type="text" name="" className="shadow-sm" placeholder="City" />
+                                        </div>
+                                    </div>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-12 pb-3">
+                                            <textarea className="form-control shadow-sm" style={{maxHeight: '100px', height: '100px'}} placeholder="Message/Query" />
+                                        </div>
+                                    </div>
+                                </Form.Group>
+                            </Form>
+                        </div>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="primary" onClick={handleClose}>
+                        Submit
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 };
 
-export default navbar;
+export default Navbar;

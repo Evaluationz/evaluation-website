@@ -85,7 +85,7 @@ jQuery(function ($) {
     $(".client-carousel").owlCarousel({
         loop: true,
         items: 3,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1500,
         margin: 5,
         dots: false,
@@ -109,7 +109,7 @@ jQuery(function ($) {
         loop: true,
         items: 3,
         center:true,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1500,
         margin: 30,
         dots: false,
@@ -131,4 +131,9 @@ jQuery(function ($) {
             }
         }
     });
+
+    /*Refresh Page click on Browser back button*/
+    window.onpopstate = function () {
+        location.reload()
+    };
 });

@@ -6440,6 +6440,7 @@ select.form-control {
 .client-carousel .owl-stage .owl-item .item{
   border-radius: 5rem;
   min-height: 150px;
+  margin: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import { withRouter } from "react-router-dom";
+import withRouter from "react-router-dom/es/withRouter";
 
 class ScrollIntoView extends PureComponent {
     componentDidMount = () => window.scrollTo(0, 0);

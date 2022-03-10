@@ -1,55 +1,42 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import Alert from 'react-bootstrap/Alert';
-import {Form, Row} from "react-bootstrap";
+import { Form, Row } from "react-bootstrap";
 import axios from "axios";
 
 
-const formData = { name:'',company:'',title:'',email:'',phone:'',city:'',message:''}
-const alertSettings = {
-    variant:'' , msg:'' , alertStatus: false
-  }
-
+const formData = { name: '', company: '', title: '', email: '', phone: '', city: '', message: '' }
 const Navbar = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [formState, updateFormState] = useState(formData);
-    const [validateform, setValidatedForm] = useState(false);
-    const [ alertState, updateAlertState ] = useState(alertSettings);
-    const { alertStatus,variant,msg } = alertState
+    const [validated, setValidated] = useState(false);
 
-
-    async function Contactus(){
-        const { name,company,title,email,phone,city,message } = formState;
-        const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
-        if(name!="" && email!="")
-       {
-        let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
-        handleClose()
-       }
-       else
-       {
-        setValidatedForm(false);
-        var msg = 'Please Enter Your Name and Email Address ';
-        updateAlertState(() => ({...alertState,alertStatus:true,variant:'danger' , msg:msg}))
-        setTimeout(() => {
-            updateAlertState(() => ({ ...alertState, alertStatus: false, variant: '', msg: '' }))
-  
-          }, 3000);
-          //handleClose()
-      
-       }
-     
-       
+    async function Contactus(event) {
+        const form = event.currentTarget;
+        console.log("form data", form)
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        else {
+         
+            console.log("inside else")
+            const { name, company, title, email, phone, city, message } = formState;
+            const postData = { "name": name, "company": company, "title": title, "email": email, "phone": phone, "city": city, "message": message }
+            let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs", postData);
+            
+    
+        }
+        setValidated(true);
     }
 
-    function onChange(e){
+    function onChange(e) {
         e.persist();
-        updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
+        updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
     }
 
 
@@ -58,10 +45,10 @@ const Navbar = () => {
             <div className="navbar-area sticky-black bg-black is-sticky">
                 <div className="container-fluid">
                     <div className="mobile-nav">
-                        <Link to="/" onClick={() => {window.location.href="/"}} className="mobile-brand">
+                        <Link to="/" onClick={() => { window.location.href = "/" }} className="mobile-brand">
                             <div className="d-flex align-items-center justify-content-start">
-                                <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50}/>
-                                <img src="images/logo.png" alt="logo" className="logo logo-image"/>
+                                <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50} />
+                                <img src="images/logo.png" alt="logo" className="logo logo-image" />
                             </div>
                         </Link>
                     </div>
@@ -70,10 +57,10 @@ const Navbar = () => {
                     <div className="container-fluid px-0">
                         <nav className="navbar navbar-expand-md navbar-light px-0">
                             <Link className="navbar-brand mr-0"
-                               to="/" onClick={() => {window.location.href="/"}}>
+                                to="/" onClick={() => { window.location.href = "/" }}>
                                 <div className="d-flex align-items-center justify-content-start">
-                                    <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50}/>
-                                    <img src="images/logo.png" alt="logo" className="logo logo-image"/>
+                                    <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50} />
+                                    <img src="images/logo.png" alt="logo" className="logo logo-image" />
                                 </div>
                             </Link>
                             <div className="collapse navbar-collapse mean-menu d-block" id="navbarSupportedContent">
@@ -106,11 +93,11 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/technology"
-                                              className="nav-link">TECHNOLOGY</Link>
+                                            className="nav-link">TECHNOLOGY</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/about-us"
-                                              className="nav-link">ABOUT</Link>
+                                            className="nav-link">ABOUT</Link>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link dropdown-toggle">INSIGHTS</a>
@@ -125,15 +112,15 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/careers"
-                                           className="nav-link">CAREERS</Link>
+                                            className="nav-link">CAREERS</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/contact"
-                                           className="nav-link">CONTACT</Link>
+                                            className="nav-link">CONTACT</Link>
                                     </li>
                                     <li className="nav-item nav-btn">
-                                        <a  onClick={handleShow}
-                                           className="nav-link cursor-pointer">GET IN TOUCH</a>
+                                        <a onClick={handleShow}
+                                            className="nav-link cursor-pointer">GET IN TOUCH</a>
                                     </li>
                                 </ul>
                             </div>
@@ -142,20 +129,21 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <Modal show={show} onHide={handleClose}>
-            <Alert show={alertStatus} variant={variant}>{msg}</Alert>
+            <Modal show={show} onHide={handleClose} >
                 <Modal.Header closeButton>
-                
                     <Modal.Title>Get in Touch</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div className="about-section contact-us-section bg-white">
                         <div className="container">
-                            <Form noValidate validated={validateform} method="POST">
+                            <Form noValidate validated={validated} onSubmit={Contactus}>
                                 <Form.Group className="mb-0" controlId="formPlaintextEmail">
                                     <div className="row align-items-center ">
                                         <div className="col-lg-12 pb-3">
                                             <Form.Control type="text" required className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
+                                            <Form.Control.Feedback type="invalid">
+                                                Please provide your name.
+                                            </Form.Control.Feedback>
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
@@ -171,6 +159,9 @@ const Navbar = () => {
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
                                             <Form.Control type="email" required name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
+                                            <Form.Control.Feedback type="invalid">
+                                                Please provide your Email Address.
+                                            </Form.Control.Feedback>
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
@@ -183,18 +174,19 @@ const Navbar = () => {
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <textarea className="form-control shadow-sm" name="message" onChange={onChange} style={{maxHeight: '100px', height: '100px'}} placeholder="Message/Query" />
+                                            <textarea className="form-control shadow-sm" name="message" onChange={onChange} style={{ maxHeight: '100px', height: '100px' }} placeholder="Message/Query" />
                                         </div>
                                     </div>
+                                    <Button type="submit" variant="primary">
+                                        Submit
+                                    </Button>
                                 </Form.Group>
                             </Form>
                         </div>
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={Contactus}>
-                        Submit
-                    </Button>
+
                 </Modal.Footer>
             </Modal>
         </div>

@@ -56,7 +56,7 @@ const Landing = () => {
                                 <div className="card-header border-b-0 bg-red">
                                     <h1 className="card-title text-white font-weight-bolder mb-0">Commitment</h1>
                                 </div>
-                                <img className="card-img-top img-fluid" src="images/careers/Image-2.png" alt="shape"/>
+                                <img className="card-img-top img-fluid" src="images/careers/image-2.png" alt="shape"/>
                                 <div className="card-body bg-red">
                                     <p className="card-text text-white">The company’s commitment to staying at the edge of
                                         verification technology, is transmuted into our work
@@ -73,7 +73,7 @@ const Landing = () => {
                                 <div className="card-header border-b-0 bg-blue">
                                     <h1 className="card-title text-white font-weight-bolder mb-0">Team work</h1>
                                 </div>
-                                <img className="card-img-top img-fluid" src="images/careers/Image-3.png" alt="shape"/>
+                                <img className="card-img-top img-fluid" src="images/careers/image-3.png" alt="shape"/>
                                 <div className="card-body bg-blue">
                                     <p className="card-text text-white">Great technology is built and runs on collaboration. At
                                         Evaluationz, we ensure that nobody works in silos, and
@@ -89,7 +89,7 @@ const Landing = () => {
                                 <div className="card-header border-b-0 bg-blue">
                                     <h1 className="card-title text-white font-weight-bolder mb-0">Integrity</h1>
                                 </div>
-                                <img className="card-img-top img-fluid" src="images/careers/Image-4.png" alt="shape"/>
+                                <img className="card-img-top img-fluid" src="images/careers/image-4.png" alt="shape"/>
                                 <div className="card-body bg-blue">
                                     <p className="card-text text-white">Integrity is at the core of the success of Evaluationz.
                                         After all, an organization that is founded on the
@@ -104,7 +104,7 @@ const Landing = () => {
                                 <div className="card-header border-b-0 bg-red">
                                     <h1 className="card-title text-white font-weight-bolder mb-0">Mutual Respect</h1>
                                 </div>
-                                <img className="card-img-top img-fluid" src="images/careers/Image-5.png" alt="shape"/>
+                                <img className="card-img-top img-fluid" src="images/careers/image-5.png" alt="shape"/>
                                 <div className="card-body bg-red">
                                     <p className="card-text text-white">We create an atmosphere where every employee is
                                         treated with respect and feels valued. And this is

@@ -12,11 +12,11 @@ const Landing = () => {
 
             </Helmet>
 
-            <div className="about-section bg-red pt-100 pb-70">
-                <div className="container">
+            <div className="about-section bg-red py-4 mt-5">
+                <div className="container pt-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
-                            <div className="about-section-item about-item-image text-center">
+                            <div className="about-section-item about-item-image text-md-left text-center">
                                 <img src="images/about-us/image-1.jpg" alt="shape" className="blue-image-left"/>
                             </div>
                         </div>
@@ -32,10 +32,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h1 className="c-red font-weight-bolder">Who We Are</h1>
@@ -62,10 +62,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-blue pt-100 pb-70">
+            <div className="about-section bg-blue py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h1 className="text-white font-weight-bolder">What We Do</h1>
@@ -88,10 +88,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h1 className="c-red font-weight-bolder">Core Values</h1>
@@ -105,7 +105,7 @@ const Landing = () => {
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
                                     <h3 className="text-white">Integrity</h3>
-                                    <p className="text-white">
+                                    <p className="text-white mb-0">
                                         Because an organization founded on the concept of
                                         verification and truth-finding has to live the principle.
                                     </p>
@@ -117,7 +117,7 @@ const Landing = () => {
                             <div className="card h-100">
                                 <div className="card-body bg-red">
                                     <h3 className="text-white">Commitment</h3>
-                                    <p className="text-white">
+                                    <p className="text-white mb-0">
                                         Because commitment to staying at the edge of
                                         verification technology encourages innovation, skills,
                                         and future thinking.
@@ -130,7 +130,7 @@ const Landing = () => {
                             <div className="card h-100">
                                 <div className="card-body bg-red">
                                     <h3 className="text-white">Teamwork</h3>
-                                    <p className="text-white">
+                                    <p className="text-white mb-0">
                                         Because great technology is built and runs on
                                         collaboration.
                                     </p>
@@ -142,7 +142,7 @@ const Landing = () => {
                             <div className="card h-100">
                                 <div className="card-body bg-blue">
                                     <h3 className="text-white">Mutual Respect</h3>
-                                    <p className="text-white">
+                                    <p className="text-white mb-0">
                                         Because an atmosphere where every employee is
                                         treated with respect and feels valued creates
                                         something bigger.
@@ -154,10 +154,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h1 className="c-blue font-weight-bolder">Leadership Team</h1>
@@ -168,8 +168,8 @@ const Landing = () => {
 
                     <div className="row">
                         <div className="col-md-6 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -200,14 +200,14 @@ const Landing = () => {
                                         industry.</p>
                                     <p>Nobby is an avid squash player, golfer and loves nature.</p>
 
-                                    <Link to="/www.linkedin.com/in/nobbynazareth/">www.linkedin.com/in/nobbynazareth/</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/nobbynazareth/"}} target="_blank">www.linkedin.com/in/nobbynazareth/</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-6 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -237,14 +237,14 @@ const Landing = () => {
                                         from Pace University, New York as well as a Masters in
                                         Business Administration degree.</p>
 
-                                    <Link to="/www.linkedin.com/in/manikandaramasamy/">www.linkedin.com/in/manikandaramasamy/</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/manikandaramasamy/"}} target="_blank">www.linkedin.com/in/manikandaramasamy/</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-6 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -276,14 +276,14 @@ const Landing = () => {
                                         free time, he loves cooking and playing the flute.
                                     </p>
 
-                                    <Link to="/www.linkedin.com/in/piyushnjha/">www.linkedin.com/in/piyushnjha/</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/piyushnjha/"}} target="_blank">www.linkedin.com/in/piyushnjha/</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-6 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -308,14 +308,14 @@ const Landing = () => {
                                         Parvathi is also passionate about sports and cooking.
                                     </p>
 
-                                    <Link to="/www.linkedin.com/in/parvathi-shankar-a5659b63/">www.linkedin.com/in/parvathi-shankar-a5659b63/</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/parvathi-shankar-a5659b63/"}} target="_blank">www.linkedin.com/in/parvathi-shankar-a5659b63/</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-12 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -336,7 +336,7 @@ const Landing = () => {
                                         business and drives greater focus. He is an astute Finance Professional with over 20 years of experience in spearheading
                                         entire Finance, Accounts, Compliance & Taxation related operations.</p>
 
-                                    <Link to="/www.linkedin.com/in/ganeshan-n-c-467992165/">www.linkedin.com/in/ganeshan-n-c-467992165/</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/ganeshan-n-c-467992165/"}} target="_blank">www.linkedin.com/in/ganeshan-n-c-467992165/</Link>
                                 </div>
                             </div>
                         </div>
@@ -344,10 +344,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-white pt-100 pb-70">
+            <div className="about-section bg-white py-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
                                 <div className="section-title section-title-left text-start">
                                     <h1 className="c-red font-weight-bolder">Board of Directors</h1>
@@ -358,8 +358,8 @@ const Landing = () => {
 
                     <div className="row">
                         <div className="col-md-6 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -391,14 +391,14 @@ const Landing = () => {
                                         industry.</p>
                                     <p>Nobby is an avid squash player, golfer and loves nature.</p>
 
-                                    <Link to="/www.linkedin.com/in/nobbynazareth/">www.linkedin.com/in/nobbynazareth/</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/nobbynazareth/"}} target="_blank">www.linkedin.com/in/nobbynazareth/</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-6 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -425,14 +425,14 @@ const Landing = () => {
                                         Council of India
                                     </p>
 
-                                    <Link to="/www.linkedin.com/in/mathew-k-k-99b35b12">www.linkedin.com/in/mathew-k-k-99b35b12</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/mathew-k-k-99b35b12/"}} target="_blank">www.linkedin.com/in/mathew-k-k-99b35b12</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-12 py-2">
-                            <div className="card h-100 text-white">
-                                <ul className="media__container pl-0">
+                            <div className="card h-100 shadow-sm text-white">
+                                <ul className="media__container pl-0 mb-0">
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
@@ -459,7 +459,7 @@ const Landing = () => {
                                         and Bachelor of Electronics Engineering from Bangalore University.
                                     </p>
 
-                                    <Link to="/www.linkedin.com/in/tmmaheshwar">www.linkedin.com/in/tmmaheshwar</Link>
+                                    <Link to={{pathname: "https://www.linkedin.com/in/tmmaheshwar/"}} target="_blank">www.linkedin.com/in/tmmaheshwar</Link>
                                 </div>
                             </div>
                         </div>

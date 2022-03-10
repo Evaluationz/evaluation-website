@@ -87,19 +87,19 @@ jQuery(function ($) {
         items: 3,
         autoplay: true,
         smartSpeed: 1500,
-        margin: 30,
+        margin: 5,
         dots: false,
         nav: true,
         navText: ["<i class='mdi mdi-chevron-left text-white'></i>", "<i class='mdi mdi-chevron-right text-white'></i>"],
         responsive:{
             0: {
-                items: 1
-            },
-            768: {
                 items: 2
             },
-            992: {
+            768: {
                 items: 3
+            },
+            992: {
+                items: 4
             }
         }
     });

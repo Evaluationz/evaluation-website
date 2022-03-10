@@ -11,14 +11,15 @@ const Blog = () => {
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
             </Helmet>
-            <div className="hero-block p-tb-100">
-                <div className="container">
+
+            <div className="hero-block pt-4 pb-5 mt-5">
+                <div className="container pt-5">
                     <div className="col-12 px-0">
                         <h1>Blogs</h1>
                     </div>
                     <div className="row d-flex justify-content-between">
-                        <div className="col-md-4 py-2" onClick={ () => history.push(`/blog1`)}>
-                            <div className="user-card h-100 bg-white">
+                        <div className="col-md-4 py-2 cursor-pointer" onClick={ () => history.push(`/blog1`)}>
+                            <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-1/image-1.png" alt="blog"/>
                                 </div>
@@ -27,26 +28,28 @@ const Blog = () => {
                                     <h4>Why background verification
                                         services are crucial before and
                                         after listing properties</h4>
-                                    <p>The world of rental is fraught with risk. It is a contract
+                                    <p className="mb-0">The world of rental is fraught with risk. It is a contract
                                         between two (usually) complete strangers where the
                                         asset under contract is of tremendous value. With the</p>
                                 </div>
                             </div>
-                         </div>
-                        <div className="col-md-4 py-2" onClick={ () => history.push(`/blog2`)}>
-                            <div className="user-card h-100 bg-white">
+                        </div>
+
+                        <div className="col-md-4 py-2 cursor-pointer" onClick={ () => history.push(`/blog2`)}>
+                            <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-2/image-1.jpg" alt="blog" />
                                 </div>
                                 <div className="card-body">
 
                                     <h4>Hassle-free verification and fraud protection for the fintech industry</h4>
-                                    <p>Recently, social media was abuzz with users discovering that there were loans taken out in their name - loans that they had no idea about. While some of them found out from  </p>
+                                    <p className="mb-0">Recently, social media was abuzz with users discovering that there were loans taken out in their name - loans that they had no idea about. While some of them found out from  </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 py-2" onClick={ () => history.push(`/blog3`)}>
-                            <div className="user-card h-100 bg-white">
+
+                        <div className="col-md-4 py-2 cursor-pointer" onClick={ () => history.push(`/blog3`)}>
+                            <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-3/image-1.jpg" alt="blog" />
                                 </div>
@@ -54,7 +57,7 @@ const Blog = () => {
 
                                     <h4>Ensuring a safer drive for ride-hailing customers
                                     </h4>
-                                    <p>It is a situation that any cab aggregator or ride-hailing company fears. Blaring headlines about driver misbehaviour or criminality.  Unfortunately, they are more common than anybody would imagine.
+                                    <p className="mb-0">It is a situation that any cab aggregator or ride-hailing company fears. Blaring headlines about driver misbehaviour or criminality.  Unfortunately, they are more common than anybody would imagine.
                                         Sample these</p>
                                 </div>
                             </div>

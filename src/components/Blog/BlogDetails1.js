@@ -1,22 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 const BlogDetails = () => {
     return (
         <section>
-           <Helmet>
+            <Helmet>
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
             </Helmet>
-            
-            <div className="about-section bg-white pt-100 mt-5 pb-4">
-                <div className="container">
+
+            <div className="about-section bg-white py-4 mt-5">
+                <div className="container pt-5">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
-                                <div className="section-title section-title-left text-start">
+                                <div className="section-title section-title-left mb-0 text-start">
                                     <h1 className="text-black font-weight-bolder">Why background verification
                                         services are crucial before and
                                         after listing properties</h1>
@@ -26,11 +25,12 @@ const BlogDetails = () => {
                     </div>
                 </div>
             </div>
+
             <div className="about-section col-md-10 p-0 m-0 red-image-right red-image-bottom">
                 <img src="images/blogs/blog-1/image-1.png" alt="shape" className="blog-details-image" />
             </div>
 
-            <div className="about-section bg-white pt-100 pb-4 blue-image-bottom">
+            <div className="about-section bg-white pt-5 blue-image-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 pb-30">
@@ -79,7 +79,7 @@ const BlogDetails = () => {
                                         therefore security to the transaction.</p>
                                     <div className="container">
                                         <div className="row align-items-center">
-                                            <div className="col-lg-12 pt-5 pb-30">
+                                            <div className="col-lg-12 px-0 py-3">
                                                 <div className="text-center">
                                                     <img src="images/blogs/blog-1/image-2.png" alt="shape" className="blog-details-image" />
                                                 </div>

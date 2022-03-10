@@ -1,23 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 const BlogDetails = () => {
     return (
         <section>
-           <Helmet>
+            <Helmet>
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
             </Helmet>
-            
 
-            <div className="about-section bg-white pt-100 mt-5 pb-4">
-                <div className="container">
+            <div className="about-section bg-white py-4 mt-5">
+                <div className="container pt-5">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 pb-30">
+                        <div className="col-lg-12">
                             <div className="about-section-item about-item-details">
-                                <div className="section-title section-title-left text-start">
+                                <div className="section-title section-title-left mb-0 text-start">
                                     <h1 className="text-black font-weight-bolder">Hassle-free verification and fraud protection for the fintech industry</h1>
                                 </div>
                             </div>
@@ -25,11 +23,12 @@ const BlogDetails = () => {
                     </div>
                 </div>
             </div>
+
             <div className="about-section col-md-10 p-0 m-0 red-image-right red-image-bottom">
                 <img src="images/blogs/blog-2/image-1.jpg" alt="shape" className="blog-details-image" />
             </div>
 
-            <div className="about-section bg-white pt-100 pb-4 blue-image-bottom">
+            <div className="about-section bg-white pt-5 blue-image-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 pb-30">
@@ -42,7 +41,7 @@ const BlogDetails = () => {
                                     <p className="text-black font-weight-normal">The term fintech refers to innovative digital technology solutions that aim to optimize financial services and banking. The fintech industry has grown exponentially in the last few years. “India’s overall fintech market opportunity is estimated to be $1.3 Tn by 2025, growing at a CAGR of 31% during 2021-2025. Of this, lending tech is likely to account for 47% ($616 Bn), followed by insurance tech at 26% ($339 Bn) and digital payments at 16% ($208 Bn).” (Source: https://inc42.com/reports/state-of-indian-fintech-infocus-bnpl-q1-2022-report/ )</p>
                                     <p className="text-black font-weight-bold mb-0">Fraud in the fintech industry</p>
                                     <p className="text-black font-weight-normal">Over the last few years, a push towards financial inclusion and a surge in digital access to financial products and services has seen a significant increase in the number of people in the formal financial space.</p>
-                                    
+
                                     <p className="text-black font-weight-normal">The rise in numbers has also been accompanied by an increase in crimes. </p>
                                     <p className="text-black font-weight-normal">A study by TransUnion, an American consumer credit reporting agency, found the percentage of suspected fraudulent digital transaction attempts against businesses originating from India increased 28.32% in 2021 over 2019. </p>
                                     <p className="text-black font-weight-normal">Data from multiple sources point to the same conclusions of an increase in fraud. Making the protection from frauds a prime concern for the fintech industry.</p>
@@ -50,11 +49,11 @@ const BlogDetails = () => {
                                     <p className="text-black font-weight-normal">Fintech players have turned the banking and lending industry on its head. From a seller-focussed, procedure-heavy and time-consuming affair, availing of most financial products or services have now become near-instant, convenient and built with the customer experience in mind.</p>
                                     <p className="text-black font-weight-normal">A large majority of fintech services, mainly in the app/platform space, work on instant or near-instant on-boarding. The benefit of instant approval comes with the burden of instant verification as well.</p>
                                     <p className="text-black font-weight-normal">The verification of information submitted by users to the fintech platform forms the bulwark against the fake profiles and fraudsters. The TransUnion study revealed that financial services had the most significant increase in fraud attempt rate at 88.50%, with true identity theft being the leading factor. </p>
-                                   
+
                                     <p className="text-black font-weight-bold mb-0">Fraud protection for fintech platforms </p>
                                     <div className="container">
                                         <div className="row align-items-center">
-                                            <div className="col-lg-12 pt-5 pb-30">
+                                            <div className="col-lg-12 px-0 py-3">
                                                 <div className="text-center">
                                                     <img src="images/blogs/blog-2/image-2.jpg" alt="shape" className="blog-details-image" />
                                                 </div>

@@ -11,11 +11,11 @@ const Services = () => {
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
 
-            <div className="about-section bg-blue pt-100 pb-70">
+            <div className="about-section bg-blue py-3 mt-5">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pt-5 pb-30">
-                            <div className="service-section-item service-item-image text-center">
+                            <div className="service-section-item service-item-image text-md-left text-center">
                                 <img src="images/services/image-1.jpg" alt="shape" className="red-image-left" />
                             </div>
                         </div>
@@ -31,13 +31,13 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="service-section bg-white pt-70">
+            <div className="service-section bg-white pt-5">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12">
                             <div className="service-section-item service-item-details">
                                 <div className="service-content">
-                                    <p className="font-weight-normal">Evaluationz uses Artificial Intelligence to automate the verification process while staying compliant to statutory norms of data
+                                    <p className="font-weight-normal mb-0">Evaluationz uses Artificial Intelligence to automate the verification process while staying compliant to statutory norms of data
                                         privacy that govern the verification process. Importantly, we have the capability to solution our current identity verification
                                         product with liveness detection and OCR capabilities.</p>
                                 </div>
@@ -47,23 +47,23 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="service-section bg-white">
+            <div className="service-section bg-white py-4">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12">
                             <div className="service-section-item service-item-details">
-                                <div className="section-title section-title-left text-start">
-                                    <h6 className="font-weight-bolder">The list of verifications that Evaluationz offers include:</h6>
+                                <div className="section-title section-title-left mb-2 text-start">
+                                    <h6 className="font-weight-bolder mb-0">The list of verifications that Evaluationz offers include:</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="row">
-                        <div className="col-md-6 py-2">
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-1.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Digital Identity Verification</h3>
                                     </div>
@@ -82,10 +82,10 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 py-2">
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-2.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Digital Address Verification</h3>
                                     </div>
@@ -107,10 +107,10 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 py-2">
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-3.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Credit Score Check</h3>
                                     </div>
@@ -126,10 +126,10 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 py-2">
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-4.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Digital Passport Verification</h3>
                                     </div>
@@ -141,10 +141,11 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 py-2">
+
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-5.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Education Verification</h3>
                                     </div>
@@ -160,10 +161,11 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 py-2">
+
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-6.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Employment Verification</h3>
                                     </div>
@@ -181,14 +183,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 py-2">
+
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-7.png" alt="shape" width="100" />
                                         <div>
-                                        <h3 className="text-white pl-3">Criminal Record Check</h3>
-                                        <p className="text-white pl-3">(Data base checks)</p>
+                                            <h3 className="text-white pl-3">Criminal Record Check</h3>
+                                            <p className="text-white pl-3">(Data base checks)</p>
                                         </div>
                                     </div>
                                     <p className="text-white">
@@ -204,10 +207,11 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 py-2">
+
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-8.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Social Media Check</h3>
                                     </div>
@@ -226,10 +230,11 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 py-2">
+
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-red">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-9.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Reference Check</h3>
                                     </div>
@@ -247,10 +252,11 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 py-2">
+
+                        <div className="col-md-6 py-2 mb-2">
                             <div className="card h-100 text-white">
                                 <div className="card-body bg-blue">
-                                    <div className="col-md-12 d-flex align-items-center justify-content-start">
+                                    <div className="col-md-12 pb-3 d-flex align-items-center justify-content-start">
                                         <img src="images/services/icons/icon-10.png" alt="shape" width="100" />
                                         <h3 className="text-white pl-3">Drug Test</h3>
                                     </div>

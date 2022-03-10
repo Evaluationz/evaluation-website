@@ -688,7 +688,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-1/image-1.png" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-1/Image-1.png" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and
@@ -707,7 +707,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-2/image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-2/Image-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
                                                             <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
@@ -724,7 +724,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-3/image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-3/Image-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
                                                             <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>

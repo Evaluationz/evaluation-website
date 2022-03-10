@@ -409,7 +409,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">{ClientCount}</h1>
+                                        <h1 className="c-red">{ClientCount}+</h1>
                                         <p className="c-blue">COMPANIES</p>
                                     </div>
                                 </div>
@@ -417,7 +417,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">{TotalCase}</h1>
+                                        <h1 className="c-red">{TotalCase}+</h1>
                                         <p className="c-blue">VERIFICATIONS</p>
                                     </div>
                                 </div>
@@ -425,7 +425,7 @@ const Landing = () => {
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
-                                        <h1 className="c-red">{RedCase}</h1>
+                                        <h1 className="c-red">{RedCase}+</h1>
                                         <p className="c-blue">RED FLAGS</p>
                                     </div>
                                 </div>

@@ -17,14 +17,11 @@ const Navbar = () => {
 
     async function Contactus(event) {
         const form = event.currentTarget;
-        console.log("form data", form)
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
         }
         else {
-         
-            console.log("inside else")
             const { name, company, title, email, phone, city, message } = formState;
             const postData = { "name": name, "company": company, "title": title, "email": email, "phone": phone, "city": city, "message": message }
             let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs", postData);
@@ -38,7 +35,20 @@ const Navbar = () => {
         e.persist();
         updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
     }
-
+    async function addressAuto(e){
+        // e.preventDefault();
+        // e.stopPropagation();
+        let autocomplete = new window.google.maps.places.Autocomplete(
+          document.getElementById( 'address' ),
+          { types: [ 'geocode' ] },
+         
+        );
+        autocomplete.addListener( 'place_changed', () =>{
+            let place = autocomplete.getPlace()
+            updateFormState(() => ({...formState,city:place.formatted_address}))
+          });
+         
+      }  
 
     return (
         <div className="fixed-top non-fixed">
@@ -137,7 +147,7 @@ const Navbar = () => {
                     <div className="about-section contact-us-section bg-white">
                         <div className="container">
                             <Form noValidate validated={validated} onSubmit={Contactus}>
-                                <Form.Group className="mb-0" controlId="formPlaintextEmail">
+                                <Form.Group className="mb-0">
                                     <div className="row align-items-center ">
                                         <div className="col-lg-12 pb-3">
                                             <Form.Control type="text" required className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
@@ -160,7 +170,7 @@ const Navbar = () => {
                                         <div className="col-lg-12 pb-3">
                                             <Form.Control type="email" required name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
                                             <Form.Control.Feedback type="invalid">
-                                                Please provide your Email Address.
+                                                Please provide your Email.
                                             </Form.Control.Feedback>
                                         </div>
                                     </div>
@@ -169,7 +179,7 @@ const Navbar = () => {
                                             <Form.Control type="number" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
                                         </div>
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text" name="city" className="shadow-sm" onChange={onChange} placeholder="City" />
+                                            <Form.Control type="text" name="city" id="address" onFocus={addressAuto} className="shadow-sm" onChange={onChange} placeholder="City" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">

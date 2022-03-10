@@ -109,7 +109,7 @@ jQuery(function ($) {
         loop: true,
         items: 3,
         center:true,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1500,
         margin: 30,
         dots: false,

@@ -6205,7 +6205,7 @@ select.form-control {
   font-size: 3.5rem;
   font-weight: 700;
 }
-.hero-block .user-card .user-card-body a{
+.hero-block .user-card .user-card-body h3{
   position: absolute;
   left: 3rem;
   bottom: 1.5rem;
@@ -6216,8 +6216,9 @@ select.form-control {
 .hero-block .user-card .user-card-body a:hover{
   text-decoration: none;
 }
-.hero-block .user-card .user-card-body a .mdi{
+.hero-block .user-card .user-card-body h3 .mdi{
   font-size: 2.5rem;
+  vertical-align: middle;
 }
 
 /*Brand Text Color*/
@@ -6453,11 +6454,13 @@ select.form-control {
 }
 
 /*Blogs*/
-.blog{
+.blog-carousel .blog{
   text-align: center;
-  padding: 85px 10px 45px 10px;
-  margin: 70px 10px 35px;
+  padding: 0.5rem;
+  margin: 0;
   position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .blog-carousel .synced .item{

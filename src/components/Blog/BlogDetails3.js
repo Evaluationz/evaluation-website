@@ -24,8 +24,8 @@ const BlogDetails = () => {
                 </div>
             </div>
 
-            <div className="about-section col-md-10 p-0 m-0 red-image-right red-image-bottom">
-                <img src="images/blogs/blog-3/image-1.jpg" alt="shape" className="blog-details-image" />
+            <div className="about-section col-md-10 p-0 m-0">
+                <img src="images/blogs/blog-3/image-1.png" alt="shape" className="blog-details-image" />
             </div>
 
             <div className="about-section bg-white pt-5 blue-image-bottom">

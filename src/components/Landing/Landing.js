@@ -59,7 +59,7 @@ const Landing = () => {
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -84,7 +84,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -109,7 +109,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -134,7 +134,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -159,7 +159,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -651,7 +651,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-1/image-1.png" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-1/banner-1.png" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and
@@ -670,7 +670,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-2/image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-2/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
                                                             <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
@@ -687,7 +687,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog bg-blue">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-3/image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top" src="images/blogs/blog-3/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
                                                             <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>

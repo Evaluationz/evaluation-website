@@ -26,7 +26,7 @@ const BlogDetails = () => {
                 </div>
             </div>
 
-            <div className="about-section col-md-10 p-0 m-0 red-image-right red-image-bottom">
+            <div className="about-section col-md-10 p-0 m-0">
                 <img src="images/blogs/blog-1/image-1.png" alt="shape" className="blog-details-image" />
             </div>
 

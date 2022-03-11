@@ -36,19 +36,16 @@ const Navbar = () => {
         updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
     }
     async function addressAuto(e){
-        // e.preventDefault();
-        // e.stopPropagation();
         let autocomplete = new window.google.maps.places.Autocomplete(
-          document.getElementById( 'address' ),
-          { types: [ 'geocode' ] },
-         
+            document.getElementsByClassName( 'address' ),
+            { types: [ 'geocode' ] }
         );
+        console.log("geo ",autocomplete);
         autocomplete.addListener( 'place_changed', () =>{
-            let place = autocomplete.getPlace()
+            let place = autocomplete.getPlace();
             updateFormState(() => ({...formState,city:place.formatted_address}))
-          });
-         
-      }  
+        });
+      }
 
     return (
         <div className="fixed-top non-fixed">
@@ -150,7 +147,12 @@ const Navbar = () => {
                                 <Form.Group className="mb-0">
                                     <div className="row align-items-center ">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" required className="shadow-sm" name="name" onChange={onChange} placeholder="Name" />
+                                            <Form.Control type="text"
+                                                          required
+                                                          className="shadow-sm"
+                                                          name="name"
+                                                          onChange={onChange}
+                                                          placeholder="Name" />
                                             <Form.Control.Feedback type="invalid">
                                                 Please provide your name.
                                             </Form.Control.Feedback>
@@ -158,17 +160,30 @@ const Navbar = () => {
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="company" className="shadow-sm" onChange={onChange} placeholder="Company" />
+                                            <Form.Control type="text"
+                                                          name="company"
+                                                          className="shadow-sm"
+                                                          onChange={onChange}
+                                                          placeholder="Company" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text" name="title" className="shadow-sm" onChange={onChange} placeholder="Title" />
+                                            <Form.Control type="text"
+                                                          name="title"
+                                                          className="shadow-sm"
+                                                          onChange={onChange}
+                                                          placeholder="Title" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <Form.Control type="email" required name="email" className="shadow-sm" onChange={onChange} placeholder="Email" />
+                                            <Form.Control type="email"
+                                                          required
+                                                          name="email"
+                                                          className="shadow-sm"
+                                                          onChange={onChange}
+                                                          placeholder="Email" />
                                             <Form.Control.Feedback type="invalid">
                                                 Please provide your Email.
                                             </Form.Control.Feedback>
@@ -176,17 +191,32 @@ const Navbar = () => {
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="number" name="phone" className="shadow-sm" onChange={onChange} placeholder="Phone" />
+                                            <Form.Control type="number"
+                                                          name="phone"
+                                                          className="shadow-sm"
+                                                          onChange={onChange}
+                                                          placeholder="Phone" />
                                         </div>
                                         <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text" name="city" id="address" onFocus={addressAuto} className="shadow-sm" onChange={onChange} placeholder="City" />
+                                            <Form.Control type="text"
+                                                          name="city"
+                                                          id="address"
+                                                          onFocus={addressAuto}
+                                                          className="shadow-sm"
+                                                          onChange={onChange}
+                                                          placeholder="City" />
                                         </div>
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 pb-3">
-                                            <textarea className="form-control shadow-sm" name="message" onChange={onChange} style={{ maxHeight: '100px', height: '100px' }} placeholder="Message/Query" />
+                                            <textarea className="form-control shadow-sm"
+                                                      name="message"
+                                                      onChange={onChange}
+                                                      style={{ maxHeight: '100px', height: '100px' }}
+                                                      placeholder="Message/Query" />
                                         </div>
                                     </div>
+
                                     <Button type="submit" variant="primary">
                                         Submit
                                     </Button>

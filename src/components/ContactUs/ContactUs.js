@@ -34,9 +34,9 @@ const ContactUs = () => {
           document.getElementById( 'city' ),
           { types: [ 'geocode' ] }
         );
-        console.log("geo ",autocomplete)
+        console.log("geo ",autocomplete);
         autocomplete.addListener( 'place_changed', () =>{
-          let place = autocomplete.getPlace()
+          let place = autocomplete.getPlace();
           updateFormState(() => ({...formState,city:place.formatted_address}))
         });
       }  
@@ -80,10 +80,7 @@ const ContactUs = () => {
             <div className="about-section bg-white py-5">
                 <div className="container">
                     <iframe className="map"
-                            frameborder="0"
                             scrolling="no"
-                            marginheight="0"
-                            marginwidth="0"
                             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left mb-0 text-start">
                         <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 71017600</h5>

@@ -59,7 +59,7 @@ const Landing = () => {
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -84,7 +84,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -109,7 +109,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -134,7 +134,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -159,7 +159,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">

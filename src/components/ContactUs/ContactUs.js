@@ -102,47 +102,79 @@ const ContactUs = () => {
                     <Form noValidate validated={validated} onSubmit={Contactus}>
                         <Form.Group as={Row} className="mb-12" controlId="formPlaintextEmail">
                             <div className="row align-items-center ">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" required className="shadow-lg" name="name" onChange={onChange} placeholder="Name" />
-                                    <Form.Control.Feedback type="invalid">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                                  required
+                                                  className="shadow-lg"
+                                                  name="name"
+                                                  onChange={onChange}
+                                                  placeholder="Name" />
+                                    <Form.Control.Feedback type="invalid" className="mb-0">
                                         Please provide your name.
                                     </Form.Control.Feedback>
                                 </div>
                             </div>
                             <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" name="company" className="shadow-lg" onChange={onChange} placeholder="Company" />
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                                  name="company"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Company" />
                                 </div>
                             </div>
                             <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" name="title" className="shadow-lg" onChange={onChange} placeholder="Title" />
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                                  name="title"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Title" />
                                 </div>
                             </div>
                             <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="email" required name="email" className="shadow-lg" onChange={onChange} placeholder="Email" />
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="email"
+                                                  required
+                                                  name="email"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Email" />
                                     <Form.Control.Feedback type="invalid">
                                         Please provide your Email.
                                     </Form.Control.Feedback>
                                 </div>
                             </div>
                             <div className="row align-items-center">
-                                <div className="col-lg-6 pb-30">
-                                    <Form.Control type="number" name="phone" className="shadow-lg" onChange={onChange} placeholder="Phone" />
+                                <div className="col-lg-6 pb-3">
+                                    <Form.Control type="number"
+                                                  name="phone"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Phone" />
                                 </div>
-                                <div className="col-lg-6 pb-30">
-                                    <Form.Control type="text" name="city" id="city" onFocus={cityAuto} className="shadow-lg" onChange={onChange} placeholder="City" />
+                                <div className="col-lg-6 pb-3">
+                                    <Form.Control type="text"
+                                                  name="city"
+                                                  id="city"
+                                                  onFocus={cityAuto}
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="City" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <textarea className="form-control shadow-lg"
+                                              name="message"
+                                              onChange={onChange}
+                                              style={{maxHeight: '150px', height: '150px'}}
+                                              placeholder="Message/Query" />
                                 </div>
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <textarea className="form-control shadow-lg" name="message" onChange={onChange} style={{maxHeight: '150px', height: '150px'}} placeholder="Message/Query" />
-                                </div>
-                            </div>
-                            <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" >Submit</Button>
+                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder">Submit</Button>
                                 </div>
                             </div>
                         </Form.Group>

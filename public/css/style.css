@@ -6716,3 +6716,15 @@ select.form-control {
   padding: 0 3rem;
   margin-bottom: 0;
 }
+
+
+/*Input Fields UI*/
+.form-control.is-valid, .was-validated .form-control:valid,
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: none !important;
+}
+.form-control.is-invalid::placeholder, .was-validated .form-control:invalid::placeholder,
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}

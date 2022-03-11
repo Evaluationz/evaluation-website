@@ -195,9 +195,6 @@ const Navbar = () => {
                         </div>
                     </div>
                 </Modal.Body>
-                <Modal.Footer>
-
-                </Modal.Footer>
             </Modal>
         </div>
     );

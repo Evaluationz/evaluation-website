@@ -37,7 +37,7 @@ const Navbar = () => {
     }
     async function addressAuto(e){
         let autocomplete = new window.google.maps.places.Autocomplete(
-            document.getElementsByClassName( 'address' ),
+            document.getElementById( 'address' ),
             { types: [ 'geocode' ] }
         );
         console.log("geo ",autocomplete);

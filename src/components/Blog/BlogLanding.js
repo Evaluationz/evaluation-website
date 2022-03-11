@@ -21,7 +21,7 @@ const Blog = () => {
                         <div className="col-md-4 py-2 cursor-pointer" onClick={ () => history.push(`/blog1`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-1/image-1.png" alt="blog"/>
+                                    <img src="images/blogs/blog-1/banner-1.png" alt="blog"/>
                                 </div>
                                 <div className="card-body">
 
@@ -38,7 +38,7 @@ const Blog = () => {
                         <div className="col-md-4 py-2 cursor-pointer" onClick={ () => history.push(`/blog2`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-2/image-1.jpg" alt="blog" />
+                                    <img src="images/blogs/blog-2/banner-1.jpg" alt="blog" />
                                 </div>
                                 <div className="card-body">
 
@@ -51,7 +51,7 @@ const Blog = () => {
                         <div className="col-md-4 py-2 cursor-pointer" onClick={ () => history.push(`/blog3`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-3/image-1.jpg" alt="blog" />
+                                    <img src="images/blogs/blog-3/banner-1.jpg" alt="blog" />
                                 </div>
                                 <div className="card-body">
 

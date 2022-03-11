@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { Form, Row } from "react-bootstrap";
+
 import axios from "axios";
 
 
@@ -14,6 +15,7 @@ const Navbar = () => {
     const handleShow = () => setShow(true);
     const [formState, updateFormState] = useState(formData);
     const [validated, setValidated] = useState(false);
+    const [activeButton, setactiveButton] = useState(true);
 
     async function Contactus(event) {
         const form = event.currentTarget;
@@ -22,10 +24,12 @@ const Navbar = () => {
             event.stopPropagation();
         }
         else {
+            event.preventDefault()
             const { name, company, title, email, phone, city, message } = formState;
             const postData = { "name": name, "company": company, "title": title, "email": email, "phone": phone, "city": city, "message": message }
             let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs", postData);
             
+           handleClose()
     
         }
         setValidated(true);
@@ -34,6 +38,7 @@ const Navbar = () => {
     function onChange(e) {
         e.persist();
         updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
+        setactiveButton(false)
     }
     async function addressAuto(e){
         let autocomplete = new window.google.maps.places.Autocomplete(
@@ -136,7 +141,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <Modal show={show} onHide={handleClose} >
+            <Modal show={show} onHide={handleClose}  >
                 <Modal.Header closeButton>
                     <Modal.Title>Get in Touch</Modal.Title>
                 </Modal.Header>
@@ -202,7 +207,7 @@ const Navbar = () => {
                                                           name="city"
                                                           id="address"
                                                           onFocus={addressAuto}
-                                                          className="shadow-sm"
+                                                          className="shadow-sm ui-front"
                                                           onChange={onChange}
                                                           placeholder="City" />
                                         </div>
@@ -217,7 +222,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
 
-                                    <Button type="submit" variant="primary">
+                                    <Button type="submit" variant="primary" disabled={activeButton}>
                                         Submit
                                     </Button>
                                 </Form.Group>

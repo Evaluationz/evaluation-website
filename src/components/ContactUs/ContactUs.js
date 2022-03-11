@@ -8,7 +8,8 @@ const formData = { name:'',company:'',title:'',email:'',phone:'',city:'',message
 const ContactUs = () => {
     const [formState, updateFormState] = useState(formData);
     const [validated, setValidated] = useState(false);
-
+    const [activeButton, setactiveButton] = useState(true);
+    
     async function Contactus(event){
         const form = event.currentTarget;
        
@@ -17,6 +18,7 @@ const ContactUs = () => {
           event.stopPropagation();
         }
         else{
+       
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
         let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
@@ -26,12 +28,14 @@ const ContactUs = () => {
 
     function onChange(e){
         e.persist();
+      
         updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
+        setactiveButton(false)
     }  
 
     async function cityAuto(){
         let autocomplete = new window.google.maps.places.Autocomplete(
-          document.getElementById( 'city' ),
+          document.getElementById('city'),
           { types: [ 'geocode' ] }
         );
         console.log("geo ",autocomplete);
@@ -157,7 +161,7 @@ const ContactUs = () => {
                                                   onFocus={cityAuto}
                                                   className="shadow-lg"
                                                   onChange={onChange}
-                                                  placeholder="City" />
+                                                  placeholder="City"/>
                                 </div>
                             </div>
                             <div className="row align-items-center">
@@ -171,7 +175,7 @@ const ContactUs = () => {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder">Submit</Button>
+                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
                                 </div>
                             </div>
                         </Form.Group>

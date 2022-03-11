@@ -3758,6 +3758,7 @@ select.form-control {
 .footer-list li .col{
   max-width: fit-content;
   margin-bottom: 0.5rem;
+  padding-right: 0;
 }
 
 .footer-list li:last-child {
@@ -6544,6 +6545,9 @@ select.form-control {
   }
   .hero-block h1{
     font-size: 2.5rem;
+  }
+  .footer-upper .white-border-right{
+    border-right: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){

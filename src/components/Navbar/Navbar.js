@@ -1,57 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-import { Form, Row } from "react-bootstrap";
 
-import axios from "axios";
-
-
-const formData = { name: '', company: '', title: '', email: '', phone: '', city: '', message: '' }
 const Navbar = () => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    const [formState, updateFormState] = useState(formData);
-    const [validated, setValidated] = useState(false);
-    const [activeButton, setactiveButton] = useState(true);
-
-    async function Contactus(event) {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        else {
-            event.preventDefault()
-            const { name, company, title, email, phone, city, message } = formState;
-            const postData = { "name": name, "company": company, "title": title, "email": email, "phone": phone, "city": city, "message": message }
-            let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs", postData);
-            
-           handleClose()
-    
-        }
-        setValidated(true);
-    }
-
-    function onChange(e) {
-        e.persist();
-        updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
-        setactiveButton(false)
-    }
-    async function addressAuto(e){
-        let autocomplete = new window.google.maps.places.Autocomplete(
-            document.getElementById( 'address' ),
-            { types: [ 'geocode' ] }
-        );
-        console.log("geo ",autocomplete);
-        autocomplete.addListener( 'place_changed', () =>{
-            let place = autocomplete.getPlace();
-            updateFormState(() => ({...formState,city:place.formatted_address}))
-        });
-      }
-
     return (
         <div className="fixed-top non-fixed">
             <div className="navbar-area sticky-black bg-black is-sticky">
@@ -131,7 +81,7 @@ const Navbar = () => {
                                             className="nav-link">CONTACT</Link>
                                     </li>
                                     <li className="nav-item nav-btn">
-                                        <a onClick={handleShow}
+                                        <a href="#getInTouch"
                                             className="nav-link cursor-pointer">GET IN TOUCH</a>
                                     </li>
                                 </ul>
@@ -140,97 +90,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
-            <Modal show={show} onHide={handleClose}  >
-                <Modal.Header closeButton>
-                    <Modal.Title>Get in Touch</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <div className="about-section contact-us-section bg-white">
-                        <div className="container">
-                            <Form noValidate validated={validated} onSubmit={Contactus}>
-                                <Form.Group className="mb-0">
-                                    <div className="row align-items-center ">
-                                        <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text"
-                                                          required
-                                                          className="shadow-sm"
-                                                          name="name"
-                                                          onChange={onChange}
-                                                          placeholder="Name" />
-                                            <Form.Control.Feedback type="invalid">
-                                                Please provide your name.
-                                            </Form.Control.Feedback>
-                                        </div>
-                                    </div>
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text"
-                                                          name="company"
-                                                          className="shadow-sm"
-                                                          onChange={onChange}
-                                                          placeholder="Company" />
-                                        </div>
-                                    </div>
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
-                                            <Form.Control type="text"
-                                                          name="title"
-                                                          className="shadow-sm"
-                                                          onChange={onChange}
-                                                          placeholder="Title" />
-                                        </div>
-                                    </div>
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
-                                            <Form.Control type="email"
-                                                          required
-                                                          name="email"
-                                                          className="shadow-sm"
-                                                          onChange={onChange}
-                                                          placeholder="Email" />
-                                            <Form.Control.Feedback type="invalid">
-                                                Please provide your Email.
-                                            </Form.Control.Feedback>
-                                        </div>
-                                    </div>
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-6 pb-3">
-                                            <Form.Control type="number"
-                                                          name="phone"
-                                                          className="shadow-sm"
-                                                          onChange={onChange}
-                                                          placeholder="Phone" />
-                                        </div>
-                                        <div className="col-lg-6 pb-3">
-                                            <Form.Control type="text"
-                                                          name="city"
-                                                          id="address"
-                                                          onFocus={addressAuto}
-                                                          className="shadow-sm ui-front"
-                                                          onChange={onChange}
-                                                          placeholder="City" />
-                                        </div>
-                                    </div>
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-12 pb-3">
-                                            <textarea className="form-control shadow-sm"
-                                                      name="message"
-                                                      onChange={onChange}
-                                                      style={{ maxHeight: '100px', height: '100px' }}
-                                                      placeholder="Message/Query" />
-                                        </div>
-                                    </div>
-
-                                    <Button type="submit" variant="primary" disabled={activeButton}>
-                                        Submit
-                                    </Button>
-                                </Form.Group>
-                            </Form>
-                        </div>
-                    </div>
-                </Modal.Body>
-            </Modal>
         </div>
     );
 };

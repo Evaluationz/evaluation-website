@@ -11,6 +11,7 @@ const ContactUs = () => {
 
     async function Contactus(event){
         const form = event.currentTarget;
+       
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
@@ -26,7 +27,19 @@ const ContactUs = () => {
     function onChange(e){
         e.persist();
         updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
-    }
+    }  
+
+    async function cityAuto(){
+        let autocomplete = new window.google.maps.places.Autocomplete(
+          document.getElementById( 'city' ),
+          { types: [ 'geocode' ] }
+        );
+        console.log("geo ",autocomplete)
+        autocomplete.addListener( 'place_changed', () =>{
+          let place = autocomplete.getPlace()
+          updateFormState(() => ({...formState,city:place.formatted_address}))
+        });
+      }  
 
     return (
         <section>
@@ -56,7 +69,7 @@ const ContactUs = () => {
                                         BHIVE Workspace, 29 MG Road
                                         7TH Floor, Mahalakshmi Chambers
                                         Next to Trinity Metro Station,
-                                        Bangalore - 560001</p>
+                                        Bangalore – 560001</p>
                                 </div>
                             </div>
                         </div>
@@ -91,6 +104,9 @@ const ContactUs = () => {
                             <div className="row align-items-center ">
                                 <div className="col-lg-12 pb-30">
                                     <Form.Control type="text" required className="shadow-lg" name="name" onChange={onChange} placeholder="Name" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide your name.
+                                    </Form.Control.Feedback>
                                 </div>
                             </div>
                             <div className="row align-items-center">
@@ -106,6 +122,9 @@ const ContactUs = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
                                     <Form.Control type="email" required name="email" className="shadow-lg" onChange={onChange} placeholder="Email" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide your Email.
+                                    </Form.Control.Feedback>
                                 </div>
                             </div>
                             <div className="row align-items-center">
@@ -113,7 +132,7 @@ const ContactUs = () => {
                                     <Form.Control type="number" name="phone" className="shadow-lg" onChange={onChange} placeholder="Phone" />
                                 </div>
                                 <div className="col-lg-6 pb-30">
-                                    <Form.Control type="text" name="city" className="shadow-lg" onChange={onChange} placeholder="City" />
+                                    <Form.Control type="text" name="city" id="city" onFocus={cityAuto} className="shadow-lg" onChange={onChange} placeholder="City" />
                                 </div>
                             </div>
                             <div className="row align-items-center">

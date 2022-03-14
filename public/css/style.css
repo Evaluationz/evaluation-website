@@ -1495,7 +1495,6 @@ select.form-control {
   padding: 5px 15px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  text-transform: none !important;
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu .nav-item a.dropdown-toggle:after {

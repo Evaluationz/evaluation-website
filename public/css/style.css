@@ -6246,6 +6246,10 @@ select.form-control {
 }
 
 /*Button UI*/
+.btn{
+  font-weight: 500 !important;
+  text-transform: uppercase;
+}
 .btn-red{
   background-color: #ff1717 !important;
   border-color: #ff1717 !important;
@@ -6498,6 +6502,10 @@ select.form-control {
   cursor: pointer;
   position: absolute;
   top: 110px !important;
+}
+.blog-carousel .owl-prev,
+.blog-carousel .owl-next {
+  background: #ff1717 !important;
 }
 .blog-carousel .owl-prev.disabled,
 .blog-carousel .owl-next.disabled {

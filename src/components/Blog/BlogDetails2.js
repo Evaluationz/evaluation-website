@@ -28,7 +28,7 @@ const BlogDetails = () => {
                 <img src="images/blogs/blog-2/image-1.png" alt="shape" className="blog-details-image" />
             </div>
 
-            <div className="about-section bg-white pt-5 blue-image-bottom">
+            <div className="about-section bg-white py-5 blue-image-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 pb-30">
@@ -72,6 +72,9 @@ const BlogDetails = () => {
                                     <p className="text-black font-weight-normal">A person with a criminal record or with cases in curt may be a risk for the company.  Comprehensive verification of the criminal data of a person entails scrutinizing using court records and conducting International Database Checks If necessary. </p>
                                     <p className="text-black font-weight-bold mb-0">Easy on-boarding for customers. Safe users for platforms. </p>
                                     <p className="text-black font-weight-normal">Choosing the right verification solution for a fintech platform makes it a win-win for both customer and company. The customer gets instant and hassle-free user KYC while the company enrolls a user who they can trust. A solution that utilizes Artificial Intelligence (AI) and the componentized government data can offer accurate, authenticated results in minutes. With trust that you can take to the bank. </p>
+
+                                    <a href="contact#getInTouch"
+                                       className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
                                 </div>
                             </div>
                         </div>

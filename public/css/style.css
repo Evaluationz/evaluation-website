@@ -6505,7 +6505,7 @@ select.form-control {
 }
 .blog-carousel .owl-prev,
 .blog-carousel .owl-next {
-  background: #ff1717 !important;
+  background: #000 !important;
 }
 .blog-carousel .owl-prev.disabled,
 .blog-carousel .owl-next.disabled {
@@ -6759,6 +6759,8 @@ select.form-control {
 
 .shadow-2xl	
 {
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+ box-shadow: 0 5px 20px rgb(0 0 0 / 0.7);
 }
+
+
 

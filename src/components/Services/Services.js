@@ -16,7 +16,7 @@ const Services = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pt-5 pb-30">
                             <div className="service-section-item service-item-image text-md-left text-center">
-                                <img src="images/services/image-1.jpg" alt="shape" className="red-image-left" />
+                                <img src="images/services/image-1.jpg" alt="shape" className="red-image-left shadow-2xl" />
                             </div>
                         </div>
 

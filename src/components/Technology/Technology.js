@@ -15,7 +15,7 @@ const Technology = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/technology/image-1.jpg" alt="shape" className="red-image-left"/>
+                                <img src="images/technology/image-1.jpg" alt="shape" className="red-image-left shadow-2xl"/>
                             </div>
                         </div>
                         <div className="col-lg-6 pb-30">
@@ -36,7 +36,7 @@ const Technology = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-4">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/landing/image-6.jpg" alt="shape"/>
+                                <img src="images/landing/image-6.jpg"  alt="shape"/>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -75,7 +75,7 @@ const Technology = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-4">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/technology/image-2.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/technology/image-2.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -124,7 +124,7 @@ const Technology = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-right text-center">
-                                <img src="images/technology/image-3.jpg" alt="shape"  className="red-image-right"/>
+                                <img src="images/technology/image-3.jpg" alt="shape"  className="red-image-right shadow-2xl"/>
                             </div>
                         </div>
                     </div>

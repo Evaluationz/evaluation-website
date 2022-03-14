@@ -16,7 +16,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/banking/image-1.jpg" alt="shape" className="red-image-left"/>
+                                <img src="images/industries/banking/image-1.jpg" alt="shape" className="red-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -71,12 +71,12 @@ const Landing = () => {
                             </span>
                         </div>
 
-                        <div className="col-md-2 d-flex align-items-center justify-content-start">
+                        {/* <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/banking/icon-4.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Education Verification
                             </span>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/banking/icon-5.png" alt="shape" width="80"/>
@@ -84,21 +84,22 @@ const Landing = () => {
                                Criminal Record Check
                             </span>
                         </div>
+                        <div className="col-md-2 d-flex align-items-center justify-content-start">
+                            <img src="images/industries/banking/icon-7.png" alt="shape" width="80"/>
+                            <span className="text-black ml-2">
+                                Court Record Verification
+                            </span>
+                        </div>
                     </div>
 
                     <div className="row align-items-center mt-4">
-                        <div className="col-md-2 d-flex align-items-center justify-content-start">
+                        {/* <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/banking/icon-6.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Reference Check
                             </span>
-                        </div>
-                        <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/banking/icon-7.png" alt="shape" width="80"/>
-                            <span className="text-black ml-2">
-                                Court RecordVerification
-                            </span>
-                        </div>
+                        </div> */}
+                        
                     </div>
                 </div>
             </div>

@@ -79,7 +79,7 @@ const BlogDetails = () => {
                                 <p className="text-black font-weight-normal">Ensure that it has API integration to reduce time and effort. An integrated solution can trigger automatic verification requests on receipt of an application and make the driver onboarding process more efficient and robust. API integration can also trigger repeat verifications at regular intervals for continuous verification to make cross-check that the driver is still in the green zone. </p>
                                 <p className="text-black font-weight-normal">Do your research and choose a comprehensive verification solution for a relaxing ride; the comfort that comes when the driver can be trusted.</p>
 
-                                <a href="contact#getInTouch"
+                                <a href="contact#getInTouch" target="_blank"
                                    className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
                             </div>
                         </div>

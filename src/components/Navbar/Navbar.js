@@ -72,16 +72,9 @@ const Navbar = () => {
                                             </li>
                                         </ul>
                                     </li>
-                                    <li className="nav-item">
-                                        <Link to="/careers"
-                                            className="nav-link">CAREERS</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/contact"
-                                            className="nav-link">CONTACT</Link>
-                                    </li>
+                                    
                                     <li className="nav-item nav-btn">
-                                        <a href="contact#getInTouch"
+                                        <a href="contact"
                                             className="nav-link cursor-pointer">GET IN TOUCH</a>
                                     </li>
                                 </ul>

@@ -112,7 +112,7 @@ const BlogDetails = () => {
                                         to offer instant verification results. And ensure that your rental portal has only genuine listings
                                         and users resulting in enhanced brand reputation.</p>
 
-                                    <a href="contact#getInTouch"
+                                    <a href="contact#getInTouch" target="_blank"
                                        className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
                                 </div>
                             </div>

@@ -7,7 +7,7 @@ const BlogDetails = () => {
             <Helmet>
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
-                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
+                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">
@@ -34,7 +34,7 @@ const BlogDetails = () => {
                         <div className="col-lg-12 pb-30">
                             <div className="about-section-item about-item-details">
                                 <div className="about-content">
-                                    <p className="text-black font-weight-normal">Recently, social media was abuzz with users discovering that there were loans taken out in their name - loans that they had no idea about. While some of them found out from investigating why their CIBIL scores were dropping, others realised it when collection agents started calling them. The cause of this particular episode of identity theft – the perpetrators used PAN numbers of the affected parties – involved a loan app. (Source:<a href="https://wap.business-standard.com/article-amp/companies/loan-fraud-hits-indiabulls-fintech-arm-fraudsters-use-pan-numbers-122021600373_1.html"  target="_blank">https://wap.business-standard.com/article-amp/companies/loan-fraud-hits-indiabulls-fintech-arm-fraudsters-use-pan-numbers-122021600373_1.html</a>  )</p>
+                                    <p className="text-black font-weight-normal">Recently, social media was abuzz with users discovering that there were loans taken out in their name - loans that they had no idea about. While some of them found out from investigating why their CIBIL scores were dropping, others realised it when collection agents started calling them. The cause of this particular episode of identity theft – the perpetrators used PAN numbers of the affected parties – involved a loan app. (Source: <a href="https://wap.business-standard.com/article-amp/companies/loan-fraud-hits-indiabulls-fintech-arm-fraudsters-use-pan-numbers-122021600373_1.html" target="_blank">https://wap.business-standard.com/article-amp/companies/loan-fraud-hits-indiabulls-fintech-arm-fraudsters-use-pan-numbers-122021600373_1.html</a>  )</p>
                                     <p className="text-black font-weight-normal">But this was just one of many stories involving financial fraud by users of fintech products. And it reiterated the need to shine a spotlight on more reliable and indisputable verification in the fintech industry. </p>
 
                                     <p className="text-black font-weight-bold mb-0">Booming fintech industry</p>
@@ -55,7 +55,7 @@ const BlogDetails = () => {
                                         <div className="row align-items-center">
                                             <div className="col-lg-12 px-0 py-3">
                                                 <div className="text-center">
-                                                    <img src="images/blogs/blog-2/image-2.jpg" alt="shape" className="blog-details-image" />
+                                                    <img src="images/blogs/blog-2/image-2.jpg" alt="shape" className="blog-details-image shadow-2xl" />
                                                 </div>
                                             </div>
                                         </div>
@@ -72,9 +72,12 @@ const BlogDetails = () => {
                                     <p className="text-black font-weight-normal">A person with a criminal record or with cases in curt may be a risk for the company.  Comprehensive verification of the criminal data of a person entails scrutinizing using court records and conducting International Database Checks If necessary. </p>
                                     <p className="text-black font-weight-bold mb-0">Easy on-boarding for customers. Safe users for platforms. </p>
                                     <p className="text-black font-weight-normal">Choosing the right verification solution for a fintech platform makes it a win-win for both customer and company. The customer gets instant and hassle-free user KYC while the company enrolls a user who they can trust. A solution that utilizes Artificial Intelligence (AI) and the componentized government data can offer accurate, authenticated results in minutes. With trust that you can take to the bank. </p>
-
-                                    <a href="contact#getInTouch" target="_blank"
-                                       className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
+                                    <div className="row text-center">
+                                        <div className="col-12">
+                                            <a href="contact"
+                                                className="btn btn-primary btn-blue">GET IN TOUCH</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/careers/image-1.png" alt="shape" className="red-image-left"/>
+                                <img src="images/careers/image-1.png" alt="shape" className="red-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -56,7 +56,7 @@ const Landing = () => {
                                 <div className="card-header border-b-0 bg-red">
                                     <h1 className="card-title text-white font-weight-bolder mb-0">Commitment</h1>
                                 </div>
-                                <img className="card-img-top img-fluid" src="images/careers/image-2.png" alt="shape"/>
+                                <img className="card-img-top img-fluid " src="images/careers/image-2.png" alt="shape"/>
                                 <div className="card-body bg-red">
                                     <p className="card-text text-white">The company’s commitment to staying at the edge of
                                         verification technology, is transmuted into our work

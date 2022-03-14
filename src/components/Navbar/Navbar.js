@@ -34,22 +34,22 @@ const Navbar = () => {
                                         <Link to="/industries" className="nav-link dropdown-toggle">INDUSTRIES</Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item nav-item-1">
-                                                <Link to="/ecommerce" className="nav-link text-uppercase">Ecommerce Companies</Link>
+                                                <Link to="/ecommerce" className="nav-link">ECOMMERCE COMPANIES</Link>
                                             </li>
                                             <li className="nav-item nav-item-2">
-                                                <Link to="/banking-fintech" className="nav-link text-uppercase">Banking and fintech</Link>
+                                                <Link to="/banking-fintech" className="nav-link text-uppercase">BANKING AND FINTECH</Link>
                                             </li>
                                             <li className="nav-item nav-item-2">
-                                                <Link to="/corporate" className="nav-link text-uppercase">Corporate</Link>
+                                                <Link to="/corporate" className="nav-link text-uppercase">CORPORATE</Link>
                                             </li>
                                             <li className="nav-item nav-item-2">
-                                                <Link to="/matrimonial" className="nav-link text-uppercase">Matrimonial</Link>
+                                                <Link to="/matrimonial" className="nav-link text-uppercase">MATRIMONIAL</Link>
                                             </li>
                                             <li className="nav-item nav-item-2">
-                                                <Link to="/online-dating" className="nav-link text-uppercase">Online dating</Link>
+                                                <Link to="/online-dating" className="nav-link text-uppercase">ONLINE DATING</Link>
                                             </li>
                                             <li className="nav-item nav-item-2">
-                                                <Link to="/rental" className="nav-link text-uppercase">Rental</Link>
+                                                <Link to="/rental" className="nav-link text-uppercase">RENTAL</Link>
                                             </li>
                                         </ul>
                                     </li>

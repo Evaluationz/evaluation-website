@@ -11,10 +11,19 @@ const Landing = () => {
         checkStatistics()
     }, [])
 
+    const formatCash = n => {
+        if (n < 1e3) return n;
+        if (n >= 1e3 && n < 1e6) return +(n / 1e3).toFixed(1) + "K";
+        if (n >= 1e6 && n < 1e9) return +(n / 1e6).toFixed(1) + "M";
+        if (n >= 1e9 && n < 1e12) return +(n / 1e9).toFixed(1) + "B";
+        if (n >= 1e12) return +(n / 1e12).toFixed(1) + "T";
+      };
+      
+
     async function checkStatistics() {
         let clientDetails = await axios.get("https://verify.evaluationz.com:304/api/KompassWebsiteData");
         let res = clientDetails.data
-        updateStatisticState(() => ({ ...statisticState, ClientCount: res.data.ClientCount, TotalCase: res.data.TotalCase, RedCase: res.data.RedCase }))
+        updateStatisticState(() => ({ ...statisticState, ClientCount: formatCash(res.data.ClientCount), TotalCase: formatCash(res.data.TotalCase), RedCase: formatCash(res.data.RedCase) }))
     }
 
     const { ClientCount, TotalCase, RedCase } = statisticState

@@ -36,7 +36,7 @@ const Landing = () => {
                         <div className="col-md-6 col-lg-4">
                             <div className="user-card">
                                 <div className="user-card-body">
-                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
+                                    <img src="images/landing/image-1.jpg" className="img-fluid shadow-2xl" />
                                     <h3 className="mb-0">Employees<i className="mdi mdi-chevron-right c-blue mt-1"></i></h3>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ const Landing = () => {
                         <div className="col-md-6 col-lg-4 float-md-right">
                             <div className="user-card">
                                 <div className="user-card-body">
-                                    <img src="images/landing/image-2.jpg" className="img-fluid" />
+                                    <img src="images/landing/image-2.jpg" className="img-fluid shadow-2xl" />
                                     <h3 className="mb-0">User<i className="mdi mdi-chevron-right c-red mt-1"></i></h3>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/landing/image-3.jpg" alt="shape" />
+                                <img src="images/landing/image-3.jpg" alt="shape" className="shadow-2xl" />
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center blue-image-left">
-                                <img src="images/landing/image-4.jpg" alt="shape" />
+                                <img src="images/landing/image-4.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
 
@@ -280,7 +280,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/landing/image-5.jpg" alt="shape" />
+                                <img src="images/landing/image-5.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
                     </div>
@@ -372,7 +372,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-left">
-                                <img src="images/landing/image-6.jpg" alt="shape" />
+                                <img src="images/landing/image-6.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
 
@@ -546,7 +546,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-blue pt-5 pb-30">
+            {/* <div className="about-section bg-blue pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
                         <h1 className="text-white font-weight-bolder">Success Stories</h1>
@@ -635,7 +635,7 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="testimonial-section position-relative">
                 <div className="container-fluid pt-5 pb-3 bg-white">
@@ -649,9 +649,9 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-                                                <div className="blog bg-blue">
-                                                    <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-1/banner-1.png" alt="Blog" />
+                                                <div className="blog">
+                                                    <div className="card shadow-2xl" >
+                                                        <img className="card-img-top blog-card-padding-4" src="images/blogs/blog-1/banner-1.png"  alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and
@@ -668,9 +668,9 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-                                                <div className="blog bg-blue">
-                                                    <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-2/banner-1.jpg" alt="Blog" />
+                                                <div className="blog">
+                                                    <div className="card shadow-2xl" >
+                                                        <img className="card-img-top blog-card-padding-4" src="images/blogs/blog-2/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
                                                             <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
@@ -685,9 +685,9 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-                                                <div className="blog bg-blue">
+                                                <div className="blog shadow-2xl">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-3/banner-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top blog-card-padding-4" src="images/blogs/blog-3/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
                                                             <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>
@@ -718,7 +718,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center blue-image-right">
-                                <img src="images/landing/image-7.jpg" alt="shape" />
+                                <img src="images/landing/image-7.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
                     </div>

@@ -6438,7 +6438,7 @@ select.form-control {
   font-size: 3rem;
 }
 .client-carousel .owl-stage .owl-item .item{
-  border-radius: 5rem;
+  border-radius: 1rem;
   min-height: 150px;
   margin: 2.5rem;
   display: flex;
@@ -6728,3 +6728,40 @@ select.form-control {
   color: #dc3545 !important;
   border-color: #dc3545 !important;
 }
+
+
+/*Box Shadow*/
+.shadow-xl
+{
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.shadow-2xl	
+{
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/*blog card padding*/
+.blog-card-padding-2
+{
+padding: 2rem;
+}
+.blog-card-padding-4
+{
+padding: 4rem;
+}
+.blog-card-padding-6
+{
+padding: 6rem;
+}
+
+.blog-card-padding-8
+{
+padding: 8rem;
+}
+
+.blog-card-padding-10
+{
+padding: 10rem;
+}
+

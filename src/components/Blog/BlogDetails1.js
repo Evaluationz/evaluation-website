@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
+import {Link} from "react-router-dom";
 
 const BlogDetails = () => {
     return (
@@ -30,7 +31,7 @@ const BlogDetails = () => {
                 <img src="images/blogs/blog-1/image-1.png" alt="shape" className="blog-details-image" />
             </div>
 
-            <div className="about-section bg-white pt-5 blue-image-bottom">
+            <div className="about-section bg-white py-5 blue-image-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 pb-30">
@@ -108,6 +109,8 @@ const BlogDetails = () => {
                                         to offer instant verification results. And ensure that your rental portal has only genuine listings
                                         and users resulting in enhanced brand reputation.</p>
 
+                                    <a href="contact#getInTouch"
+                                       className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
                                 </div>
                             </div>
                         </div>

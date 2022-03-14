@@ -114,7 +114,7 @@ jQuery(function ($) {
         margin: 30,
         dots: false,
         nav: true,
-        navText: ["<i class='mdi mdi-chevron-left c-blue'></i>", "<i class='mdi mdi-chevron-right c-blue'></i>"],
+        navText: ["<i class='mdi mdi-chevron-left text-white'></i>", "<i class='mdi mdi-chevron-right text-white'></i>"],
         pagination:false,
         // onInitialized : function(el){
         //     el.find(".owl-item").eq(0).addClass("synced");

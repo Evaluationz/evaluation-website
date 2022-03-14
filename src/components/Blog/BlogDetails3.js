@@ -28,7 +28,7 @@ const BlogDetails = () => {
                 <img src="images/blogs/blog-3/image-1.png" alt="shape" className="blog-details-image" />
             </div>
 
-            <div className="about-section bg-white pt-5 blue-image-bottom">
+            <div className="about-section bg-white py-5 blue-image-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 pb-30">
@@ -78,6 +78,9 @@ const BlogDetails = () => {
                                 <p className="text-black font-weight-normal">Look for a verification solution that can keep pace with the needs of the fast-changing industry. The ability to componentize government identity databases and utilize AI to return results in real-time can make your verification process quicker and more accurate. </p>
                                 <p className="text-black font-weight-normal">Ensure that it has API integration to reduce time and effort. An integrated solution can trigger automatic verification requests on receipt of an application and make the driver onboarding process more efficient and robust. API integration can also trigger repeat verifications at regular intervals for continuous verification to make cross-check that the driver is still in the green zone. </p>
                                 <p className="text-black font-weight-normal">Do your research and choose a comprehensive verification solution for a relaxing ride; the comfort that comes when the driver can be trusted.</p>
+
+                                <a href="contact#getInTouch"
+                                   className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
                             </div>
                         </div>
                     </div>

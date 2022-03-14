@@ -165,7 +165,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-red">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-white">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +186,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-blue">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-white">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +207,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-blue">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-white">Apply Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +227,7 @@ const Landing = () => {
                                         Salary is not a constraint for the right candidates
                                     </p>
 
-                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-red">Apply Now</Link>
+                                    <Link to={{pathname: "mailto:hr@evaluationz.com"}} target="_blank" className="btn btn-primary btn-white">Apply Now</Link>
                                 </div>
                             </div>
                         </div>

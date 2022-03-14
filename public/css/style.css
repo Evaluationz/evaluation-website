@@ -6301,7 +6301,7 @@ select.form-control {
   background-size: cover;
 }
 .about-section-bg .statistic-block .col-md-4{
-  padding: 3rem;
+  padding: 2rem;
 }
 .about-section-bg .statistic-block .circle{
   background-color: #ffffff;
@@ -6462,13 +6462,34 @@ select.form-control {
 /*Blogs*/
 .blog-carousel .blog{
   text-align: center;
-  padding: 0.5rem;
+  padding: 0;
   margin: 0;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
+.blog-carousel .owl-item.active .blog .card{
+  background: #ff1717;
+}
+.blog-carousel .owl-item.active .blog .card .card-body .card-title{
+  color: #ffffff;
+}
+.blog-carousel .owl-item.active .blog .card .card-body .btn.btn-primary.btn-red{
+  color: #ff1717;
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff;
+}
+.blog-carousel .owl-item.active.center .blog .card{
+  background: #3e72fe;
+}
+.blog-carousel .owl-item.active.center .blog .card .card-body .card-title{
+  color: #ffffff;
+}
+.blog-carousel .owl-item.active.center .blog .card .card-body .btn.btn-primary.btn-red{
+  color: #ffffff;
+  background-color: #ff1717 !important;
+  border: 1px solid #ff1717;
+}
 .blog-carousel .synced .item{
   background: #0c83e7;
 }
@@ -6732,29 +6753,5 @@ select.form-control {
 .shadow-2xl	
 {
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-}
-
-/*blog card padding*/
-.blog-card-padding-2
-{
-padding: 2rem;
-}
-.blog-card-padding-4
-{
-padding: 4rem;
-}
-.blog-card-padding-6
-{
-padding: 6rem;
-}
-
-.blog-card-padding-8
-{
-padding: 8rem;
-}
-
-.blog-card-padding-10
-{
-padding: 10rem;
 }
 

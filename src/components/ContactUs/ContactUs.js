@@ -30,7 +30,14 @@ const ContactUs = () => {
         e.persist();
       
         updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
-        setactiveButton(false)
+        if(e.target.name==="name" || e.target.name==="email" &&  e.target.value==="")
+        {
+        setactiveButton(true)
+        }
+        else
+        {
+        setactiveButton(false)  
+        }
     }  
 
     async function cityAuto(){

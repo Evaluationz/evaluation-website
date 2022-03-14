@@ -11,10 +11,19 @@ const Landing = () => {
         checkStatistics()
     }, [])
 
+    const formatCash = n => {
+        if (n < 1e3) return n;
+        if (n >= 1e3 && n < 1e6) return +(n / 1e3).toFixed(1) + "K";
+        if (n >= 1e6 && n < 1e9) return +(n / 1e6).toFixed(1) + "M";
+        if (n >= 1e9 && n < 1e12) return +(n / 1e9).toFixed(1) + "B";
+        if (n >= 1e12) return +(n / 1e12).toFixed(1) + "T";
+      };
+      
+
     async function checkStatistics() {
         let clientDetails = await axios.get("https://verify.evaluationz.com:304/api/KompassWebsiteData");
         let res = clientDetails.data
-        updateStatisticState(() => ({ ...statisticState, ClientCount: res.data.ClientCount, TotalCase: res.data.TotalCase, RedCase: res.data.RedCase }))
+        updateStatisticState(() => ({ ...statisticState, ClientCount: formatCash(res.data.ClientCount), TotalCase: formatCash(res.data.TotalCase), RedCase: formatCash(res.data.RedCase) }))
     }
 
     const { ClientCount, TotalCase, RedCase } = statisticState
@@ -74,7 +83,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Bespoke solutions powered by AI and integration</p>
-                                                            <Link to="/about-us" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/about-us"  target="_blank" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -99,7 +108,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Digital. Instant. And universal.</p>
-                                                            <Link to="/services" className="btn btn-primary btn-blue">Explore</Link>
+                                                            <Link to="/services" target="_blank" className="btn btn-primary btn-blue">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,7 +133,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Verification made digital. And simple.</p>
-                                                            <Link to="/technology" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/technology" target="_blank" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -149,7 +158,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Seamless Integration with powerful API</p>
-                                                            <Link to="/technology" className="btn btn-primary btn-blue">Explore</Link>
+                                                            <Link to="/technology" target="_blank" className="btn btn-primary btn-blue">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -174,7 +183,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Read our latest blog</p>
-                                                            <Link to="/blog" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/blog" target="_blank" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -249,7 +258,7 @@ const Landing = () => {
                                         near-instant verification solutions based on the
                                         proprietary BlueG platform.
                                     </p>
-                                    <Link to="/industries" className="btn btn-primary btn-blue">Explore</Link>
+                                    <Link to="/industries" target="_blank" className="btn btn-primary btn-blue">Explore</Link>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +370,7 @@ const Landing = () => {
 
                     <div className="row align-items-center my-md-4">
                         <div className="col-12">
-                            <Link to="/services" className="btn btn-primary btn-blue">Explore</Link>
+                            <Link to="/services" target="_blank" className="btn btn-primary btn-blue">Explore</Link>
                         </div>
                     </div>
                 </div>
@@ -389,7 +398,7 @@ const Landing = () => {
                                         interfaces to offer accurate and comprehensive results
                                         in real-time.</p>
 
-                                    <Link to="/technology" className="btn btn-primary btn-red">Explore</Link>
+                                    <Link to="/technology" target="_blank" className="btn btn-primary btn-red">Explore</Link>
                                 </div>
                             </div>
                         </div>
@@ -439,7 +448,7 @@ const Landing = () => {
                         </p>
 
                         <div className="col-12">
-                            <Link to="/about-us" className="btn btn-primary btn-blue">Explore</Link>
+                            <Link to="/about-us" target="_blank" className="btn btn-primary btn-blue">Explore</Link>
                         </div>
                     </div>
                 </div>
@@ -656,7 +665,7 @@ const Landing = () => {
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and
                                                                 after listing properties</h4>
-                                                            <Link to="/blog1" className="btn btn-primary btn-red">Read More</Link>
+                                                            <Link to="/blog1" target="_blank" className="btn btn-primary btn-red">Read More</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -674,7 +683,7 @@ const Landing = () => {
                                                         <img className="card-img-top px-5 pt-5" src="images/blogs/blog-2/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
-                                                            <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
+                                                            <Link to="/blog2" target="_blank" className="btn btn-primary btn-red">Read More</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -692,7 +701,7 @@ const Landing = () => {
                                                         <img className="card-img-top px-5 pt-5" src="images/blogs/blog-3/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
-                                                            <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>
+                                                            <Link to="/blog3" target="_blank" className="btn btn-primary btn-red">Read More</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -714,7 +723,7 @@ const Landing = () => {
                                 <div className="section-title section-title-left text-start">
                                     <h2 className="text-white">Start verifying now.</h2>
                                 </div>
-                                <Link to="/contact" className="btn btn-primary btn-blue">Get in touch</Link>
+                                <Link to="/contact" target="_blank" className="btn btn-primary btn-blue">Get in touch</Link>
                             </div>
                         </div>
 

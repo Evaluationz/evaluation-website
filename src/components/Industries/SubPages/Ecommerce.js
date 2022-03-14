@@ -79,17 +79,16 @@ const Landing = () => {
                     </div>
 
                     <div className="row align-items-center mt-4">
-                        
-                        <div className="col-md-4 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/ecommerce/icon-5.png" alt="shape" width="80"/>
-                            <span className="text-black ml-2">
-                                Legal Verification
-                            </span>
-                        </div>
                         <div className="col-md-4 d-flex align-items-center justify-content-start">
                             <img src="images/industries/ecommerce/icon-6.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Drug Tests
+                            </span>
+                        </div>
+                        <div className="col-md-4 d-flex align-items-center justify-content-start">
+                            <img src="images/industries/ecommerce/icon-5.png" alt="shape" width="80"/>
+                            <span className="text-black ml-2">
+                                Legal Verification
                             </span>
                         </div>
                     </div>

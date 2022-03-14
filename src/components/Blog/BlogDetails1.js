@@ -41,16 +41,19 @@ const BlogDetails = () => {
 
                                 <div className="about-content">
                                     <p className="text-black font-weight-bold mb-0">Suspects Took Delhi Flat With Fake Papers, Kept 3 Kg Explosives:</p>
-                                    <p className="text-black font-weight-normal">Sources:https://www.ndtv.com/delhi-news/delhi-seemapuri-suspects-took-delhi-flat-with-fake-
-                                        papers-kept-3-kg-explosives-sources-2774929#pfrom=home-ndtv_bigstory</p>
+                                    <p className="text-black font-weight-normal">Sources:<a href="https://www.ndtv.com/delhi-news/delhi-seemapuri-suspects-took-delhi-flat-with-fake-
+                                        papers-kept-3-kg-explosives-sources-2774929#pfrom=home-ndtv_bigstory" target="_blank">https://www.ndtv.com/delhi-news/delhi-seemapuri-suspects-took-delhi-flat-with-fake-
+                                        papers-kept-3-kg-explosives-sources-2774929#pfrom=home-ndtv_bigstory</a></p>
 
                                     <p className="text-black font-weight-bold mb-0">‘Tenant’ dupes realtor and four tenants</p>
-                                    <p className="text-black font-weight-normal">Sources:https://www.thehindu.com/news/cities/bangalore/tenant-dupes-realtor-and-four-tena
-                                        nts/article25115078.ece</p>
+                                    <p className="text-black font-weight-normal"><a href="https://www.thehindu.com/news/cities/bangalore/tenant-dupes-realtor-and-four-tena
+                                        nts/article25115078.ece" target="_blank">Sources:https://www.thehindu.com/news/cities/bangalore/tenant-dupes-realtor-and-four-tena
+                                        nts/article25115078.ece</a></p>
 
                                     <p className="text-black font-weight-bold mb-0">Rent Scam: Fraudster Posing As Army Officer Dupes Bhopal Man Of Rs 1 Lakh</p>
-                                    <p className="text-black font-weight-normal">Sources:https://www.the420.in/rent-scam-fraudster-posing-as-army-officer-dupes-bhopal-
-                                        man-of-rs-1-lakh/</p>
+                                    <p className="text-black font-weight-normal"><a href="https://www.the420.in/rent-scam-fraudster-posing-as-army-officer-dupes-bhopal-
+                                        man-of-rs-1-lakh/" target="_blank">Sources:https://www.the420.in/rent-scam-fraudster-posing-as-army-officer-dupes-bhopal-
+                                        man-of-rs-1-lakh/</a></p>
                                     <p className="text-black font-weight-normal">The world of rental is fraught with risk. It is a contract between two (usually) complete strangers
                                         where the asset under contract is of tremendous value. With the rise of property portals, and
                                         many owner/tenant agreements becoming completely digital, the relationship becomes even

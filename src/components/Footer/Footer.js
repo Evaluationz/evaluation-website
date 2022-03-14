@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-upper pt-4 pb-2 position-relative">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-12 col-md-6 col-lg-4 white-border-right">
+                        <div className="col-md-6 col-lg-4 white-border-right">
                             <div className="footer-content-item">
                                 <div className="footer-logo">
                                     <Link to="/" onClick={() => {window.location.href="/"}}>
@@ -34,12 +34,12 @@ const Footer = () => {
                                     </ul>
 
                                     <div className="footer-copyright-text pt-3 footer-copyright-text-white">
-                                        <p><Link to="/tnc">Terms of Use</Link> | <Link to="/privacy">Privacy Policy</Link> | <Link to="/cookie">Cookie Policy</Link> | <Link to="/faq">FAQ's</Link></p>
+                                        <p>{/*<Link to="/tnc">Terms of Use</Link> | */}<Link to="/privacy">Privacy Policy</Link>{/* | <Link to="/cookie">Cookie Policy</Link>*/} | <Link to="/faq">FAQ's</Link></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-md-6 col-lg-4 white-border-right">
+                        <div className="col-md-6 col-lg-4 white-border-right">
                             <div className="footer-content-list footer-content-item desk-pad-left-70">
                                 <div className="footer-content-title">
                                     <h3>QUICK LINKS</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-md-6 col-lg-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="footer-content-list footer-content-item desk-pad-left-70">
                                 <div className="footer-content-title">
                                     <h3>ADDRESS</h3>

@@ -3758,6 +3758,7 @@ select.form-control {
 .footer-list li .col{
   max-width: fit-content;
   margin-bottom: 0.5rem;
+  padding-right: 0;
 }
 
 .footer-list li:last-child {
@@ -6250,6 +6251,10 @@ select.form-control {
   background-color: #ff1717 !important;
   border-color: #ff1717 !important;
 }
+.btn-red:disabled{
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
 .btn-blue{
   background-color: #3e72fe !important;
   border-color: #3e72fe !important;
@@ -6486,8 +6491,6 @@ select.form-control {
   right: 400px;
 }
 
-
-
 .no-wrap{
   white-space: nowrap;
 }
@@ -6545,6 +6548,9 @@ select.form-control {
   .hero-block h1{
     font-size: 2.5rem;
   }
+  .footer-upper .white-border-right{
+    border-right: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
   .hero-block{
@@ -6592,6 +6598,7 @@ select.form-control {
 .blog-carousel .owl-nav.disabled{
   display: block;
 }
+
 .blog-carousel .owl-prev.disabled,
 .blog-carousel .owl-next.disabled {
   pointer-events: none;
@@ -6601,21 +6608,7 @@ select.form-control {
 .blog-carousel.default-carousel.owl-theme .owl-nav {
   margin-top: 0;
 }
-/* .blog-carousel.default-carousel.owl-theme .owl-nav button {
-  font-size: 18px;
-  width: 50px;
-  height: 50px;
-  border: transparent;
-  color: #3e72fe;
-  border-radius: 50%;
-  margin: 0;
-  margin-right: 15px;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .blog-carousel.default-carousel.owl-theme .owl-nav button:hover,
 .blog-carousel.default-carousel.owl-theme .owl-nav button:focus,
 .blog-carousel.default-carousel.owl-theme .owl-nav button:active {

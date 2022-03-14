@@ -33,7 +33,7 @@ const Landing = () => {
                         <h1>If you need it verified, we've got it covered.</h1>
                     </div>
                     <div className="row d-flex justify-content-between">
-                        <div className="col-md-6 col-lg-4">
+                        <div className="col-md-6 col-lg-4 mb-3">
                             <div className="user-card">
                                 <div className="user-card-body">
                                     <img src="images/landing/image-1.jpg" className="img-fluid shadow-2xl" />
@@ -41,7 +41,7 @@ const Landing = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 float-md-right">
+                        <div className="col-md-6 col-lg-4 mb-md-3 float-md-right">
                             <div className="user-card">
                                 <div className="user-card-body">
                                     <img src="images/landing/image-2.jpg" className="img-fluid shadow-2xl" />

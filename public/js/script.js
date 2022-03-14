@@ -93,7 +93,7 @@ jQuery(function ($) {
         navText: ["<i class='mdi mdi-chevron-left text-white'></i>", "<i class='mdi mdi-chevron-right text-white'></i>"],
         responsive:{
             0: {
-                items: 2
+                items: 1
             },
             768: {
                 items: 3
@@ -107,7 +107,7 @@ jQuery(function ($) {
     //Blogs carousel
     $(".blog-carousel").owlCarousel({
         loop: true,
-        items: 3,
+        items: 1,
         center:true,
         autoplay: true,
         smartSpeed: 1500,

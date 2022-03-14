@@ -6762,6 +6762,10 @@ select.form-control {
 {
  box-shadow: 0 5px 20px rgb(0 0 0 / 0.7);
 }
-
-
-
+.short-text{
+  color: #000000;
+}
+.readMoreText{
+  font-weight: 500;
+  margin-left: 0.5rem;
+}

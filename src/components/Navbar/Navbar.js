@@ -17,7 +17,7 @@ const Navbar = () => {
                 </div>
                 <div className="main-nav">
                     <div className="container-fluid px-0">
-                        <nav className="navbar navbar-expand-md navbar-light px-0">
+                        <nav className="navbar navbar-expand-md navbar-light">
                             <Link className="navbar-brand mr-0"
                                 to="/" onClick={() => { window.location.href = "/" }}>
                                 <div className="d-flex align-items-center justify-content-start">

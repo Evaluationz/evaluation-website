@@ -16,7 +16,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/image-1.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/image-1.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -70,7 +70,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-right text-center">
-                                <img src="images/industries/image-2.jpg" alt="shape" className="red-image-right"/>
+                                <img src="images/industries/image-2.jpg" alt="shape" className="red-image-right shadow-2xl"/>
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/image-3.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/image-3.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -175,12 +175,12 @@ const Landing = () => {
                             </span>
                         </div>
 
-                        <div className="col-md-2 d-flex align-items-center justify-content-start">
+                        {/* <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-4.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Education Verification
                             </span>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-7.png" alt="shape" width="80"/>
@@ -195,9 +195,6 @@ const Landing = () => {
                                 Legal Verification
                             </span>
                         </div>
-                    </div>
-
-                    <div className="row align-items-center mt-4">
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-6.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
@@ -205,6 +202,10 @@ const Landing = () => {
                             </span>
                         </div>
                     </div>
+
+                    {/* <div className="row align-items-center mt-4">
+                        
+                    </div> */}
 
                     <div className="row mt-2">
                         <div className="col-12">
@@ -234,7 +235,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-right text-center">
-                                <img src="images/industries/image-4.jpg" alt="shape" className="red-image-right"/>
+                                <img src="images/industries/image-4.jpg" alt="shape" className="red-image-right shadow-2xl"/>
                             </div>
                         </div>
                     </div>
@@ -264,26 +265,17 @@ const Landing = () => {
                             </span>
                         </div>
 
-                        <div className="col-md-2 d-flex align-items-center justify-content-start">
+                        {/* <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-4.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Education Verification
                             </span>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-5.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Criminal Record Check
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="row align-items-center mt-4">
-                        <div className="col-md-2 d-flex align-items-center justify-content-start">
-                            <img src="images/industries/icon-9.png" alt="shape" width="80"/>
-                            <span className="text-white ml-2">
-                                Reference Check
                             </span>
                         </div>
                         <div className="col-md-2 d-flex align-items-center justify-content-start">
@@ -292,6 +284,16 @@ const Landing = () => {
                                 Court Record Verification
                             </span>
                         </div>
+                    </div>
+
+                    <div className="row align-items-center mt-4">
+                        {/* <div className="col-md-2 d-flex align-items-center justify-content-start">
+                            <img src="images/industries/icon-9.png" alt="shape" width="80"/>
+                            <span className="text-white ml-2">
+                                Reference Check
+                            </span>
+                        </div> */}
+                        
                     </div>
 
                     <div className="row mt-2">
@@ -307,7 +309,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/image-5.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/image-5.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -345,12 +347,12 @@ const Landing = () => {
                             </span>
                         </div>
 
-                        <div className="col-md-3 d-flex align-items-center justify-content-start">
+                        {/* <div className="col-md-3 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-4.png" alt="shape" width="80"/>
                             <span className="text-white ml-2">
                                 Education Verification
                             </span>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
                             <img src="images/industries/icon-8.png" alt="shape" width="80"/>
@@ -388,7 +390,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-right text-center">
-                                <img src="images/industries/image-6.jpg" alt="shape" className="red-image-right"/>
+                                <img src="images/industries/image-6.jpg" alt="shape" className="red-image-right shadow-2xl"/>
                             </div>
                         </div>
                     </div>
@@ -455,7 +457,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/image-7.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/image-7.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 

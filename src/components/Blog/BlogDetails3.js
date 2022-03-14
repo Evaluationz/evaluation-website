@@ -7,7 +7,7 @@ const BlogDetails = () => {
             <Helmet>
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
-                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
+                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">
@@ -36,10 +36,10 @@ const BlogDetails = () => {
                                 <div className="about-content">
                                     <p className="text-black font-weight-normal">It is a situation that any cab aggregator or ride-hailing company fears. Blaring headlines about driver misbehaviour or criminality.  Unfortunately, they are more common than anybody would imagine. </p>
                                     <p className="text-black font-weight-normal">Sample these headlines.</p>
-                                    <p className="text-black font-weight-normal"><i>Bengaluru: Uber driver 'rapes' woman passenger as she returns from party, booked</i> <a href="https://www.timesnownews.com/bengaluru/article/bengaluru-uber-driver-rapes-woman-passenger-as-she-returns-from-party-booked/815505" target="_blank">https://www.timesnownews.com/bengaluru/article/bengaluru-uber-driver-rapes-woman-passenger-as-she-returns-from-party-booked/815505</a></p>
-                                    <p className="text-black font-weight-normal"><i>Murder of Kolkata model in Bengaluru: Ola driver arrested for crime</i> <a href="https://www.thenewsminute.com/article/murder-kolkata-model-bengaluru-ola-driver-arrested-crime-107753" target="_blank">https://www.thenewsminute.com/article/murder-kolkata-model-bengaluru-ola-driver-arrested-crime-107753</a></p>
-                                    <p className="text-black font-weight-normal"><i>Ola cab driver held for harassing, threatening woman passenger </i><a href="https://www.hindustantimes.com/cities/ola-cab-driver-held-for-harassing-threatening-woman-passenger/story-G4dUKJDU0Io7SDTkqfxHII.html" target="_blank">https://www.hindustantimes.com/cities/ola-cab-driver-held-for-harassing-threatening-woman-passenger/story-G4dUKJDU0Io7SDTkqfxHII.html </a> </p>
-                                    <p className="text-black font-weight-normal"> And this is a worldwide problem.  In fact, the first-ever safety report by Lyft revealed over 4,000 assaults between 2017-2019 ( <a href="https://www.theverge.com/2021/10/22/22740609/lyft-safety-report-2017-2019-physical-sexual-assault-death" target="_blank">https://www.theverge.com/2021/10/22/22740609/lyft-safety-report-2017-2019-physical-sexual-assault-death</a> ). And Uber’s safety report disclosed 3,045 sexual assaults and nine murders in the US in 2018. (<a href="https://www.theverge.com/2019/12/5/20997939/uber-safety-report-2018-sexual-assault-ride-hailing-platform-stats" target="_blank">https://www.theverge.com/2019/12/5/20997939/uber-safety-report-2018-sexual-assault-ride-hailing-platform-stats </a>)</p>    </div>
+                                    <p className="text-black font-weight-normal"> <a href="https://www.timesnownews.com/bengaluru/article/bengaluru-uber-driver-rapes-woman-passenger-as-she-returns-from-party-booked/815505" target="_blank"><i>Bengaluru: Uber driver 'rapes' woman passenger as she returns from party, booked</i></a></p>
+                                    <p className="text-black font-weight-normal"><a href="https://www.thenewsminute.com/article/murder-kolkata-model-bengaluru-ola-driver-arrested-crime-107753" target="_blank"><i>Murder of Kolkata model in Bengaluru: Ola driver arrested for crime</i></a></p>
+                                    <p className="text-black font-weight-normal"><a href="https://www.hindustantimes.com/cities/ola-cab-driver-held-for-harassing-threatening-woman-passenger/story-G4dUKJDU0Io7SDTkqfxHII.html" target="_blank"><i>Ola cab driver held for harassing, threatening woman passenger </i></a> </p>
+                                    <p className="text-black font-weight-normal"> And this is a worldwide problem.  In fact, <a href="https://www.theverge.com/2021/10/22/22740609/lyft-safety-report-2017-2019-physical-sexual-assault-death" target="_blank">the first-ever safety report by Lyft revealed over 4,000 assaults between 2017-2019</a>. And <a href="https://www.theverge.com/2019/12/5/20997939/uber-safety-report-2018-sexual-assault-ride-hailing-platform-stats" target="_blank">Uber’s safety report disclosed 3,045 sexual assaults and nine murders in the US in 2018. </a></p>    </div>
                                 <p className="text-black font-weight-normal">So, what can cab aggregators do to mitigate risks and ensure that their drivers do not put them in such situations? </p>
                                 <p className="text-black font-weight-bold mb-0">The drive for safety starts before the drive.</p>
                                 <p className="text-black font-weight-normal">To set the context, there has been explosive growth in the ride-hailing segment. The online taxi services market in India was valued at INR 29.75 Bn in FY 2019. The market is anticipated to expand at a compound annual growth rate (CAGR) of ~16.60% to reach a sales value of INR 61.59 Bn by 2024. What this means is more drivers to meet the demand. And as the numbers increase, so do the risks, unless processes are put in place to mitigate them.</p>
@@ -51,7 +51,7 @@ const BlogDetails = () => {
                                     <div className="row align-items-center">
                                         <div className="col-lg-12 px-0 py-3">
                                             <div className="text-center">
-                                                <img src="images/blogs/blog-3/image-2.jpg" alt="shape" className="blog-details-image" />
+                                                <img src="images/blogs/blog-3/image-2.jpg" alt="shape" className="blog-details-image shadow-2xl" />
                                             </div>
                                         </div>
                                     </div>
@@ -78,9 +78,12 @@ const BlogDetails = () => {
                                 <p className="text-black font-weight-normal">Look for a verification solution that can keep pace with the needs of the fast-changing industry. The ability to componentize government identity databases and utilize AI to return results in real-time can make your verification process quicker and more accurate. </p>
                                 <p className="text-black font-weight-normal">Ensure that it has API integration to reduce time and effort. An integrated solution can trigger automatic verification requests on receipt of an application and make the driver onboarding process more efficient and robust. API integration can also trigger repeat verifications at regular intervals for continuous verification to make cross-check that the driver is still in the green zone. </p>
                                 <p className="text-black font-weight-normal">Do your research and choose a comprehensive verification solution for a relaxing ride; the comfort that comes when the driver can be trusted.</p>
-
-                                <a href="contact#getInTouch"
-                                   className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
+                                <div className="row text-center">
+                                    <div className="col-12">
+                                        <a href="contact"
+                                            className="btn btn-primary btn-blue">GET IN TOUCH</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

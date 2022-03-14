@@ -65,7 +65,7 @@ const ContactUs = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/contact-us/image-1.png" alt="shape" className="blue-image-left" />
+                                <img src="images/contact-us/image-1.png" alt="shape" className="blue-image-left shadow-2xl" />
                             </div>
                         </div>
 
@@ -76,10 +76,10 @@ const ContactUs = () => {
                                 </div>
                                 <div className="section-title section-title-left text-start">
                                     <h5 className="text-white font-weight-bolder">Visit us in person at :</h5>
-                                    <p className="text-white">Evaluationz India Private Limited
-                                        BHIVE Workspace, 29 MG Road
-                                        7TH Floor, Mahalakshmi Chambers
-                                        Next to Trinity Metro Station,
+                                    <p className="text-white">Evaluationz India Private Limited<br/>
+                                        BHIVE Workspace, 29 MG Road<br/>
+                                        7TH Floor, Mahalakshmi Chambers<br/>
+                                        Next to Trinity Metro Station,<br/>
                                         Bangalore – 560001</p>
                                 </div>
                             </div>

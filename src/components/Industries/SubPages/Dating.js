@@ -16,7 +16,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/dating/image-1.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/dating/image-1.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 
@@ -68,12 +68,12 @@ const Landing = () => {
                             </span>
                         </div>
 
-                        <div className="col-md-3 d-flex align-items-center justify-content-start">
+                        {/* <div className="col-md-3 d-flex align-items-center justify-content-start">
                             <img src="images/industries/dating/icon-3.png" alt="shape" width="80"/>
                             <span className="text-black ml-2">
                                 Education Verification
                             </span>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-3 d-flex align-items-center justify-content-start">
                             <img src="images/industries/dating/icon-4.png" alt="shape" width="80"/>

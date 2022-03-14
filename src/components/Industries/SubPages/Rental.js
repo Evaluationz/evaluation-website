@@ -16,7 +16,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-md-left text-center">
-                                <img src="images/industries/rental/image-1.jpg" alt="shape" className="blue-image-left"/>
+                                <img src="images/industries/rental/image-1.jpg" alt="shape" className="blue-image-left shadow-2xl"/>
                             </div>
                         </div>
 

@@ -81,7 +81,7 @@ const Navbar = () => {
                                             className="nav-link">CONTACT</Link>
                                     </li>
                                     <li className="nav-item nav-btn">
-                                        <a href="#getInTouch"
+                                        <a href="contact#getInTouch"
                                             className="nav-link cursor-pointer">GET IN TOUCH</a>
                                     </li>
                                 </ul>

@@ -161,11 +161,11 @@ const Landing = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <Link to="/technology" className="btn btn-primary btn-white shadow-lg">For more details on the BlueG platform and API integration, go here</Link>
+                            <Link to="/technology" target="_blank" className="btn btn-primary btn-white shadow-lg">For more details on the BlueG platform and API integration, go here</Link>
                         </div>
 
                         <div className="col-12 mt-4">
-                            <Link to="/services" className="btn btn-primary btn-white shadow-lg">For more information on our Services, go here</Link>
+                            <Link to="/services" target="_blank" className="btn btn-primary btn-white shadow-lg">For more information on our Services, go here</Link>
                         </div>
                     </div>
                 </div>

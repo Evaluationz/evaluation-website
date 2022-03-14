@@ -126,7 +126,7 @@ const Landing = () => {
 
                     <div className="row mt-2">
                         <div className="col-12">
-                            <Link to="/corporate" className="btn btn-primary btn-red float-right">Read More</Link>
+                            <Link to="/corporate" target="_blank" className="btn btn-primary btn-red float-right">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@ const Landing = () => {
 
                     <div className="row mt-2">
                         <div className="col-12">
-                            <Link to="/ecommerce" className="btn btn-primary btn-blue float-right">Read More</Link>
+                            <Link to="/ecommerce" target="_blank" className="btn btn-primary btn-blue float-right">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@ const Landing = () => {
 
                     <div className="row mt-2">
                         <div className="col-12">
-                            <Link to="/banking-fintech" className="btn btn-primary btn-red float-right">Read More</Link>
+                            <Link to="/banking-fintech" target="_blank" className="btn btn-primary btn-red float-right">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -362,7 +362,7 @@ const Landing = () => {
 
                     <div className="row mt-2">
                         <div className="col-12">
-                            <Link to="/online-dating" className="btn btn-primary btn-blue float-right">Read More</Link>
+                            <Link to="/online-dating" target="_blank" className="btn btn-primary btn-blue float-right">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -444,7 +444,7 @@ const Landing = () => {
 
                     <div className="row mt-2">
                         <div className="col-12">
-                            <Link to="/matrimonial" className="btn btn-primary btn-red float-right">Read More</Link>
+                            <Link to="/matrimonial" target="_blank" className="btn btn-primary btn-red float-right">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -511,7 +511,7 @@ const Landing = () => {
 
                     <div className="row mt-2">
                         <div className="col-12">
-                            <Link to="/rental" className="btn btn-primary btn-blue float-right">Read More</Link>
+                            <Link to="/rental" target="_blank" className="btn btn-primary btn-blue float-right">Read More</Link>
                         </div>
                     </div>
                 </div>

@@ -22,14 +22,14 @@ const Footer = () => {
                                         FOLLOW US ON
                                     </p>
                                     <ul className="social-list social-list-btn">
-                                        <li>
+                                        {/*<li>
                                             <Link to={{pathname: "https://www.twitter.com/"}} target="_blank" name="facebook"><i className="mdi mdi-twitter"></i></Link>
+                                        </li>*/}
+                                        <li>
+                                            <Link to={{pathname: "https://www.linkedin.com/company/evaluationz-india-pvt-ltd/?viewAsMember=true"}} target="_blank" name="linkedin"><i className="mdi mdi-linkedin"></i></Link>
                                         </li>
                                         <li>
-                                            <Link to={{pathname: "https://www.facebook.com/"}} target="_blank" name="youtube"><i className="mdi mdi-facebook"></i></Link>
-                                        </li>
-                                        <li>
-                                            <Link to={{pathname: "https://in.linkedin.com/"}} target="_blank" name="linkedin"><i className="mdi mdi-linkedin"></i></Link>
+                                            <Link to={{pathname: "https://www.facebook.com/Evaluationz-212093105791989"}} target="_blank" name="youtube"><i className="mdi mdi-facebook"></i></Link>
                                         </li>
                                     </ul>
 

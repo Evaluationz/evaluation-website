@@ -6676,7 +6676,8 @@ select.form-control {
 
 .media__item > img {
   display: block;
-  max-width: none;
+  max-width: 130px;
+  border-radius: 0;
   margin: 0 auto;
 }
 .media--rev .media__item {

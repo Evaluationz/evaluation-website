@@ -211,7 +211,7 @@ const Landing = () => {
                                     <li className="media">
                                         <div>
                                             <div className="media__item">
-                                                <img className="card-img-top img-fluid" src="images/about-us/manikandan.jpg" alt="Manikandan"/>
+                                                <img className="card-img-top img-fluid" src="images/about-us/manikandan.png" alt="Manikandan"/>
                                             </div>
                                         </div>
                                     </li>

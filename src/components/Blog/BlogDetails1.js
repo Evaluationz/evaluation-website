@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const BlogDetails = () => {
     return (
@@ -8,7 +8,7 @@ const BlogDetails = () => {
             <Helmet>
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
-                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
+                <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">
@@ -41,20 +41,10 @@ const BlogDetails = () => {
                                 </div>
 
                                 <div className="about-content">
-                                    <p className="text-black font-weight-bold mb-0">Suspects Took Delhi Flat With Fake Papers, Kept 3 Kg Explosives:</p>
-                                    <p className="text-black font-weight-normal">Sources:<a href="https://www.ndtv.com/delhi-news/delhi-seemapuri-suspects-took-delhi-flat-with-fake-
-                                        papers-kept-3-kg-explosives-sources-2774929#pfrom=home-ndtv_bigstory" target="_blank">https://www.ndtv.com/delhi-news/delhi-seemapuri-suspects-took-delhi-flat-with-fake-
-                                        papers-kept-3-kg-explosives-sources-2774929#pfrom=home-ndtv_bigstory</a></p>
+                                    <p className="text-black font-weight-bold mb-0"><a href="https://www.ndtv.com/delhi-news/delhi-seemapuri-suspects-took-delhi-flat-with-fake-papers-kept-3-kg-explosives-sources-2774929#pfrom=home-ndtv_bigstory" target="_blank">Suspects Took Delhi Flat With Fake Papers, Kept 3 Kg Explosives</a></p>
+                                    <p className="text-black font-weight-bold mb-0"><a href="https://www.thehindu.com/news/cities/bangalore/tenant-dupes-realtor-and-four-tenants/article25115078.ece" target="_blank">‘Tenant’ dupes realtor and four tenants</a></p>
 
-                                    <p className="text-black font-weight-bold mb-0">‘Tenant’ dupes realtor and four tenants</p>
-                                    <p className="text-black font-weight-normal"><a href="https://www.thehindu.com/news/cities/bangalore/tenant-dupes-realtor-and-four-tena
-                                        nts/article25115078.ece" target="_blank">Sources:https://www.thehindu.com/news/cities/bangalore/tenant-dupes-realtor-and-four-tena
-                                        nts/article25115078.ece</a></p>
-
-                                    <p className="text-black font-weight-bold mb-0">Rent Scam: Fraudster Posing As Army Officer Dupes Bhopal Man Of Rs 1 Lakh</p>
-                                    <p className="text-black font-weight-normal"><a href="https://www.the420.in/rent-scam-fraudster-posing-as-army-officer-dupes-bhopal-
-                                        man-of-rs-1-lakh/" target="_blank">Sources:https://www.the420.in/rent-scam-fraudster-posing-as-army-officer-dupes-bhopal-
-                                        man-of-rs-1-lakh/</a></p>
+                                    <p className="text-black font-weight-bold mb-0"><a href="https://www.the420.in/rent-scam-fraudster-posing-as-army-officer-dupes-bhopal-man-of-rs-1-lakh/" target="_blank">Rent Scam: Fraudster Posing As Army Officer Dupes Bhopal Man Of Rs 1 Lakh</a></p>
                                     <p className="text-black font-weight-normal">The world of rental is fraught with risk. It is a contract between two (usually) complete strangers
                                         where the asset under contract is of tremendous value. With the rise of property portals, and
                                         many owner/tenant agreements becoming completely digital, the relationship becomes even
@@ -111,9 +101,12 @@ const BlogDetails = () => {
                                         service that uses the power of artificial intelligence and information from government databases
                                         to offer instant verification results. And ensure that your rental portal has only genuine listings
                                         and users resulting in enhanced brand reputation.</p>
-
-                                    <a href="contact#getInTouch"
-                                       className="btn btn-primary btn-blue float-right">GET IN TOUCH</a>
+                                    <div className="row text-center">
+                                        <div className="col-12">
+                                            <a href="contact"
+                                                className="btn btn-primary btn-blue">GET IN TOUCH</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

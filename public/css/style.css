@@ -6093,7 +6093,7 @@ select.form-control {
   width: 50px;
 }
 .logo-image{
-  width: 150px;
+  width: 250px;
 }
 
 /*Coming Soon*/
@@ -6326,7 +6326,7 @@ select.form-control {
   width: 100%;
 }
 .about-section-bg .statistic-block .circle .circle__inner h1{
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .about-section-bg .statistic-block .circle .circle__inner p{

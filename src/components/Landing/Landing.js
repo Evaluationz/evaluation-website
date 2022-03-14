@@ -406,13 +406,21 @@ const Landing = () => {
                         <h1 className="c-red font-weight-bolder">Why Evaluationz</h1>
                     </div>
 
+                    <div className="row">
+                        <p className="text-white">
+                            NSR Empanelled Gold Partner
+                            <Link to={{pathname: "https://nationalskillsregistry.com/background-verification.htm"}} target="_blank" className="ml-1">Know more</Link>
+                        </p>
+                        <p className="text-white mb-0">An ISO 27001:2005 & ISO 9001: 2008 Company</p>
+                    </div>
+
                     <div className="row statistic-block">
                         <div className="grid d-md-flex">
                             <div className="col-md-4">
                                 <div className="circle">
                                     <div className="circle__inner">
                                         <h1 className="c-red">{ClientCount}</h1>
-                                        <p className="c-blue">COMPANIES</p>
+                                        <p className="c-blue mb-0">COMPANIES</p>
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +428,7 @@ const Landing = () => {
                                 <div className="circle">
                                     <div className="circle__inner">
                                         <h1 className="c-red">{TotalCase}</h1>
-                                        <p className="c-blue">VERIFICATIONS</p>
+                                        <p className="c-blue mb-0">VERIFICATIONS</p>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +436,7 @@ const Landing = () => {
                                 <div className="circle">
                                     <div className="circle__inner">
                                         <h1 className="c-red">{RedCase}</h1>
-                                        <p className="c-blue">RED FLAGS</p>
+                                        <p className="c-blue mb-0">RED FLAGS</p>
                                     </div>
                                 </div>
                             </div>

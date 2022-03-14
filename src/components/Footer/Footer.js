@@ -12,7 +12,6 @@ const Footer = () => {
                                 <div className="footer-logo">
                                     <Link to="/" onClick={() => {window.location.href="/"}}>
                                         <div className="d-flex align-items-center justify-content-start">
-                                            <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50}/>
                                             <img src="images/logo.png" alt="logo" className="logo logo-image"/>
                                         </div>
                                     </Link>
@@ -29,7 +28,7 @@ const Footer = () => {
                                             <Link to={{pathname: "https://www.linkedin.com/company/evaluationz-india-pvt-ltd/?viewAsMember=true"}} target="_blank" name="linkedin"><i className="mdi mdi-linkedin"></i></Link>
                                         </li>
                                         <li>
-                                            <Link to={{pathname: "https://www.facebook.com/Evaluationz-212093105791989"}} target="_blank" name="youtube"><i className="mdi mdi-facebook"></i></Link>
+                                            <Link to={{pathname: "https://www.facebook.com/Evaluationz-212093105791989"}} target="_blank" name="facebook"><i className="mdi mdi-facebook"></i></Link>
                                         </li>
                                     </ul>
 
@@ -78,10 +77,10 @@ const Footer = () => {
                                 <div className="footer-details footer-address">
                                     <div className="footer-address-item">
                                         <div className="footer-address-text">
-                                            <p>Evaluationz India Private Limited
-                                                BHIVE Workspace, 29 MG Road,
-                                                7th Floor-Mahalaxmi Chambers,
-                                                Next to Trinity Metro Station,
+                                            <p>Evaluationz India Private Limited<br/>
+                                                BHIVE Workspace, 29 MG Road,<br/>
+                                                7th Floor-Mahalaxmi Chambers,<br/>
+                                                Next to Trinity Metro Station,<br/>
                                                 Bangalore - 560001</p>
                                         </div>
                                     </div>

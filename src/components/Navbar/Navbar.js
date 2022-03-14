@@ -9,19 +9,17 @@ const Navbar = () => {
                     <div className="mobile-nav">
                         <Link to="/" onClick={() => { window.location.href = "/" }} className="mobile-brand">
                             <div className="d-flex align-items-center justify-content-start">
-                                <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50} />
                                 <img src="images/logo.png" alt="logo" className="logo logo-image" />
                             </div>
                         </Link>
                     </div>
                 </div>
                 <div className="main-nav">
-                    <div className="container-fluid px-0">
+                    <div className="container-fluid">
                         <nav className="navbar navbar-expand-md navbar-light">
                             <Link className="navbar-brand mr-0"
                                 to="/" onClick={() => { window.location.href = "/" }}>
                                 <div className="d-flex align-items-center justify-content-start">
-                                    <img src="images/small-logo.png" alt="logo" className="logo small-logo-image" width={50} />
                                     <img src="images/logo.png" alt="logo" className="logo logo-image" />
                                 </div>
                             </Link>

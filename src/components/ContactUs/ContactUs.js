@@ -76,7 +76,7 @@ const ContactUs = () => {
                                 </div>
                                 <div className="section-title section-title-left text-start">
                                     <h5 className="text-white font-weight-bolder">Visit us in person at :</h5>
-                                    <p className="text-white">Evaluationz India Private Limited<br/>
+                                    <p className="text-white"><b>Evaluationz India Private Limited</b><br/>
                                         BHIVE Workspace, 29 MG Road<br/>
                                         7TH Floor, Mahalakshmi Chambers<br/>
                                         Next to Trinity Metro Station,<br/>

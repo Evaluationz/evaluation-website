@@ -8,14 +8,17 @@ const formData = { name:'',company:'',title:'',email:'',phone:'',city:'',message
 const ContactUs = () => {
     const [formState, updateFormState] = useState(formData);
     const [validated, setValidated] = useState(false);
-
+    const [activeButton, setactiveButton] = useState(true);
+    
     async function Contactus(event){
         const form = event.currentTarget;
+       
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
         }
         else{
+       
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
         let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
@@ -25,8 +28,22 @@ const ContactUs = () => {
 
     function onChange(e){
         e.persist();
+      
         updateFormState(() => ({...formState,[e.target.name]:e.target.value}))
-    }    
+        setactiveButton(false)
+    }  
+
+    async function cityAuto(){
+        let autocomplete = new window.google.maps.places.Autocomplete(
+          document.getElementById('city'),
+          { types: [ 'geocode' ] }
+        );
+        console.log("geo ",autocomplete);
+        autocomplete.addListener( 'place_changed', () =>{
+          let place = autocomplete.getPlace();
+          updateFormState(() => ({...formState,city:place.formatted_address}))
+        });
+      }  
 
     return (
         <section>
@@ -67,10 +84,7 @@ const ContactUs = () => {
             <div className="about-section bg-white py-5">
                 <div className="container">
                     <iframe className="map"
-                            frameborder="0"
                             scrolling="no"
-                            marginheight="0"
-                            marginwidth="0"
                             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left mb-0 text-start">
                         <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 71017600</h5>
@@ -79,8 +93,8 @@ const ContactUs = () => {
                 </div>
             </div>
 
-            <div className="about-section contact-us-section bg-light-gray pt-5 pb-1">
-                <div className="container">
+            <div className="about-section contact-us-section bg-light-gray pt-5 pb-1" id="getInTouch">
+                <div className="container my-5">
                     <div className="section-title section-title-left mb-3 text-start">
                         <h3 className="text-black font-weight-bolder">Get in Touch</h3>
                         <p className="text-black mb-0">If you have a specific query, please fill this form and we will get back to you soon.</p>
@@ -89,41 +103,79 @@ const ContactUs = () => {
                     <Form noValidate validated={validated} onSubmit={Contactus}>
                         <Form.Group as={Row} className="mb-12" controlId="formPlaintextEmail">
                             <div className="row align-items-center ">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" required className="shadow-lg" name="name" onChange={onChange} placeholder="Name" />
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                                  required
+                                                  className="shadow-lg"
+                                                  name="name"
+                                                  onChange={onChange}
+                                                  placeholder="Name" />
+                                    <Form.Control.Feedback type="invalid" className="mb-0">
+                                        Please provide your name.
+                                    </Form.Control.Feedback>
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                                  name="company"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Company" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                                  name="title"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Title" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="email"
+                                                  required
+                                                  name="email"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Email" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide your Email.
+                                    </Form.Control.Feedback>
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-6 pb-3">
+                                    <Form.Control type="number"
+                                                  name="phone"
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="Phone" />
+                                </div>
+                                <div className="col-lg-6 pb-3">
+                                    <Form.Control type="text"
+                                                  name="city"
+                                                  id="city"
+                                                  onFocus={cityAuto}
+                                                  className="shadow-lg"
+                                                  onChange={onChange}
+                                                  placeholder="City"/>
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <textarea className="form-control shadow-lg"
+                                              name="message"
+                                              onChange={onChange}
+                                              style={{maxHeight: '150px', height: '150px'}}
+                                              placeholder="Message/Query" />
                                 </div>
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" name="company" className="shadow-lg" onChange={onChange} placeholder="Company" />
-                                </div>
-                            </div>
-                            <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="text" name="title" className="shadow-lg" onChange={onChange} placeholder="Title" />
-                                </div>
-                            </div>
-                            <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Form.Control type="email" required name="email" className="shadow-lg" onChange={onChange} placeholder="Email" />
-                                </div>
-                            </div>
-                            <div className="row align-items-center">
-                                <div className="col-lg-6 pb-30">
-                                    <Form.Control type="number" name="phone" className="shadow-lg" onChange={onChange} placeholder="Phone" />
-                                </div>
-                                <div className="col-lg-6 pb-30">
-                                    <Form.Control type="text" name="city" className="shadow-lg" onChange={onChange} placeholder="City" />
-                                </div>
-                            </div>
-                            <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <textarea className="form-control shadow-lg" name="message" onChange={onChange} style={{maxHeight: '150px', height: '150px'}} placeholder="Message/Query" />
-                                </div>
-                            </div>
-                            <div className="row align-items-center">
-                                <div className="col-lg-12 pb-30">
-                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" >Submit</Button>
+                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
                                 </div>
                             </div>
                         </Form.Group>

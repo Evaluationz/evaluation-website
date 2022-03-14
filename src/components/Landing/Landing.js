@@ -28,8 +28,6 @@ const Landing = () => {
 
     const { ClientCount, TotalCase, RedCase } = statisticState
 
-
-
     return (
         <section>
             <Helmet>
@@ -37,25 +35,26 @@ const Landing = () => {
                 <meta name="description" content="Evaluationz is a Nascom empanalled gold partner in the space of employee, vendor and user verification which is digitized and real time" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
             </Helmet>
-            <div className="hero-block p-tb-100">
-                <div className="container">
+
+            <div className="hero-block py-5 mt-5">
+                <div className="container pt-3">
                     <div className="col-12 px-0 pb-md-5">
                         <h1>If you need it verified, we've got it covered.</h1>
                     </div>
                     <div className="row d-flex justify-content-between">
-                        <div className="col-md-6 col-lg-5">
+                        <div className="col-md-6 col-lg-4 mb-3">
                             <div className="user-card">
                                 <div className="user-card-body">
-                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                    <Link to="/employees" className="redirect-link">Employees<i className="mdi mdi-chevron-right c-blue mt-1"></i></Link>
+                                    <img src="images/landing/image-1.jpg" className="img-fluid shadow-2xl" />
+                                    <h3 className="mb-0">Employees<i className="mdi mdi-chevron-right c-blue mt-1"></i></h3>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-5 float-md-right">
+                        <div className="col-md-6 col-lg-4 mb-md-3 float-md-right">
                             <div className="user-card">
                                 <div className="user-card-body">
-                                    <img src="images/landing/image-2.jpg" className="img-fluid" />
-                                    <Link to="/user" className="redirect-link">User<i className="mdi mdi-chevron-right c-red mt-1"></i></Link>
+                                    <img src="images/landing/image-2.jpg" className="img-fluid shadow-2xl" />
+                                    <h3 className="mb-0">User<i className="mdi mdi-chevron-right c-red mt-1"></i></h3>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +68,7 @@ const Landing = () => {
                         <div className="owl-stage-outer pt-0">
                             <div className="owl-stage">
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -84,7 +83,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Bespoke solutions powered by AI and integration</p>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/about-us" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,7 +93,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -109,7 +108,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Digital. Instant. And universal.</p>
-                                                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                                            <Link to="/services" className="btn btn-primary btn-blue">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -119,7 +118,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -134,7 +133,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Verification made digital. And simple.</p>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/technology" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -144,7 +143,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -159,7 +158,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Seamless Integration with powerful API</p>
-                                                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                                            <Link to="/technology" className="btn btn-primary btn-blue">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -169,7 +168,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="owl-item">
-                                    <div className="item">
+                                    <div className="item my-3">
                                         <div className="container">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6 pb-30">
@@ -184,7 +183,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Read our latest blog</p>
-                                                            <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/blog" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -226,7 +225,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/landing/image-3.jpg" alt="shape" />
+                                <img src="images/landing/image-3.jpg" alt="shape" className="shadow-2xl" />
                             </div>
                         </div>
                     </div>
@@ -238,7 +237,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center blue-image-left">
-                                <img src="images/landing/image-4.jpg" alt="shape" />
+                                <img src="images/landing/image-4.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
 
@@ -259,7 +258,7 @@ const Landing = () => {
                                         near-instant verification solutions based on the
                                         proprietary BlueG platform.
                                     </p>
-                                    <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                    <Link to="/industries" className="btn btn-primary btn-blue">Explore</Link>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +289,7 @@ const Landing = () => {
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-right">
-                                <img src="images/landing/image-5.jpg" alt="shape" />
+                                <img src="images/landing/image-5.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
                     </div>
@@ -371,7 +370,7 @@ const Landing = () => {
 
                     <div className="row align-items-center my-md-4">
                         <div className="col-12">
-                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                            <Link to="/services" className="btn btn-primary btn-blue">Explore</Link>
                         </div>
                     </div>
                 </div>
@@ -382,7 +381,7 @@ const Landing = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center red-image-left">
-                                <img src="images/landing/image-6.jpg" alt="shape" />
+                                <img src="images/landing/image-6.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
 
@@ -399,7 +398,7 @@ const Landing = () => {
                                         interfaces to offer accurate and comprehensive results
                                         in real-time.</p>
 
-                                    <Link to="/explore" className="btn btn-primary btn-red">Explore</Link>
+                                    <Link to="/technology" className="btn btn-primary btn-red">Explore</Link>
                                 </div>
                             </div>
                         </div>
@@ -449,84 +448,11 @@ const Landing = () => {
                         </p>
 
                         <div className="col-12">
-                            <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                            <Link to="/about-us" className="btn btn-primary btn-blue">Explore</Link>
                         </div>
                     </div>
                 </div>
             </div>
-
-           {/* <div className="testimonial-section pt-5 position-relative">
-                <div className="col-12 px-md-5 bg-white">
-                    <div className="row">
-                        <h1 className="c-red font-weight-bolder pl-80">Testimonials</h1>
-                    </div>
-                    <div className="testimonials-carousel default-carousel owl-carousel owl-theme owl-loaded owl-drag">
-                        <div className="owl-stage-outer pt-0">
-                            <div className="owl-stage">
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="owl-item">
-                                    <div className="item">
-                                        <div className="container">
-                                            <div className="testimonial bg-red">
-                                                <div className="pic shadow-lg">
-                                                    <img src="images/landing/image-1.jpg" className="img-fluid" />
-                                                </div>
-                                                <p className="description text-white">
-                                                    is simply dummy text of the printing
-                                                    and typesetting industry. Lorem
-                                                    Ipsum has been the industry's
-                                                    standard dummy text ever since the
-                                                    1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
 
             <div className="testimonial-section position-relative">
                 <div className="container-fluid py-5 bg-red">
@@ -629,7 +555,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="about-section bg-blue pt-5 pb-30">
+            {/* <div className="about-section bg-blue pt-5 pb-30">
                 <div className="container">
                     <div className="row align-items-center">
                         <h1 className="text-white font-weight-bolder">Success Stories</h1>
@@ -652,7 +578,7 @@ const Landing = () => {
                                             publishing software like Aldus PageMaker including
                                             versions of Lorem Ipsum.
                                         </p>
-                                        <Link to="/explore" className="btn btn-primary btn-blue">Explore</Link>
+                                        <Link to="/case-studies" className="btn btn-primary btn-blue">Explore</Link>
                                     </div>
                                 </div>
                             </div>
@@ -718,10 +644,10 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="testimonial-section position-relative">
-                <div className="container-fluid py-5 bg-white">
+                <div className="container-fluid pt-5 pb-3 bg-white">
                     <div className="row">
                         <h1 className="c-red font-weight-bolder pl-80">Blog</h1>
                     </div>
@@ -732,9 +658,9 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-                                                <div className="blog bg-blue">
-                                                    <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-1/image-1.png" alt="Blog" />
+                                                <div className="blog">
+                                                    <div className="card shadow-2xl" >
+                                                        <img className="card-img-top blog-card-padding-4" src="images/blogs/blog-1/banner-1.png"  alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and
@@ -751,9 +677,9 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-                                                <div className="blog bg-blue">
-                                                    <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-2/image-1.jpg" alt="Blog" />
+                                                <div className="blog">
+                                                    <div className="card shadow-2xl" >
+                                                        <img className="card-img-top blog-card-padding-4" src="images/blogs/blog-2/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Hassle-free verification and fraud protection for the fintech industry</h4>
                                                             <Link to="/blog2" className="btn btn-primary btn-red">Read More</Link>
@@ -768,9 +694,9 @@ const Landing = () => {
                                     <div className="item">
                                         <div className="container">
                                             <div className="row align-items-center">
-                                                <div className="blog bg-blue">
+                                                <div className="blog shadow-2xl">
                                                     <div className="card" >
-                                                        <img className="card-img-top" src="images/blogs/blog-3/image-1.jpg" alt="Blog" />
+                                                        <img className="card-img-top blog-card-padding-4" src="images/blogs/blog-3/banner-1.jpg" alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Ensuring a safer drive for ride-hailing customers</h4>
                                                             <Link to="/blog3" className="btn btn-primary btn-red">Read More</Link>
@@ -795,13 +721,13 @@ const Landing = () => {
                                 <div className="section-title section-title-left text-start">
                                     <h2 className="text-white">Start verifying now.</h2>
                                 </div>
-                                <Link to="/get-in-touch" className="btn btn-primary btn-blue">Get in touch</Link>
+                                <Link to="/contact" className="btn btn-primary btn-blue">Get in touch</Link>
                             </div>
                         </div>
 
                         <div className="col-lg-6 pb-30">
                             <div className="about-section-item about-item-image text-center blue-image-right">
-                                <img src="images/landing/image-7.jpg" alt="shape" />
+                                <img src="images/landing/image-7.jpg" className="shadow-2xl" alt="shape" />
                             </div>
                         </div>
                     </div>

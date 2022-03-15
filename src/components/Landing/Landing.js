@@ -77,7 +77,7 @@ const Landing = () => {
                                                         </div>
                                                         <div className="about-content">
                                                             <p className="text-white">Bespoke solutions powered by AI and integration</p>
-                                                            <Link to="/about-us"  target="_blank" className="btn btn-primary btn-red">Explore</Link>
+                                                            <Link to="/technology"  target="_blank" className="btn btn-primary btn-red">Explore</Link>
                                                         </div>
                                                     </div>
                                                 </div>

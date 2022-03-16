@@ -6519,6 +6519,15 @@ select.form-control {
   right: 400px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-carousel .owl-prev {
+    left: 190px;
+  }
+  .blog-carousel .owl-next {
+    right: 190px;
+  }
+}
+
 .no-wrap{
   white-space: nowrap;
 }
@@ -6579,8 +6588,11 @@ select.form-control {
   .footer-upper .white-border-right{
     border-right: none;
   }
-  .blog-carousel .owl-nav{
-    display: none;
+  .blog-carousel .owl-prev {
+    left: 10px;
+  }
+  .blog-carousel .owl-next {
+    right: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){

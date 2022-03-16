@@ -101,14 +101,14 @@ const ContactUs = () => {
             </div>
 
             <div className="about-section contact-us-section bg-light-gray pt-5 pb-1" id="getInTouch">
-                <div className="container my-5">
+                <div className="container">
                     <div className="section-title section-title-left mb-3 text-start">
                         <h3 className="text-black font-weight-bolder">Get in Touch</h3>
                         <p className="text-black mb-0">If you have a specific query, please fill this form and we will get back to you soon.</p>
                     </div>
 
                     <Form noValidate validated={validated} onSubmit={Contactus}>
-                        <Form.Group as={Row} className="mb-12" controlId="formPlaintextEmail">
+                        <Form.Group className="mb-12" controlId="formPlaintextEmail">
                             <div className="row align-items-center ">
                                 <div className="col-lg-12 pb-3">
                                     <Form.Control type="text"

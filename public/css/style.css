@@ -6577,6 +6577,9 @@ select.form-control {
 }
 
 @media screen and (max-width: 767px){
+  .logo-image {
+    width: 200px;
+  }
   .hero-block{
     margin-top: 2rem;
   }
@@ -6605,11 +6608,16 @@ select.form-control {
     flex: 0 0 33.3%;
     margin-bottom: 1rem;
   }
-
   .services-section .col-md-2{
     max-width: 33.3%;
     flex: 0 0 33.3%;
     margin-bottom: 1rem;
+  }
+  .about-section-bg .statistic-block .circle .circle__inner h1 {
+    font-size: 2rem;
+  }
+  .about-section-bg .statistic-block .circle .circle__inner p {
+    font-size: 1rem;
   }
 }
 

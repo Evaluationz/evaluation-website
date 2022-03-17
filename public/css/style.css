@@ -6563,6 +6563,16 @@ select.form-control {
     margin-bottom: 1rem;
   }
 }
+@media screen and (max-width: 479px){
+    .media__item > img {
+      margin: 0 !important;
+  }
+  .media__body {
+    text-align: left !important;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+}
 @media screen and (min-width: 500px) and (max-width: 767px){
   .about-section .col-md-2{
     max-width: 50%;

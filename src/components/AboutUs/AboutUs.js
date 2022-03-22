@@ -74,7 +74,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="about-content">
-                                    <p className="text-white font-weight-normal">It started with employee background verification services in 2006. And that foundation has stood us in good stead as we expanded and innovated to being one of the leading players in digital verification.</p>
+                                    <p className="text-white font-weight-normal">It started with employee background verification services in 2006. And that foundation has stood us in good stead as we expanded and innovated to being one of the leading players in digital verification.</p>
 
                                     <p className="text-white font-weight-normal">Today, we offer a gamut of services that span verification types and industries. We have the capability to solve our own digital
                                         identity verification product with liveness detection and OCR capabilities.</p>

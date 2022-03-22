@@ -21,7 +21,7 @@ const ContactUs = () => {
        
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
-        let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
+        let logContact = await axios.post("https://verify.evaluationz.com:304/api/ContactUs",postData);
         }
         setValidated(true);
     }

@@ -94,7 +94,7 @@ const ContactUs = () => {
                             scrolling="no"
                             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left mb-0 text-start">
-                        <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 71017600</h5>
+                        <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 49905616</h5>
                         <h5 className="text-black font-weight-bolder">Mail us at : sales@evaluationz.com</h5>
                     </div>
                 </div>

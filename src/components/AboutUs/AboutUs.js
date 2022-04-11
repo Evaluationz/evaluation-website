@@ -74,7 +74,7 @@ const Landing = () => {
                                 </div>
 
                                 <div className="about-content">
-                                    <p className="text-white font-weight-normal">It started with employee background verification services in 2006. And that foundation has stood us in good stead as we expanded and innovated to being one of the leading players in digital verification.</p>
+                                    <p className="text-white font-weight-normal">It started with employee background verification services in 2006. And that foundation has stood us in good stead as we expanded and innovated to being one of the leading players in digital verification.</p>
 
                                     <p className="text-white font-weight-normal">Today, we offer a gamut of services that span verification types and industries. We have the capability to solve our own digital
                                         identity verification product with liveness detection and OCR capabilities.</p>
@@ -477,7 +477,7 @@ const Landing = () => {
                                         {"Maheshwar is the President & CEO of TVI Global. He brings 18 years of experience in translating strategy to execution: delivering\n" +
                                         "                                        top-line and bottom-line results. He has extensive experience in sales, marketing, professional services, and strategic\n" +
                                         "                                        growth initiatives.\n" +
-                                        "                                        Mahesh has established himself as a value creator and growth catalyst throughout the US, Latin America, Europe,\n" +
+                                        "                                        Maheshwar has established himself as a value creator and growth catalyst throughout the US, Latin America, Europe,\n" +
                                         "                                        Middle East, and Asia Pacific. His experience ranges from start-ups to major global players, including market leaders\n" +
                                         "                                        such as NCR, SITA, Cisco, Nortel, and AT&T.\n" +
                                         "                                        \n" +

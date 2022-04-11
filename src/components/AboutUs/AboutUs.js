@@ -207,7 +207,6 @@ const Landing = () => {
                                         "                                    Nobby is an avid squash player, golfer and loves nature."}
                                     </ReadMoreAndLess>
 
-
                                     <Link to={{pathname: "https://www.linkedin.com/in/nobbynazareth/"}} target="_blank">www.linkedin.com/in/nobbynazareth/</Link>
                                 </div>
                             </div>

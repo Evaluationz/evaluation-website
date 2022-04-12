@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
+import {Link} from "react-router-dom";
 
 const TermsOfUse = () => {
     return (
@@ -24,7 +25,7 @@ const TermsOfUse = () => {
                                         Where the context so requires, the Website and the App shall be collectively referred to as the "Platform".
                                     </p>
                                     <p className="font-weight-normal">
-                                        The Company has established a Privacy Policy available at policies.Evaluationz.com ("Privacy Policy"),
+                                        The Company has established a Privacy Policy available at <Link to="/privacy" target="_blank"> policies.Evaluationz.com</Link> ("Privacy Policy"),
                                         that explains to Users how their information is collected and used. The Privacy Policy is referenced
                                         below and is hereby incorporated into the Terms of Use set forth herein. Your use of the Platform is
                                         governed also by the Privacy Policy.

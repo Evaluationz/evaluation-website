@@ -114,8 +114,8 @@ const ContactUs = () => {
             <div className="about-section bg-white py-5">
                 <div className="container">
                     <iframe className="map"
-                        scrolling="no"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
+                            scrolling="no"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left mb-0 text-start">
                         <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 49905616</h5>
                         <h5 className="text-black font-weight-bolder">Mail us at : sales@evaluationz.com</h5>
@@ -140,26 +140,29 @@ const ContactUs = () => {
                                         <Form.Control id="mauticform_input_getintouch_f_name" name="mauticform[f_name]" className="mauticform-input" type="text" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}>Need Information</span>
                                     </div>
-                                    <div id="mauticform_getintouch_company" className="mauticform-row mauticform-text mauticform-field-2">
+
+                                    <div id="mauticform_getintouch_company" className="mauticform-row mauticform-text mauticform-field-2 mt-4">
                                         <label id="mauticform_label_getintouch_company" className="mauticform-label">Company</label>
                                         <Form.Control id="mauticform_input_getintouch_company" name="mauticform[company]" className="mauticform-input" type="text" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
                                     </div>
 
-                                    <div id="mauticform_getintouch_title" className="mauticform-row mauticform-text mauticform-field-3">
+                                    <div id="mauticform_getintouch_title" className="mauticform-row mauticform-text mauticform-field-3 mt-4">
                                         <label id="mauticform_label_getintouch_title" className="mauticform-label">Title</label>
                                         <Form.Control id="mauticform_input_getintouch_title" name="mauticform[title]" className="mauticform-input" type="text" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
                                     </div>
 
-                                    <div id="mauticform_getintouch_email" data-validate="email" data-validation-type="email" className="mauticform-row mauticform-email mauticform-field-4 mauticform-required">
+                                    <div id="mauticform_getintouch_email"
+                                         data-validate="email"
+                                         data-validation-type="email"
+                                         className="mauticform-row mauticform-email mauticform-field-4 mt-4 mauticform-required">
                                         <label id="mauticform_label_getintouch_email" className="mauticform-label">Email</label>
                                         <Form.Control id="mauticform_input_getintouch_email" name="mauticform[email]" className="mauticform-input" type="email" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}>Need Information</span>
-
                                     </div>
 
-                                    <div id="mauticform_getintouch_phone" className="mauticform-row mauticform-tel mauticform-field-5">
+                                    <div id="mauticform_getintouch_phone" className="mauticform-row mauticform-tel mauticform-field-5 mt-4">
                                         <label id="mauticform_label_getintouch_phone" className="mauticform-label">Phone</label>
                                         <Form.Control id="mauticform_input_getintouch_phone" name="mauticform[phone]" isInvalid={contactValidity} onChange={onChange} className="mauticform-input" type="number" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
@@ -168,23 +171,23 @@ const ContactUs = () => {
     </Form.Control.Feedback> */}
                                     </div>
 
-                                    <div id="mauticform_getintouch_city" className="mauticform-row mauticform-text mauticform-field-6">
+                                    <div id="mauticform_getintouch_city" className="mauticform-row mauticform-text mauticform-field-6 mt-4">
                                         <label id="mauticform_label_getintouch_city" className="mauticform-label">City</label>
                                         <Form.Control id="mauticform_input_getintouch_city" onFocus={cityAuto} name="mauticform[city]" className="mauticform-input" type="text" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
                                     </div>
 
-                                    <div id="mauticform_getintouch_message_query" className="mauticform-row mauticform-text mauticform-field-7">
+                                    <div id="mauticform_getintouch_message_query" className="mauticform-row mauticform-text mauticform-field-7 mt-4">
                                         <label id="mauticform_label_getintouch_message_query" className="mauticform-label">Message/ Query</label>
-                                        <textarea id="mauticform_input_getintouch_message_query" name="mauticform[message_query]" className="mauticform-textarea"></textarea>
+                                        <textarea id="mauticform_input_getintouch_message_query"
+                                                  name="mauticform[message_query]"
+                                                  className="mauticform-textarea form-control" style={{ height:150 }}></textarea>
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
                                     </div>
 
-                                    <div id="mauticform_getintouch_submit" className="mauticform-row mauticform-button-wrapper mauticform-field-8">
-
+                                    <div id="mauticform_getintouch_submit" className="mauticform-row mauticform-button-wrapper mauticform-field-8 mt-4">
                                         <Button type="submit" name="mauticform[submit]" id="mauticform_input_getintouch_submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
                                     </div>
-
                                 </div>
                             </div>
                         </Form>

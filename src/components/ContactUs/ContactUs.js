@@ -32,8 +32,8 @@ const ContactUs = () => {
 
     function onChange(e) {
         e.persist();
-        var name=document.getElementById('mauticform_input_getintouch_f_name').value;
-        var email=document.getElementById('mauticform_input_getintouch_email').value;
+        var name = document.getElementById('mauticform_input_getintouch_f_name').value;
+        var email = document.getElementById('mauticform_input_getintouch_email').value;
         // if (e.target.id === 'mauticform_input_getintouch_email') {
         //     var email_regex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i;
         //     if (e.target.value.match(email_regex)) {
@@ -43,15 +43,13 @@ const ContactUs = () => {
         //         updateEmailValidity(true)
         //     }
         //   }
-          
 
-        if(name!=="" && email!=="")
-        {
+
+        if (name !== "" && email !== "") {
             setactiveButton(false)
         }
-        else
-        {
-            setactiveButton(true)   
+        else {
+            setactiveButton(true)
         }
         var contact_no = document.getElementById('mauticform_input_getintouch_phone').value;
         if (contact_no.length === 10) {
@@ -63,7 +61,7 @@ const ContactUs = () => {
         }
     }
 
-    
+
 
     async function cityAuto() {
         let autocomplete = new window.google.maps.places.Autocomplete(
@@ -156,9 +154,9 @@ const ContactUs = () => {
 
                                     <div id="mauticform_getintouch_email" data-validate="email" data-validation-type="email" className="mauticform-row mauticform-email mauticform-field-4 mauticform-required">
                                         <label id="mauticform_label_getintouch_email" className="mauticform-label">Email</label>
-                                        <Form.Control id="mauticform_input_getintouch_email"    name="mauticform[email]" className="mauticform-input" type="email" />
+                                        <Form.Control id="mauticform_input_getintouch_email" name="mauticform[email]" className="mauticform-input" type="email" />
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}>Need Information</span>
-                                        
+
                                     </div>
 
                                     <div id="mauticform_getintouch_phone" className="mauticform-row mauticform-tel mauticform-field-5">
@@ -167,7 +165,7 @@ const ContactUs = () => {
                                         <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
                                         {/* <Form.Control.Feedback type="invalid" className="text-left">
                                             Please provide a valid contact number.
-                                        </Form.Control.Feedback> */}
+    </Form.Control.Feedback> */}
                                     </div>
 
                                     <div id="mauticform_getintouch_city" className="mauticform-row mauticform-text mauticform-field-6">
@@ -183,7 +181,7 @@ const ContactUs = () => {
                                     </div>
 
                                     <div id="mauticform_getintouch_submit" className="mauticform-row mauticform-button-wrapper mauticform-field-8">
-                                       
+
                                         <Button type="submit" name="mauticform[submit]" id="mauticform_input_getintouch_submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
                                     </div>
 

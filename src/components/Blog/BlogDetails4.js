@@ -26,7 +26,7 @@ const BlogDetails = () => {
             </div>
 
             <div className="about-section col-md-10 p-0 m-0">
-                <img src="images/blogs/blog-4/banner-1.jpeg" alt="shape" className="blog-details-image" />
+                <img src="images/blogs/blog-4/banner-1.png" alt="shape" className="blog-details-image" />
             </div>
 
             <div className="about-section bg-white py-5 blue-image-bottom">

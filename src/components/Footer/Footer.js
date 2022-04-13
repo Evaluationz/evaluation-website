@@ -33,7 +33,7 @@ const Footer = () => {
                                     </ul>
 
                                     <div className="footer-copyright-text pt-3 footer-copyright-text-white">
-                                        <p>{/*<Link to="/tnc">Terms of Use</Link> | */}<Link to="/privacy" target="_blank">Privacy Policy</Link>{/* | <Link to="/cookie">Cookie Policy</Link>*/} | <Link to="/faq" target="_blank">FAQ's</Link></p>
+                                        <p><Link to="/tnc" target="_blank">Terms of Use</Link> | <Link to="/privacy" target="_blank">Privacy Policy</Link>{/* | <Link to="/cookie">Cookie Policy</Link>*/} | <Link to="/faq" target="_blank">FAQ's</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const Footer = () => {
                                 <div className="footer-details footer-address">
                                     <div className="footer-address-item">
                                         <div className="footer-address-text">
-                                            <p>Evaluationz India Private Limited<br/>
+                                            <p>Evaluationz India Private Limited,<br/>
                                                 BHIVE Workspace, 29 MG Road,<br/>
                                                 7th Floor-Mahalaxmi Chambers,<br/>
                                                 Next to Trinity Metro Station,<br/>

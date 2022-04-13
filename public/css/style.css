@@ -6569,6 +6569,17 @@ select.form-control {
   }
 }
 
+@media screen and (max-width: 479px){
+  .media__item > img {
+    margin: 0 !important;
+}
+.media__body {
+  text-align: left !important;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+}
+
 @media screen and (max-width: 767px){
   .hero-block{
     margin-top: 2rem;
@@ -6579,7 +6590,7 @@ select.form-control {
   .footer-upper .white-border-right{
     border-right: none;
   }
-  .blog-carousel .owl-nav{
+   .blog-carousel .owl-nav {
     display: none;
   }
 }

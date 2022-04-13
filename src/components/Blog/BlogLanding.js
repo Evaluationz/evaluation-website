@@ -18,13 +18,12 @@ const Blog = () => {
                         <h1>Blogs</h1>
                     </div>
                     <div className="row d-flex justify-content-between">
-                        <div className="col-md-4 py-2 cursor-pointer" onClick={() => history.push(`/blog1`)}>
+                        <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog1`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-1/banner-1.png" alt="blog" />
                                 </div>
                                 <div className="card-body">
-
                                     <h4>Why background verification
                                         services are crucial before and
                                         after listing properties</h4>
@@ -35,7 +34,7 @@ const Blog = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-4 py-2 cursor-pointer" onClick={() => history.push(`/blog2`)}>
+                        <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog2`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-2/banner-1.jpg" alt="blog" />
@@ -48,7 +47,7 @@ const Blog = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-4 py-2 cursor-pointer" onClick={() => history.push(`/blog3`)}>
+                        <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog3`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
                                     <img src="images/blogs/blog-3/banner-1.jpg" alt="blog" />
@@ -63,10 +62,10 @@ const Blog = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-4 py-2 cursor-pointer" onClick={() => history.push(`/blog4`)}>
+                        <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog4`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-4/banner-1.jpeg" alt="blog" />
+                                    <img src="images/blogs/blog-4/banner-1.jpg" alt="blog" />
                                 </div>
                                 <div className="card-body">
                                     <h4>Is it time for social media users to self-verify? The tech exists</h4>

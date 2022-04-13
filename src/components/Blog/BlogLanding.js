@@ -65,7 +65,7 @@ const Blog = () => {
                         <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog4`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-4/banner-1.jpg" alt="blog" />
+                                    <img src="images/blogs/blog-4/blog-4.png" alt="blog" />
                                 </div>
                                 <div className="card-body">
                                     <h4>Is it time for social media users to self-verify? The tech exists</h4>

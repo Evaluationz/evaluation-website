@@ -21,7 +21,7 @@ const ContactUs = () => {
        
         const { name,company,title,email,phone,city,message } = formState;
         const postData = {"name":name,"company":company,"title":title,"email":email,"phone":phone,"city":city,"message":message}
-        let logContact = await axios.post("https://verify.evaluationz.com:300/api/ContactUs",postData);
+        let logContact = await axios.post("https://verify.evaluationz.com:304/api/ContactUs",postData);
         }
         setValidated(true);
     }
@@ -94,21 +94,21 @@ const ContactUs = () => {
                             scrolling="no"
                             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left mb-0 text-start">
-                        <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 71017600</h5>
+                        <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 49905616</h5>
                         <h5 className="text-black font-weight-bolder">Mail us at : sales@evaluationz.com</h5>
                     </div>
                 </div>
             </div>
 
             <div className="about-section contact-us-section bg-light-gray pt-5 pb-1" id="getInTouch">
-                <div className="container my-5">
+                <div className="container">
                     <div className="section-title section-title-left mb-3 text-start">
                         <h3 className="text-black font-weight-bolder">Get in Touch</h3>
                         <p className="text-black mb-0">If you have a specific query, please fill this form and we will get back to you soon.</p>
                     </div>
 
                     <Form noValidate validated={validated} onSubmit={Contactus}>
-                        <Form.Group as={Row} className="mb-12" controlId="formPlaintextEmail">
+                        <Form.Group className="mb-12" controlId="formPlaintextEmail">
                             <div className="row align-items-center ">
                                 <div className="col-lg-12 pb-3">
                                     <Form.Control type="text"

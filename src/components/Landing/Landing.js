@@ -711,6 +711,23 @@ const Landing = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="owl-item">
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row align-items-center">
+                                                <div className="blog">
+                                                    <div className="card shadow-2xl border-0">
+                                                        <img className="card-img-top px-5 pt-5" src="images/blogs/blog-4/blog-4.png" alt="Blog" />
+                                                        <div className="card-body">
+                                                            <h4 className="card-title">Is it time for social media users to self-verify? The tech exists.</h4>
+                                                            <Link to="/blog4" target="_blank" className="btn btn-primary btn-red">Read More</Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

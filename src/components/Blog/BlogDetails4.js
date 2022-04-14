@@ -9,6 +9,21 @@ const BlogDetails = () => {
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="Elon Musk, social Media, verification, compliance, government regulation, digital security, digital verification, identity verification, criminal verification" />
+                <meta property="og:title" content="Is it time for social media users to self-verify? The tech exists. | Evaluationz" />
+                <meta property="og:description" content="Read our blogs on the latest news and thoughts surrounding verification" />
+                <meta property="og:url" content="https://evaluationz.com/blog4" />
+                <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-4/blog-4.png" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/blog4" />
+                <meta property="og:image:width" content="320" />
+                <meta property="og:image:height" content="320" />
+                <meta property="og:image:alt" content="Evaluationz" />
+                <meta property="fb:app_id" content="950342812297599" />
+                {/* <meta property="fb:admins" content="moonlyte.social" /> */}
+                <meta name="twitter:card" content="Evaluationz" />
+                <meta name="twitter:site" content="Evaluationz" />
+                <meta name="twitter:creator" content="Evaluationz" />
+            
+            
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">

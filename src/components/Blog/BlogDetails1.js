@@ -9,6 +9,19 @@ const BlogDetails = () => {
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
+                <meta property="og:title" content="Why background verification services are crucial before and after listing properties | Evaluationz" />
+                <meta property="og:description" content="Read our blogs on the latest news and thoughts surrounding verification" />
+                <meta property="og:url" content="https://evaluationz.com/blog1" />
+                <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-1/banner-1.png" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/blog1" />
+                <meta property="og:image:width" content="320" />
+                <meta property="og:image:height" content="320" />
+                <meta property="og:image:alt" content="Evaluationz" />
+                <meta property="fb:app_id" content="950342812297599" />
+                {/* <meta property="fb:admins" content="moonlyte.social" /> */}
+                <meta name="twitter:card" content="Evaluationz" />
+                <meta name="twitter:site" content="Evaluationz" />
+                <meta name="twitter:creator" content="Evaluationz" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">

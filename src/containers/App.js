@@ -30,13 +30,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Switch from "react-bootstrap/cjs/Switch";
 import ScrollIntoView from "../components/ScrollIntoView";
 
+
 const App = () => {
-	return (
+    return (
         <BrowserRouter>
             <div>
                 <ScrollIntoView>
                     <Switch className="pl-0">
-                        <Navbar/>
+                        <Navbar />
                         <Route path='/' exact component={Landing} />
                         <Route path='/about-us' component={AboutUs} />
                         <Route path='/careers' component={Careers} />
@@ -59,12 +60,14 @@ const App = () => {
                         <Route path='/technology' component={Technology} />
                         <Route path='/privacy' component={PrivacyPolicy} />
                         <Route path='/tnc' component={TermsOfUse} />
-                        <Footer/>
+                        <Footer />
                     </Switch>
                 </ScrollIntoView>
             </div>
         </BrowserRouter>
     );
 };
+
+
 
 export default App;

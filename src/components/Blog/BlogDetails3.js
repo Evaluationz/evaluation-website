@@ -12,16 +12,7 @@ const BlogDetails = () => {
                 <meta property="og:description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta property="og:url" content="https://evaluationz.com/blog3" />
                 <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-3/banner-1.jpg" />
-                <meta property="og:image:secure_url" content="https://evaluationz.com/blog3" />
-                <meta property="og:image:width" content="320" />
-                <meta property="og:image:height" content="320" />
-                <meta property="og:image:alt" content="Evaluationz" />
-                <meta property="fb:app_id" content="950342812297599" />
-                {/* <meta property="fb:admins" content="moonlyte.social" /> */}
-                <meta name="twitter:card" content="Evaluationz" />
-                <meta name="twitter:site" content="Evaluationz" />
-                <meta name="twitter:creator" content="Evaluationz" />
-            
+                <meta property="og:image:secure_url" content="https://evaluationz.com/images/blogs/blog-3/banner-1.jpg" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">

@@ -14,6 +14,7 @@ const BlogDetails = () => {
                 <meta property="og:url" content="https://evaluationz.com/blog4" />
                 <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-4/blog-4.png" />
                 <meta property="og:image:secure_url" content="https://evaluationz.com/images/blogs/blog-4/blog-4.png" />
+                <meta name="twitter:image" content="https://evaluationz.com/images/blogs/blog-4/blog-4.png" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">

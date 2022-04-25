@@ -9,6 +9,11 @@ const Landing = () => {
                 <title>Evaluationz: Careers</title>
                 <meta name="description" content="See what open jobs in Evaluationz are best suited to you" />
                 <meta name="keywords" content="Careers, hiring, job position, application" />
+                <meta property="og:description" content="See what open jobs in Evaluationz are best suited to you" />
+                <meta property="og:url" content="https://evaluationz.com/careers" />
+                <meta property="og:image" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta name="twitter:image" content="https://evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="about-section bg-blue py-4 mt-5">

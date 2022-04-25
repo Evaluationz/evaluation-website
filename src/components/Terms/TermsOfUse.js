@@ -9,6 +9,11 @@ const TermsOfUse = () => {
                 <title>Terms Of Use</title>
                 <meta name="description" content="Read our terms & conditions here" />
                 <meta name="keywords" content="Evaluationz Terms & Conditions"/>
+                <meta property="og:description" content="Read our terms & conditions here" />
+                <meta property="og:url" content="https://evaluationz.com/tnc" />
+                <meta property="og:image" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta name="twitter:image" content="https://evaluationz.com/images/favicon.jpg" />
             </Helmet>
             <div className="service-section bg-white pt-130 pb-70">
                 <div className="container">

@@ -10,7 +10,11 @@ const Landing = () => {
                 <title>Evaluationz: About us</title>
                 <meta name="description" content="Learn about values, mission and leadership team and the Board of Directors leading Evaluationz" />
                 <meta name="keywords" content="Nobby Nazareth, Piyush Jha, Manikandan Ramasamy, Ganesh N C, Parvathi Shankar, KK Mathew, Maheshwar Tiruchinapalli" />
-
+                <meta property="og:description" content="Learn about values, mission and leadership team and the Board of Directors leading Evaluationz" />
+                <meta property="og:url" content="https://evaluationz.com/about-us" />
+                <meta property="og:image" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta name="twitter:image" content="https://evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="about-section bg-red py-4 mt-5">

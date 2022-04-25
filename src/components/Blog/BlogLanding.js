@@ -10,6 +10,11 @@ const Blog = () => {
                 <title>Evaluationz: Blog</title>
                 <meta name="description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
+                <meta property="og:description" content="Read our blogs on the latest news and thoughts surrounding verification" />
+                <meta property="og:url" content="https://evaluationz.com/blog" />
+                <meta property="og:image" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta name="twitter:image" content="https://evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="hero-block pt-4 pb-5 mt-5">
@@ -21,7 +26,7 @@ const Blog = () => {
                         <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog1`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-1/banner-1.png" alt="blog" />
+                                    <img src="images/blogs/blog-1/banner-1.jpg" alt="blog" />
                                 </div>
                                 <div className="card-body">
                                     <h4>Why background verification
@@ -65,7 +70,7 @@ const Blog = () => {
                         <div className="col-md-6 py-2 cursor-pointer" onClick={() => history.push(`/blog4`)}>
                             <div className="user-card h-100 blog-card bg-white">
                                 <div className="about-section-item about-item-image text-center blue-image-left">
-                                    <img src="images/blogs/blog-4/blog-4.png" alt="blog" />
+                                    <img src="images/blogs/blog-4/blog-4.jpg" alt="blog" />
                                 </div>
                                 <div className="card-body">
                                     <h4>Is it time for social media users to self-verify? The tech exists</h4>

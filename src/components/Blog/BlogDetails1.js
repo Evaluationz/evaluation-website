@@ -13,9 +13,9 @@ function BlogDetails() {
                 <meta property="og:title" content="Why background verification services are crucial before and after listing properties | Evaluationz" />
                 <meta property="og:description" content="Read our blogs on the latest news and thoughts surrounding verification" />
                 <meta property="og:url" content="https://evaluationz.com/blog1" />
-                <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-1/banner-1.png" />
-                <meta property="og:image:secure_url" content="https://evaluationz.com/images/blogs/blog-1/banner-1.png" />
-                <meta name="twitter:image" content="https://evaluationz.com/images/blogs/blog-1/banner-1.png" />
+                <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-1/banner-1.jpg" />
+                <meta property="og:image:secure_url" content="https://evaluationz.com/images/blogs/blog-1/banner-1.jpg" />
+                <meta name="twitter:image" content="https://evaluationz.com/images/blogs/blog-1/banner-1.jpg" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">

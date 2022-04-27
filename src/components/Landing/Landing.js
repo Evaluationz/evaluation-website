@@ -29,10 +29,10 @@ const Landing = () => {
                 <meta name="description" content="Evaluationz is a Nascom empanalled gold partner in the space of employee, vendor and user verification which is digitized and real time" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
                 <meta property="og:description" content="Evaluationz is a Nascom empanalled gold partner in the space of employee, vendor and user verification which is digitized and real time" />
-                <meta property="og:url" content="https://evaluationz.com" />
-                <meta property="og:image" content="https://evaluationz.com/images/favicon.jpg" />
-                <meta property="og:image:secure_url" content="https://evaluationz.com/images/favicon.jpg" />
-                <meta name="twitter:image" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta property="og:url" content="https://www.evaluationz.com" />
+                <meta property="og:image" content="https://www.evaluationz.com/images/favicon.jpg" />
+                <meta property="og:image:secure_url" content= "https://www.evaluationz.com/images/favicon.jpg" />
+                <meta name="twitter:image" content=" https://www.evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="hero-block py-5 mt-5">
@@ -667,7 +667,7 @@ const Landing = () => {
                                             <div className="row align-items-center">
                                                 <div className="blog">
                                                     <div className="card shadow-2xl border-0" >
-                                                        <img className="card-img-top px-5 pt-5" src="images/blogs/blog-1/banner-1.png"  alt="Blog" />
+                                                        <img className="card-img-top px-5 pt-5" src="images/blogs/blog-1/banner-1.jpg"  alt="Blog" />
                                                         <div className="card-body">
                                                             <h4 className="card-title">Why background verification
                                                                 services are crucial before and

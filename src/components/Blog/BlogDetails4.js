@@ -11,10 +11,10 @@ const BlogDetails = () => {
                 <meta name="keywords" content="Elon Musk, social Media, verification, compliance, government regulation, digital security, digital verification, identity verification, criminal verification" />
                 <meta property="og:title" content="Is it time for social media users to self-verify? The tech exists. | Evaluationz" />
                 <meta property="og:description" content="Read our blogs on the latest news and thoughts surrounding verification" />
-                <meta property="og:url" content="https://evaluationz.com/blog4" />
-                <meta property="og:image" content="https://evaluationz.com/images/blogs/blog-4/blog-4.jpg" />
-                <meta property="og:image:secure_url" content="https://evaluationz.com/images/blogs/blog-4/blog-4.jpg" />
-                <meta name="twitter:image" content="https://evaluationz.com/images/blogs/blog-4/blog-4.jpg" />
+                <meta property="og:url" content="https://www.evaluationz.com/blog4" />
+                <meta property="og:image" content="https://www.evaluationz.com/images/blogs/blog-4/blog-4.jpg" />
+                <meta property="og:image:secure_url" content="https://www.evaluationz.com/images/blogs/blog-4/blog-4.jpg" />
+                <meta name="twitter:image" content="https://www.evaluationz.com/images/blogs/blog-4/blog-4.jpg" />
             </Helmet>
 
             <div className="about-section bg-white py-4 mt-5">

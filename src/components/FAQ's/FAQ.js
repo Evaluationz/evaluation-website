@@ -9,10 +9,10 @@ const FAQ = () => {
                 <meta name="description" content="Answers to the frequently asked questions about verification and Evaluationz" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification"/>
                 <meta property="og:description" content="Answers to the frequently asked questions about verification and Evaluationz" />
-                <meta property="og:url" content="https://evaluationz.com/faq" />
-                <meta property="og:image" content="https://evaluationz.com/images/favicon.jpg" />
-                <meta property="og:image:secure_url" content="https://evaluationz.com/images/favicon.jpg" />
-                <meta name="twitter:image" content="https://evaluationz.com/images/favicon.jpg" />
+                <meta property="og:url" content=" https://www.evaluationz.com/faq" />
+                <meta property="og:image" content="https://www.evaluationz.com/images/favicon.jpg" />
+                <meta property="og:image:secure_url" content="https://www.evaluationz.com/images/favicon.jpg" />
+                <meta name="twitter:image" content="https://www.evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="about-section pt-70 pb-70">

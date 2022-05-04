@@ -1,18 +1,20 @@
 import React, { Component, useState } from "react";
 import { Helmet } from 'react-helmet';
-import { Button, Alert, Form, Row, Col } from 'react-bootstrap';
+import { Button, Form, Row, Col } from 'react-bootstrap';
 import axios from "axios";
+import swal from 'sweetalert';
 
 
+const formData = { name: '', company: '', title: '', email: '', phone: '', city: '', message: '' }
 
 
 
 const ContactUs = () => {
-
+    const [formState, updateFormState] = useState(formData);
     const [validated, setValidated] = useState(false);
     const [activeButton, setactiveButton] = useState(true);
     const [contactValidity, updateContactValidity] = useState(false);
-    // const [emailValidity, updateEmailValidity] = useState(false);
+    const [emailValidity, updateEmailValidity] = useState(false);
 
     async function Contactus(event) {
         const form = event.currentTarget;
@@ -22,56 +24,66 @@ const ContactUs = () => {
             event.stopPropagation();
         }
         else {
+            event.preventDefault();
+            event.stopPropagation();
 
-
-            const postData = { "name": document.getElementById('mauticform_input_getintouch_f_name').value, "company": document.getElementById('mauticform_input_getintouch_company').value, "title": document.getElementById('mauticform_input_getintouch_title').value, "email": document.getElementById('mauticform_input_getintouch_email').value, "phone": document.getElementById('mauticform_input_getintouch_phone').value, "city": document.getElementById('mauticform_input_getintouch_city').value, "message": document.getElementById('mauticform_input_getintouch_message_query').value }
+            const { name, company, title, email, phone, city, message } = formState;
+            const postData = { "name": name, "company": company, "title": title, "email": email, "phone": phone, "city": city, "message": message }
             let logContact = await axios.post("https://verify.evaluationz.com:304/api/ContactUs", postData);
+            if (logContact.status === 200) {
+                swal("We have sent your request to the right desk. You will be contacted shortly")
+                    .then((value) => {
+                        window.location.reload()
+                    });
+            }
+            setValidated(true);
         }
-        setValidated(true);
     }
 
     function onChange(e) {
         e.persist();
-        var name = document.getElementById('mauticform_input_getintouch_f_name').value;
-        var email = document.getElementById('mauticform_input_getintouch_email').value;
-        // if (e.target.id === 'mauticform_input_getintouch_email') {
-        //     var email_regex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i;
-        //     if (e.target.value.match(email_regex)) {
-        //         updateEmailValidity(false)
-        //     }
-        //     else {
-        //         updateEmailValidity(true)
-        //     }
-        //   }
 
-
-        if (name !== "" && email !== "") {
-            setactiveButton(false)
-        }
-        else {
+        updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
+        if (e.target.name === "name" || e.target.name === "email" && e.target.value === "") {
             setactiveButton(true)
         }
-        var contact_no = document.getElementById('mauticform_input_getintouch_phone').value;
-        if (contact_no.length === 10) {
-            updateContactValidity(false)
-        }
         else {
-            updateContactValidity(true)
+            setactiveButton(false)
+        }
 
+        if (e.target.name === 'email') {
+            var email_regex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i;
+            if (e.target.value.match(email_regex)) {
+                updateEmailValidity(false);
+            }
+            else {
+                updateEmailValidity(true);
+            }
+        }
+
+        if (e.target.name === 'phone') {
+
+            if (e.target.value === '' || e.target.value.length === 10) {
+
+                updateContactValidity(false);
+            }
+            else {
+                updateContactValidity(true);
+
+            }
         }
     }
 
 
-
     async function cityAuto() {
         let autocomplete = new window.google.maps.places.Autocomplete(
-            document.getElementById('mauticform_input_getintouch_city'),
+            document.getElementById('city'),
             { types: ['geocode'] }
         );
         console.log("geo ", autocomplete);
         autocomplete.addListener('place_changed', () => {
             let place = autocomplete.getPlace();
-            // updateFormState(() => ({ ...formState, city: place.formatted_address }))
+            updateFormState(() => ({ ...formState, city: place.formatted_address }))
         });
     }
 
@@ -81,11 +93,6 @@ const ContactUs = () => {
                 <title>Evaluationz: Contact us</title>
                 <meta name="description" content="Have someone from Evaluationz reach out to you with out various digital and realtime offerings" />
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
-                <meta property="og:description" content="Have someone from Evaluationz reach out to you with out various digital and realtime offerings" />
-                <meta property="og:url" content="https://www.evaluationz.com/contact" />
-                <meta property="og:image" content="https://www.evaluationz.com/images/favicon.jpg" />
-                <meta property="og:image:secure_url" content="https://www.evaluationz.com/images/favicon.jpg" />
-                <meta name="twitter:image" content="https://www.evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="about-section bg-red py-4 mt-5">
@@ -119,8 +126,8 @@ const ContactUs = () => {
             <div className="about-section bg-white py-5">
                 <div className="container">
                     <iframe className="map"
-                            scrolling="no"
-                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
+                        scrolling="no"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BHIVE%20Workspace%20MG%20Road+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe>
                     <div className="section-title section-title-left mb-0 text-start">
                         <h5 className="text-black font-weight-bolder pt-5">Call us at : +91 80 49905616</h5>
                         <h5 className="text-black font-weight-bolder">Mail us at : sales@evaluationz.com</h5>
@@ -130,73 +137,97 @@ const ContactUs = () => {
 
             <div className="about-section contact-us-section bg-light-gray pt-5 pb-1" id="getInTouch">
                 <div className="container">
+
                     <div className="section-title section-title-left mb-3 text-start">
                         <h3 className="text-black font-weight-bolder">Get in Touch</h3>
                         <p className="text-black mb-0">If you have a specific query, please fill this form and we will get back to you soon.</p>
                     </div>
-                    <div id="mauticform_wrapper_getintouch" className="mauticform_wrapper">
-                        <Form noValidate validated={validated} onSubmit={Contactus} autoComplete="off" role="form" method="post" action="https://evaluationz.mykampaign.com/form/submit?formId=2" id="mauticform_getintouch" data-mautic-form="getintouch">
-                            <div className="mauticform-error" id="mauticform_getintouch_error"></div>
-                            <div className="mauticform-message" id="mauticform_getintouch_message"></div>
-                            <div className="mauticform-innerform">
-                                <div className="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
-                                    <div id="mauticform_getintouch_f_name" data-validate="f_name" data-validation-type="text" className="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
-                                        <label id="mauticform_label_getintouch_f_name" className="mauticform-label">Name</label>
-                                        <Form.Control id="mauticform_input_getintouch_f_name" name="mauticform[f_name]" className="mauticform-input" type="text" />
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}>Need Information</span>
-                                    </div>
 
-                                    <div id="mauticform_getintouch_company" className="mauticform-row mauticform-text mauticform-field-2 mt-4">
-                                        <label id="mauticform_label_getintouch_company" className="mauticform-label">Company</label>
-                                        <Form.Control id="mauticform_input_getintouch_company" name="mauticform[company]" className="mauticform-input" type="text" />
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
-                                    </div>
-
-                                    <div id="mauticform_getintouch_title" className="mauticform-row mauticform-text mauticform-field-3 mt-4">
-                                        <label id="mauticform_label_getintouch_title" className="mauticform-label">Title</label>
-                                        <Form.Control id="mauticform_input_getintouch_title" name="mauticform[title]" className="mauticform-input" type="text" />
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
-                                    </div>
-
-                                    <div id="mauticform_getintouch_email"
-                                         data-validate="email"
-                                         data-validation-type="email"
-                                         className="mauticform-row mauticform-email mauticform-field-4 mt-4 mauticform-required">
-                                        <label id="mauticform_label_getintouch_email" className="mauticform-label">Email</label>
-                                        <Form.Control id="mauticform_input_getintouch_email" name="mauticform[email]" className="mauticform-input" type="email" />
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}>Need Information</span>
-                                    </div>
-
-                                    <div id="mauticform_getintouch_phone" className="mauticform-row mauticform-tel mauticform-field-5 mt-4">
-                                        <label id="mauticform_label_getintouch_phone" className="mauticform-label">Phone</label>
-                                        <Form.Control id="mauticform_input_getintouch_phone" name="mauticform[phone]" isInvalid={contactValidity} onChange={onChange} className="mauticform-input" type="number" />
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
-                                        {/* <Form.Control.Feedback type="invalid" className="text-left">
-                                            Please provide a valid contact number.
-    </Form.Control.Feedback> */}
-                                    </div>
-
-                                    <div id="mauticform_getintouch_city" className="mauticform-row mauticform-text mauticform-field-6 mt-4">
-                                        <label id="mauticform_label_getintouch_city" className="mauticform-label">City</label>
-                                        <Form.Control id="mauticform_input_getintouch_city" onFocus={cityAuto} name="mauticform[city]" className="mauticform-input" type="text" />
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
-                                    </div>
-
-                                    <div id="mauticform_getintouch_message_query" className="mauticform-row mauticform-text mauticform-field-7 mt-4">
-                                        <label id="mauticform_label_getintouch_message_query" className="mauticform-label">Message/ Query</label>
-                                        <textarea id="mauticform_input_getintouch_message_query"
-                                                  name="mauticform[message_query]"
-                                                  className="mauticform-textarea form-control" style={{ height:150 }}></textarea>
-                                        <span className="mauticform-errormsg" style={{ display: 'none' }}></span>
-                                    </div>
-
-                                    <div id="mauticform_getintouch_submit" className="mauticform-row mauticform-button-wrapper mauticform-field-8 mt-4">
-                                        <Button type="submit" name="mauticform[submit]" id="mauticform_input_getintouch_submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
-                                    </div>
+                    <Form noValidate validated={validated} onSubmit={Contactus}>
+                        <Form.Group className="mb-12" controlId="formPlaintextEmail">
+                            <div className="row align-items-center ">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                        required
+                                        className="shadow-lg"
+                                        name="name"
+                                        onChange={onChange}
+                                        placeholder="Name" />
+                                    <Form.Control.Feedback type="invalid" className="mb-0">
+                                        Please provide your name.
+                                    </Form.Control.Feedback>
                                 </div>
                             </div>
-                        </Form>
-                    </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                        name="company"
+                                        className="shadow-lg"
+                                        onChange={onChange}
+                                        placeholder="Company" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="text"
+                                        name="title"
+                                        className="shadow-lg"
+                                        onChange={onChange}
+                                        placeholder="Title" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <Form.Control type="email"
+                                        required
+                                        name="email"
+                                        className="shadow-lg"
+                                        onChange={onChange}
+                                        isInvalid={emailValidity}
+                                        placeholder="Email" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a valid email.
+                                    </Form.Control.Feedback>
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-6 pb-3">
+                                    <Form.Control type="number"
+                                        name="phone"
+                                        className="shadow-lg"
+                                        onChange={onChange}
+                                        isInvalid={contactValidity}
+                                        placeholder="Phone" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a valid contact number.
+                                    </Form.Control.Feedback>
+                                </div>
+                                <div className="col-lg-6 pb-3">
+                                    <Form.Control type="text"
+                                        name="city"
+                                        id="city"
+                                        onFocus={cityAuto}
+                                        className="shadow-lg"
+                                        onChange={onChange}
+                                        placeholder="City" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-3">
+                                    <textarea className="form-control shadow-lg"
+                                        name="message"
+                                        onChange={onChange}
+                                        style={{ maxHeight: '150px', height: '150px' }}
+                                        placeholder="Message/Query" />
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-12 pb-30">
+                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
+                                </div>
+                            </div>
+                        </Form.Group>
+                    </Form>
                 </div>
             </div>
         </section>

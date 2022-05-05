@@ -12,7 +12,6 @@ const formData = { name: '', company: '', title: '', email: '', phone: '', city:
 const ContactUs = () => {
     const [formState, updateFormState] = useState(formData);
     const [validated, setValidated] = useState(false);
-    const [activeButton, setactiveButton] = useState(true);
     const [contactValidity, updateContactValidity] = useState(false);
     const [emailValidity, updateEmailValidity] = useState(false);
 
@@ -42,14 +41,10 @@ const ContactUs = () => {
 
     function onChange(e) {
         e.persist();
-
+       
         updateFormState(() => ({ ...formState, [e.target.name]: e.target.value }))
-        if (e.target.name === "name" || e.target.name === "email" && e.target.value === "") {
-            setactiveButton(true)
-        }
-        else {
-            setactiveButton(false)
-        }
+       
+        
 
         if (e.target.name === 'email') {
             var email_regex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i;
@@ -86,13 +81,25 @@ const ContactUs = () => {
             updateFormState(() => ({ ...formState, city: place.formatted_address }))
         });
     }
-
+    var {name,email}=formState;
     return (
         <section>
             <Helmet>
                 <title>Evaluationz: Contact us</title>
+
                 <meta name="description" content="Have someone from Evaluationz reach out to you with out various digital and realtime offerings" />
+
                 <meta name="keywords" content="address verification, criminal verification, drug panel testing, employment verification, education verification, employee verification, user verification, vendor verification, Identity check, Social Media Check, Reference check, Drug test, Digital verification, passport verification, credit check, API Integration, Reduced TAT, Real time verification, verification Specialist, NASCOM empanelled, credit score check, Evaluationz, Evaluationz India Pvt. Ltd., Verification India, AI, Artificial Intelligence, BlueG, Coporate verification, IT Verification, Ites Verification, Banking and Financial Services Industry Verification, Automative verification, eCommerce verification, healthcare verification, rental verificaion, matrimonial verification, hyperlocal verification, blue collar verification, white collar verification" />
+
+                <meta property="og:description" content="Have someone from Evaluationz reach out to you with out various digital and realtime offerings" />
+
+                <meta property="og:url" content="https://www.evaluationz.com/contact" />
+
+                <meta property="og:image" content="https://www.evaluationz.com/images/favicon.jpg" />
+
+                <meta property="og:image:secure_url" content="https://www.evaluationz.com/images/favicon.jpg" />
+
+                <meta name="twitter:image" content="https://www.evaluationz.com/images/favicon.jpg" />
             </Helmet>
 
             <div className="about-section bg-red py-4 mt-5">
@@ -144,7 +151,7 @@ const ContactUs = () => {
                     </div>
 
                     <Form noValidate validated={validated} onSubmit={Contactus}>
-                        <Form.Group className="mb-12" controlId="formPlaintextEmail">
+                        <Form.Group className="mb-12" >
                             <div className="row align-items-center ">
                                 <div className="col-lg-12 pb-3">
                                     <Form.Control type="text"
@@ -223,7 +230,7 @@ const ContactUs = () => {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12 pb-30">
-                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={activeButton}>Submit</Button>
+                                    <Button type="submit" className="btn btn-primary btn-red shadow-lg font-weight-bolder" disabled={name === "" || emailValidity || email===""  ? true : false} >Submit</Button>
                                 </div>
                             </div>
                         </Form.Group>
